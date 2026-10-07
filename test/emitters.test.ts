@@ -34,7 +34,7 @@ const catalog: Catalog = {
   ],
 };
 
-const ctx = { repoUrl: "https://github.com/icepuma/marktplatz-dev.git", sha: "c".repeat(40) };
+const ctx = { repoUrl: "https://github.com/marktplatz-dev/marktplatz-dev.git", sha: "c".repeat(40) };
 
 describe("resolveSelection", () => {
   const ids = (roles: string[], skills: string[]) => resolveSelection(catalog, roles, skills).map((s) => s.id);
@@ -93,8 +93,8 @@ describe("emitters", () => {
       displayName: "Dev (guild)",
       description: "d Brings 1 skill: beta.",
       author: { name: "marktplatz" },
-      homepage: `https://github.com/icepuma/marktplatz-dev/blob/${ctx.sha}/roles/dev.yaml`,
-      repository: "https://github.com/icepuma/marktplatz-dev",
+      homepage: `https://github.com/marktplatz-dev/marktplatz-dev/blob/${ctx.sha}/roles/dev.yaml`,
+      repository: "https://github.com/marktplatz-dev/marktplatz-dev",
       license: "MIT",
       keywords: ["beta"],
       category: "guilds",

@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { renderMarkdown } from "../src/lib/markdown";
 
-const base = "https://github.com/icepuma/marktplatz-dev/blob/abc/approved/demo/v1/skills/demo";
+const base = "https://github.com/marktplatz-dev/marktplatz-dev/blob/abc/approved/demo/v1/skills/demo";
 
 describe("renderMarkdown", () => {
   test("renders ordinary Markdown", () => {
