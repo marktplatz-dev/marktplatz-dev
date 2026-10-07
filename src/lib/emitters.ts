@@ -9,7 +9,7 @@ export const MARKETPLACE_NAME = "marktplatz";
 export type Harness = "claude-code" | "codex";
 
 export type EmitContext = {
-  /** Git URL of this repo, e.g. https://github.com/icepuma/marktplatz-dev.git */
+  /** Git URL of this repo, e.g. https://github.com/marktplatz-dev/marktplatz-dev.git */
   repoUrl: string;
   /** The commit the site was built from; every skill is pinned to it. */
   sha: string;
