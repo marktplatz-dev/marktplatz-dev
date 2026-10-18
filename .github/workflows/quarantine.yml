@@ -79,7 +79,6 @@ jobs:
         run: bun scripts/quarantine.ts check "$SKILL"
         env:
           SKILL: ${{ matrix.skill }}
-          GITHUB_TOKEN: ${{ github.token }} # read-only; only used for the license API rate limit
       - name: Job summary
         if: always()
         run: cat ".quarantine/$SKILL/report.md" >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true

@@ -43,25 +43,22 @@ export function evaluateLicense(response: GithubLicenseResponse | null): RepoLic
 }
 
 /** The repo's NOTICE file at an exact commit, if it has one: its attribution notices must travel with the files. */
-export async function fetchRepoNotice(repo: string, sha: string, token?: string): Promise<string | null> {
-  const res = await fetch(`https://raw.githubusercontent.com/${repo}/${sha}/NOTICE`, {
-    headers: token ? { authorization: `Bearer ${token}` } : {},
-  });
+export async function fetchRepoNotice(repo: string, sha: string): Promise<string | null> {
+  const res = await fetch(`https://raw.githubusercontent.com/${repo}/${sha}/NOTICE`);
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`NOTICE download returned ${res.status}`);
   return res.text();
 }
 
-/** Reads the repo license at an exact commit via `GET /repos/{repo}/license?ref={sha}`. */
-export async function fetchRepoLicense(repo: string, sha: string, token?: string): Promise<RepoLicense> {
+/**
+ * Reads the repo license at an exact commit via `GET /repos/{repo}/license?ref={sha}`, unauthenticated: an Actions
+ * token comes from another organization, and some (databricks) answer it with 403. One call per check job.
+ */
+export async function fetchRepoLicense(repo: string, sha: string): Promise<RepoLicense> {
   const res = await fetch(`https://api.github.com/repos/${repo}/license?ref=${sha}`, {
-    headers: {
-      accept: "application/vnd.github+json",
-      "x-github-api-version": "2022-11-28",
-      ...(token ? { authorization: `Bearer ${token}` } : {}),
-    },
+    headers: { accept: "application/vnd.github+json", "x-github-api-version": "2022-11-28" },
   });
   if (res.status === 404) return evaluateLicense(null);
-  if (!res.ok) throw new Error(`GitHub license API returned ${res.status}`);
+  if (!res.ok) throw new Error(`GitHub license API returned ${res.status}: ${await res.text()}`);
   return evaluateLicense((await res.json()) as GithubLicenseResponse);
 }
