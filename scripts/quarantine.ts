@@ -60,9 +60,9 @@ async function check(id: string): Promise<boolean> {
   const hash = await contentHash(skillDir);
 
   console.log(`license  ${manifest.repo}@${sha}`);
-  const license = await fetchRepoLicense(manifest.repo, sha, process.env.GITHUB_TOKEN);
+  const license = await fetchRepoLicense(manifest.repo, sha);
   await writeFile(join(stage, "LICENSE"), license.text);
-  const notice = await fetchRepoNotice(manifest.repo, sha, process.env.GITHUB_TOKEN);
+  const notice = await fetchRepoNotice(manifest.repo, sha);
   if (notice !== null) await writeFile(join(stage, "NOTICE"), notice);
   console.log(`         ${license.spdx}`);
 
