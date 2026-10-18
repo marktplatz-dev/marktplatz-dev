@@ -1,0 +1,10 @@
+{
+  "id": "ask-matt",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/ask-matt",
+  "version": "v1.3.1",
+  "sha": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "contentHash": "sha256-ae4f261c7569ebc59d27706ab5a55b66f2da8c6689ccf4f593392f8d216e639c",
+  "license": "MIT",
+  "promotedAt": "2026-10-18T18:00:08.765Z"
+}

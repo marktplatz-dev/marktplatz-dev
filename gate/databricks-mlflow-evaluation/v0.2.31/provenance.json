@@ -1,0 +1,11 @@
+{
+  "id": "databricks-mlflow-evaluation",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-mlflow-evaluation",
+  "version": "v0.2.31",
+  "sha": "aea6a1b9bd88eefc7e858941fb98b2d3b01fbd80",
+  "contentHash": "sha256-ab38e8236e7cc818feffc6e7991df383e2e6d5709cfcaada9c070f7214e2526b",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-18T18:00:10.721Z",
+  "description": "MLflow 3 GenAI agent evaluation. Use when writing mlflow.genai.evaluate() code, creating @scorer functions, using built-in scorers (Guidelines, Correctness, Safety, RetrievalGroundedness), building eval datasets from traces, setting up trace ingestion and production monitoring, aligning judges with MemAlign from domain expert feedback, or running optimize_prompts() with GEPA for automated prompt improvement."
+}

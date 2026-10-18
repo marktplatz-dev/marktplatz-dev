@@ -1,0 +1,10 @@
+{
+  "id": "databricks-spark-structured-streaming",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-spark-structured-streaming",
+  "version": "v0.2.31",
+  "sha": "aea6a1b9bd88eefc7e858941fb98b2d3b01fbd80",
+  "contentHash": "sha256-be141709adab784f155345b20125fa25c24a6f143a2548d1dcfa8b74c865733c",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-18T18:00:11.289Z"
+}

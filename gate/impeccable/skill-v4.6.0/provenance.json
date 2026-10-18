@@ -1,0 +1,11 @@
+{
+  "id": "impeccable",
+  "repo": "pbakaus/impeccable",
+  "path": "plugin/skills/impeccable",
+  "version": "skill-v4.6.0",
+  "sha": "8a0e198da34ebc5b936a9d5975fb7a3b1cf353b7",
+  "contentHash": "sha256-060b2c2df6d485a975ecafee7defb84c61b7bc2f0a542549e7ce9cdecd749d7d",
+  "license": "Apache-2.0",
+  "promotedAt": "2026-10-18T18:00:12.363Z",
+  "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reusable design systems or tokens. Also use for bland designs that need to become bolder or more delightful, loud designs that should become quieter, live browser iteration on UI elements, or ambitious visual effects that should feel technically extraordinary. Not for backend-only or non-UI tasks."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "databricks-genie-agents",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-genie-agents",
+  "version": "v0.2.31",
+  "sha": "aea6a1b9bd88eefc7e858941fb98b2d3b01fbd80",
+  "contentHash": "sha256-edcfb28307ee0fe306b075e4b5d63dfb957d35acba217fd0bd9fe7742925b8a4",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-18T18:00:10.077Z",
+  "description": "Create, manage, and query Databricks Genie Agents — curated, per-data natural-language agents (formerly Genie Spaces): build, export/import, migrate across workspaces, and ask questions of a *specific* Agent via the Conversation API. For general data questions or finding data across your workspace, use databricks-data-discovery (Genie One) instead."
+}

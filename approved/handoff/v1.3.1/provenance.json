@@ -1,0 +1,10 @@
+{
+  "id": "handoff",
+  "repo": "mattpocock/skills",
+  "path": "skills/productivity/handoff",
+  "version": "v1.3.1",
+  "sha": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "contentHash": "sha256-05b0154cd8832fbc2edc805548cf7198594a81d01c7c6b5282b077f941196d9a",
+  "license": "MIT",
+  "promotedAt": "2026-10-18T18:00:12.262Z"
+}

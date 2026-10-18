@@ -1,0 +1,6 @@
+{
+  "name": "databricks-agent-bricks",
+  "description": "Create Agent Bricks: Knowledge Assistants (KA) for document Q&A and Supervisor Agents for multi-agent orchestration (MAS).",
+  "license": "LicenseRef-Databricks",
+  "repository": "https://github.com/databricks/databricks-agent-skills"
+}

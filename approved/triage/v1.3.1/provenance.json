@@ -1,0 +1,10 @@
+{
+  "id": "triage",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/triage",
+  "version": "v1.3.1",
+  "sha": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "contentHash": "sha256-b26fcea03379789ace2e8292b66f366487973879c1f60775eb628c51d90fefb7",
+  "license": "MIT",
+  "promotedAt": "2026-10-18T18:00:13.468Z"
+}
