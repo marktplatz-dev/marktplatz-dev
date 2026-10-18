@@ -1,0 +1,11 @@
+{
+  "id": "databricks-lakebase",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-lakebase",
+  "version": "v0.2.31",
+  "sha": "aea6a1b9bd88eefc7e858941fb98b2d3b01fbd80",
+  "contentHash": "sha256-2ad2d7f05786a9e68747b9ee48892db5154e79c8127b6df12f5179e0d932e0fe",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-18T18:00:10.353Z",
+  "description": "Databricks Lakebase Postgres: projects, scaling, connectivity, Lakebase synced tables, and Data API. Use when asked about Lakebase databases, OLTP storage, or connecting apps to Postgres on Databricks."
+}

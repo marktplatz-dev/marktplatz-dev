@@ -1,0 +1,1550 @@
+{
+  "skill": {
+    "name": "impeccable",
+    "source": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/impeccable/skill",
+    "scanned_at": "2026-10-18T17:57:32.346065+00:00"
+  },
+  "risk_assessment": {
+    "score": 100,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 88,
+      "executable": false,
+      "size_bytes": 12541
+    },
+    {
+      "path": "reference/adapt.md",
+      "type": "markdown",
+      "lines": 318,
+      "executable": false,
+      "size_bytes": 11301
+    },
+    {
+      "path": "reference/adapt.native.md",
+      "type": "markdown",
+      "lines": 58,
+      "executable": false,
+      "size_bytes": 3910
+    },
+    {
+      "path": "reference/android.md",
+      "type": "markdown",
+      "lines": 46,
+      "executable": false,
+      "size_bytes": 4093
+    },
+    {
+      "path": "reference/animate.md",
+      "type": "markdown",
+      "lines": 89,
+      "executable": false,
+      "size_bytes": 5236
+    },
+    {
+      "path": "reference/audit.md",
+      "type": "markdown",
+      "lines": 137,
+      "executable": false,
+      "size_bytes": 8528
+    },
+    {
+      "path": "reference/audit.native.md",
+      "type": "markdown",
+      "lines": 139,
+      "executable": false,
+      "size_bytes": 8364
+    },
+    {
+      "path": "reference/bolder.md",
+      "type": "markdown",
+      "lines": 33,
+      "executable": false,
+      "size_bytes": 3471
+    },
+    {
+      "path": "reference/clarify.md",
+      "type": "markdown",
+      "lines": 94,
+      "executable": false,
+      "size_bytes": 4590
+    },
+    {
+      "path": "reference/colorize.md",
+      "type": "markdown",
+      "lines": 86,
+      "executable": false,
+      "size_bytes": 4537
+    },
+    {
+      "path": "reference/component-review.md",
+      "type": "markdown",
+      "lines": 63,
+      "executable": false,
+      "size_bytes": 7954
+    },
+    {
+      "path": "reference/craft-floor.md",
+      "type": "markdown",
+      "lines": 44,
+      "executable": false,
+      "size_bytes": 4484
+    },
+    {
+      "path": "reference/craft.md",
+      "type": "markdown",
+      "lines": 5,
+      "executable": false,
+      "size_bytes": 555
+    },
+    {
+      "path": "reference/critique.md",
+      "type": "markdown",
+      "lines": 809,
+      "executable": false,
+      "size_bytes": 43496
+    },
+    {
+      "path": "reference/degraded/asset-producer.md",
+      "type": "markdown",
+      "lines": 42,
+      "executable": false,
+      "size_bytes": 8401
+    },
+    {
+      "path": "reference/degraded/documenter.md",
+      "type": "markdown",
+      "lines": 24,
+      "executable": false,
+      "size_bytes": 3325
+    },
+    {
+      "path": "reference/degraded/finish-reviewer.md",
+      "type": "markdown",
+      "lines": 38,
+      "executable": false,
+      "size_bytes": 15834
+    },
+    {
+      "path": "reference/degraded/manual-edit-applier.md",
+      "type": "markdown",
+      "lines": 92,
+      "executable": false,
+      "size_bytes": 7196
+    },
+    {
+      "path": "reference/delight.md",
+      "type": "markdown",
+      "lines": 70,
+      "executable": false,
+      "size_bytes": 3716
+    },
+    {
+      "path": "reference/distill.md",
+      "type": "markdown",
+      "lines": 111,
+      "executable": false,
+      "size_bytes": 5624
+    },
+    {
+      "path": "reference/doctor.md",
+      "type": "markdown",
+      "lines": 54,
+      "executable": false,
+      "size_bytes": 5549
+    },
+    {
+      "path": "reference/document.md",
+      "type": "markdown",
+      "lines": 416,
+      "executable": false,
+      "size_bytes": 27428
+    },
+    {
+      "path": "reference/extract.md",
+      "type": "markdown",
+      "lines": 69,
+      "executable": false,
+      "size_bytes": 3340
+    },
+    {
+      "path": "reference/generate.md",
+      "type": "markdown",
+      "lines": 101,
+      "executable": false,
+      "size_bytes": 13084
+    },
+    {
+      "path": "reference/harden.md",
+      "type": "markdown",
+      "lines": 345,
+      "executable": false,
+      "size_bytes": 9450
+    },
+    {
+      "path": "reference/hooks.md",
+      "type": "markdown",
+      "lines": 113,
+      "executable": false,
+      "size_bytes": 13925
+    },
+    {
+      "path": "reference/init.md",
+      "type": "markdown",
+      "lines": 131,
+      "executable": false,
+      "size_bytes": 11671
+    },
+    {
+      "path": "reference/ios.md",
+      "type": "markdown",
+      "lines": 51,
+      "executable": false,
+      "size_bytes": 3812
+    },
+    {
+      "path": "reference/layout.md",
+      "type": "markdown",
+      "lines": 84,
+      "executable": false,
+      "size_bytes": 5154
+    },
+    {
+      "path": "reference/live-setup.md",
+      "type": "markdown",
+      "lines": 104,
+      "executable": false,
+      "size_bytes": 8179
+    },
+    {
+      "path": "reference/live.md",
+      "type": "markdown",
+      "lines": 325,
+      "executable": false,
+      "size_bytes": 36147
+    },
+    {
+      "path": "reference/mode-operate.md",
+      "type": "markdown",
+      "lines": 21,
+      "executable": false,
+      "size_bytes": 4716
+    },
+    {
+      "path": "reference/mode-persuade.md",
+      "type": "markdown",
+      "lines": 19,
+      "executable": false,
+      "size_bytes": 3638
+    },
+    {
+      "path": "reference/mode-read.md",
+      "type": "markdown",
+      "lines": 21,
+      "executable": false,
+      "size_bytes": 4396
+    },
+    {
+      "path": "reference/new-work.md",
+      "type": "markdown",
+      "lines": 154,
+      "executable": false,
+      "size_bytes": 62108
+    },
+    {
+      "path": "reference/onboard.md",
+      "type": "markdown",
+      "lines": 234,
+      "executable": false,
+      "size_bytes": 7740
+    },
+    {
+      "path": "reference/operate.md",
+      "type": "markdown",
+      "lines": 61,
+      "executable": false,
+      "size_bytes": 4145
+    },
+    {
+      "path": "reference/optimize.md",
+      "type": "markdown",
+      "lines": 258,
+      "executable": false,
+      "size_bytes": 7614
+    },
+    {
+      "path": "reference/overdrive.md",
+      "type": "markdown",
+      "lines": 127,
+      "executable": false,
+      "size_bytes": 9085
+    },
+    {
+      "path": "reference/polish.md",
+      "type": "markdown",
+      "lines": 105,
+      "executable": false,
+      "size_bytes": 6632
+    },
+    {
+      "path": "reference/quieter.md",
+      "type": "markdown",
+      "lines": 99,
+      "executable": false,
+      "size_bytes": 4859
+    },
+    {
+      "path": "reference/region-map.md",
+      "type": "markdown",
+      "lines": 26,
+      "executable": false,
+      "size_bytes": 3340
+    },
+    {
+      "path": "reference/routing.md",
+      "type": "markdown",
+      "lines": 24,
+      "executable": false,
+      "size_bytes": 3322
+    },
+    {
+      "path": "reference/shape.md",
+      "type": "markdown",
+      "lines": 59,
+      "executable": false,
+      "size_bytes": 3547
+    },
+    {
+      "path": "reference/typeset.md",
+      "type": "markdown",
+      "lines": 80,
+      "executable": false,
+      "size_bytes": 5249
+    },
+    {
+      "path": "reference/visualize.md",
+      "type": "markdown",
+      "lines": 47,
+      "executable": false,
+      "size_bytes": 13911
+    },
+    {
+      "path": "scripts/VERSION",
+      "type": "other",
+      "lines": 1,
+      "executable": false,
+      "size_bytes": 7
+    },
+    {
+      "path": "scripts/command-metadata.json",
+      "type": "json",
+      "lines": 98,
+      "executable": false,
+      "size_bytes": 8392
+    },
+    {
+      "path": "scripts/data/font-index-failures.json",
+      "type": "json",
+      "lines": 121,
+      "executable": false,
+      "size_bytes": 2437
+    },
+    {
+      "path": "scripts/data/font-index.json",
+      "type": "json",
+      "lines": 1,
+      "executable": false,
+      "size_bytes": 1100013
+    },
+    {
+      "path": "scripts/impeccable",
+      "type": "other",
+      "lines": 206,
+      "executable": false,
+      "size_bytes": 8514
+    },
+    {
+      "path": "scripts/impeccable.cmd",
+      "type": "other",
+      "lines": 214,
+      "executable": false,
+      "size_bytes": 8498
+    },
+    {
+      "path": "scripts/live-browser-dom.js",
+      "type": "javascript",
+      "lines": 281,
+      "executable": true,
+      "size_bytes": 10623
+    },
+    {
+      "path": "scripts/live-browser-ignores.js",
+      "type": "javascript",
+      "lines": 242,
+      "executable": true,
+      "size_bytes": 10346
+    },
+    {
+      "path": "scripts/live-browser-session.js",
+      "type": "javascript",
+      "lines": 148,
+      "executable": true,
+      "size_bytes": 4346
+    },
+    {
+      "path": "scripts/live-browser.js",
+      "type": "javascript",
+      "lines": 13532,
+      "executable": true,
+      "size_bytes": 548448
+    },
+    {
+      "path": "scripts/modern-screenshot.umd.js",
+      "type": "javascript",
+      "lines": 14,
+      "executable": true,
+      "size_bytes": 29290
+    }
+  ],
+  "issues": [
+    {
+      "id": "LP3",
+      "finding_id": "finding-2cf8c60253cd4ed3abb8d82edc1255f6",
+      "category": "MCP Least Privilege",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 1,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "Without declared permissions the skill's intent is opaque and cannot be validated.",
+      "remediation": "Declare the skill's tool scope: for Claude Code / Agent Skills SKILL.md, list the tools the skill may invoke in the 'allowed-tools' frontmatter field; for MCP server manifests, add a 'permissions' list naming the required capabilities.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI02"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-a90790d120484763aec38302bc2d2130",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "reference/doctor.md",
+        "start_line": 9,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-e42309bc140d43c2ab7c002ea358f3a0",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "reference/hooks.md",
+        "start_line": 15,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-7601c891394a4fa39c29088760700f6a",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "reference/hooks.md",
+        "start_line": 15,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-2c3d81fc4ace4ee2a9be6f7d2221fb31",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "reference/hooks.md",
+        "start_line": 15,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-ec7a22f0c47b452a94d8e3b61976d6ef",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "reference/hooks.md",
+        "start_line": 67,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "AS1",
+      "finding_id": "finding-c9bdf23b124b49b9ab6a69cb669b000b",
+      "category": "Agent Snooping",
+      "pattern": "Agent Config Directory Access",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "location": {
+        "file": "reference/hooks.md",
+        "start_line": 17,
+        "end_line": null
+      },
+      "finding": "~/.claude/settings.json",
+      "explanation": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, personal settings, and other credentials that the skill has no legitimate need to access.",
+      "remediation": "Remove all code or instructions that access agent configuration directories (.claude/, .codex/, .gemini/). If configuration values are needed, pass them explicitly as parameters or environment variables \u2014 never read the agent's own config files.",
+      "code_snippet": "\nManual `npx impeccable detect` scans use the same project filter config by default: `detector.ignoreRules`, `detector.ignoreFiles`, `detector.ignoreValues`, and `detector.designSystem.enabled`. `hook.enabled` only controls automatic hook execution, not manual CLI scans. Use `npx impeccable detect --no-config ...` for a raw detector run that ignores project config/context. Use `npx impeccable ignores ...` for direct CLI CRUD on the same detector ignores.\n\nSupported harnesses: Claude Code (`.claude/settings.local.json` for a project-scope install; `~/.claude/settings.json` for a user-scope install; a project hook moved into shared `.claude/settings.json` is honored in place too), Codex (`.codex/hooks.json` in the project), Cursor (`.cursor/hooks.json` in the project), Grok Build (`.grok/hooks/impeccable.json` in the project; requires `/hooks-trust` or `--trust`), and GitHub Copilot (`.github/hooks/impeccable.json` in the project, a team-shared committed file that both the Copilot CLI and the cloud agent read). For the Copilot CLI, repo-level hooks fire once `.github/hooks/impeccable.json` is committed to the repository's default branch.\n\nOn **Cursor**, `preToolUse` checks proposed Write/Edit/Shell write content and denies only when the real detector finds an issue. The denial message is visible to the agent as the tool error, so the agent can reconsider before the bad write lands.\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ]
+    },
+    {
+      "id": "AS1",
+      "finding_id": "finding-76bedbd5fa2140d086cdd1ac49e490ee",
+      "category": "Agent Snooping",
+      "pattern": "Agent Config Directory Access",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "location": {
+        "file": "reference/hooks.md",
+        "start_line": 108,
+        "end_line": null
+      },
+      "finding": "~/.claude/settings.json",
+      "explanation": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, personal settings, and other credentials that the skill has no legitimate need to access.",
+      "remediation": "Remove all code or instructions that access agent configuration directories (.claude/, .codex/, .gemini/). If configuration values are needed, pass them explicitly as parameters or environment variables \u2014 never read the agent's own config files.",
+      "code_snippet": "- Never modify `.impeccable/config.json` or `.impeccable/config.local.json` by hand from this command. Always go through `impeccable hooks` so writes stay validated and the file shape stays consistent. One exception: `detector.extensions` has no admin action, so when the user asks to cover a template stack, edit that one field in `.impeccable/config.json` directly and leave the rest of the file untouched.\n- Do not edit the launcher or the binary behind `impeccable hook` and `impeccable hook-before-edit` from this flow. Those are skill plumbing.\n- Cursor can block a proposed write when the detector finds a real issue. Claude Code, Codex, and GitHub Copilot do not block the edit; they emit a post-edit reminder instead. Disabling stops both blocking and reminders.\n- The hook is bundled with the Impeccable skill. Project installs use `.claude/settings.local.json`, `.codex/hooks.json`, `.cursor/hooks.json`, `.github/hooks/impeccable.json`, and `.gemini/settings.json`; a user-scope Claude install uses `~/.claude/settings.json`. On Codex, the user must approve the hook via `/hooks` the first time. On Cursor, confirm hooks are enabled under Settings -> Hooks. On GitHub Copilot, the CLI loads `.github/hooks/impeccable.json` once it is committed to the repository's default branch, and the cloud agent reads it from the repo directly.\n\n## Failure modes\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ]
+    },
+    {
+      "id": "AR2",
+      "finding_id": "finding-062d53bc0c0d416ca880a33fc444748d",
+      "category": "Anti-Refusal",
+      "pattern": "Anti-Refusal Statement",
+      "severity": "HIGH",
+      "confidence": 0.85,
+      "location": {
+        "file": "reference/new-work.md",
+        "start_line": 138,
+        "end_line": null
+      },
+      "finding": "Never judge",
+      "explanation": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from the user and is a common jailbreak preamble.",
+      "remediation": "Remove instructions that suppress warnings, disclaimers, or ethical commentary. Let the agent surface safety-relevant caveats to the user.",
+      "code_snippet": "\n## 7. Inspect and finish\n\nInspect the surface's target sizes in one batched screenshot round: desktop and mobile on the web; on a native platform (`ios` / `android` / `adaptive`), the shipped device classes per OS, captured from the simulator or emulator the way the platform reference's Verifying the build section describes. When the harness reports the user's actual viewport (an in-app browser's size, a named resolution), add that width to the set: the width that breaks is the one the user sees first. Critique the render against the user's request and the direction contract, fix material gaps, and confirm with one final round; two rounds is the ceiling, and fixes batch between them rather than earning per-tweak screenshots. The ceiling bounds inspection and never closes an open build-phase gate: a gate stays open until it passes or the route it names is taken. On a comp-led build, run `\"<skill-base-dir>/scripts/impeccable\" comp-diff --comp <approved comp> --build .impeccable/review/desktop.png --spec .impeccable/build/spec.json --out-dir .impeccable/review/diff/final` and read its region rows and paired crops as the critique: the side-by-side is the view the build thread never has on its own, and a region it scores missing or contradicted is a fix whatever the page looks like from memory. Never judge fidelity from one full-page thumbnail; it hides exactly the failures that matter. On a Persuade surface, verify the mode did its job: a first-time visitor should know what this is, why it matters, and what to do within seconds, in the form's own vocabulary.\n\nA capture is evidence only when it is valid, and you validate before you send. Settle or disable entrance motion first: an element hidden by animation timing reads as a missing element and gets fixed into a regression. Capture full-page shots from the document top. Capture the comp comparison at the comp's own pixel dimensions. Then open every file once and confirm it shows what its name claims: no black or blank regions, no wrong section behind a right filename, no half-loaded state. A malformed capture sent onward costs the whole round; the reviewer answers it with `disposition: recapture` and nothing it reviewed binds.\n",
+      "intent": null,
+      "tags": [
+        "Anti-Refusal"
+      ]
+    },
+    {
+      "id": "E1",
+      "finding_id": "finding-29ab6a8507954653872f4d98b32f809b",
+      "category": "Data Exfiltration",
+      "pattern": "External Transmission",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 7168,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost:' + PORT + '/agent-target-result?token=' + TOKEN, {\n      method: 'POST'",
+      "explanation": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recommended.",
+      "remediation": "Verify the destination URL is trusted and necessary. Remove or replace with documented APIs. Ensure no secrets, tokens, or PII are transmitted.",
+      "code_snippet": "  // the agent's held-open CLI call.\n\n  function postAgentTargetResult(targetId, result) {\n    fetch('http://localhost:' + PORT + '/agent-target-result?token=' + TOKEN, {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ token: TOKEN, targetId, clientId: AGENT_TARGET_CLIENT_ID, ...result }),",
+      "intent": null,
+      "tags": [
+        "Data Exfiltration"
+      ]
+    },
+    {
+      "id": "E1",
+      "finding_id": "finding-079f6cc510ee4d96aaa2296d33f4fc0d",
+      "category": "Data Exfiltration",
+      "pattern": "External Transmission",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 7290,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost:' + PORT + '/agent-target-claim?token=' + TOKEN, {\n      method: 'POST'",
+      "explanation": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recommended.",
+      "remediation": "Verify the destination URL is trusted and necessary. Remove or replace with documented APIs. Ensure no secrets, tokens, or PII are transmitted.",
+      "code_snippet": "  }\n\n  function claimAgentTarget(targetId, report) {\n    return fetch('http://localhost:' + PORT + '/agent-target-claim?token=' + TOKEN, {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ token: TOKEN, targetId, clientId: AGENT_TARGET_CLIENT_ID, ...report }),",
+      "intent": null,
+      "tags": [
+        "Data Exfiltration"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-8a4d3582faa74c98ae21687e8cb2a2de",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/audit.md",
+        "start_line": 137,
+        "end_line": null
+      },
+      "finding": "without verification",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "- Provide generic recommendations (be specific and actionable)\n- Skip positive findings (celebrate what works)\n- Forget to prioritize (everything can't be P0)\n- Report false positives without verification",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-52c6e2d065fe481fa270de2d93a3a386",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/audit.native.md",
+        "start_line": 139,
+        "end_line": null
+      },
+      "finding": "without verification",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "- Provide generic recommendations (be specific and actionable)\n- Skip positive findings (celebrate what works)\n- Forget to prioritize (everything can't be P0)\n- Report false positives without verification",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-46190c5b47bc4b59b78844116c0f4f44",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/critique.md",
+        "start_line": 690,
+        "end_line": null
+      },
+      "finding": "No confirmation",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "- Technical jargon without explanation\n- No visible help option or guidance\n- Ambiguous next steps after completing an action\n- No confirmation that an action succeeded\n\n---\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-4b4ca0eb94904576a5015ed825868592",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/degraded/finish-reviewer.md",
+        "start_line": 19,
+        "end_line": null
+      },
+      "finding": "no approval",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "## Checks, in order\n\n0. **Evidence.** Before any other check, verify the required captures exist and every capture is valid. Required: the platform's full viewport set (web: `desktop.png` and `mobile.png`; native: one capture per shipped device class), plus every capture the calling brief names as required, a reported user viewport (`user-<width>.png`) included. Valid: no black or blank regions, content matching what the filename claims (a visit capture showing the About section is invalid), the document top visible where the file claims a full page, dimensions that make sense for the named viewport. A required capture that is absent fails exactly like one that is malformed: a viewport nobody captured is a viewport nobody inspected, and it cannot ship. When any capture fails, the whole review changes shape: return `disposition: recapture` as the first line, then one section, `recapture`, listing each missing or invalid file and what a valid capture of it shows, and stop. Never build a matrix on malformed evidence; a verdict derived from a broken capture launders the breakage into an approval, and the parent owes you a full re-review on valid captures, not a scoring round.\n1. **Persistence.** PRODUCT.md exists. On a comp-led build, `.impeccable/build/state.json` exists and every phase before `review` is `closed` or explicitly `skipped`; an open or failed phase is a material finding. A comp-led config with no state file, or a state whose `comps` phase is neither `closed` nor `skipped`, means the comp round was skipped and the build ran from a world description alone, a material finding that outranks craft; a phase closed with a `forced` record is disclosed as a material finding unless the user downgraded the comp in words the packet quotes; a state file whose `hero.gate.score` sits under 0.72, or a missing state file, means the reproduction ran unproven, a material finding, and `.impeccable/review/hero-repro.png` must exist either way. When DESIGN.md predates this build (an extension or redesign), it matches the built world; on a new world it is written after this review by the documenter, so its absence here is not a finding. When comp-round comps exist under `.impeccable/mocks/`, an approval record exists too: the surface brief naming the approved comp, or an `approved` flag in its sidecar. Comp-round comps with no recorded pick mean the approval point was skipped, a material finding. Files under `.impeccable/mocks/decision/` are exempt: they are the direction round's dealt hand, produced before any comp round, and imply no approval whatever the build path; a code-led build has no comp round at all.\n2. **Fidelity.** Start from the measurement, then judge what it cannot: read `.impeccable/review/diff/final/report.json` (and hero) first; every region scored `missing` or `contradicted` is a matrix row in that state unless the paired crop under `regions/` shows the score is wrong, and you say why; a region scored `match` still gets your eye for lettering character and material, which the numbers do not measure. Then, against your own element inventory of the approved comp, never against the contract's summary of it: topology, reading order, focal scale, overlaps and z-order, density, signature geometry, the primary action's treatment (a CTA the comp physically works, dissolves, or stamps is a signature element; its plain-rectangle rendition is contradicted), navigation items and icons, headline levels and scale relationships. Classify every salient element: match, acceptable adaptation, missing, contradicted, or added without approval. Three rows are mandatory in every matrix. TYPE: the display lettering's character, compression, width, weight, contrast, terminals, against the comp's; a face of a different character is contradicted however the layout matches. MATERIAL: an element rendered as flat CSS or clean vector where the comp shows painted, textured, dimensional, or photographic material is contradicted regardless of placement; medium is part of the promise. GROUND: the page field's value and temperature against the comp's, sampled from pixels on both sides when tooling allows rather than judged from memory, and read as the net on-screen result where a texture or tile paints over the base color; a ground warmer or cooler than the comp's is contradicted however faithfully the layout matches, and drift toward the rendition prior (warm cream on light grounds, blue-black slate on dark) is the direction to hunt. With no approved comp, TYPE and MATERIAL do not lapse: judge them against the contract's OWN-WORLD and the world's real materials, and treat faked physicality (CSS bevels, embossing, stamped-metal or chalk effects imitating a material the page never renders) as contradicted on its face; imitation material is the single most reliable mark of machine-made design. GROUND narrows rather than lapses: with no comp to sample, a color OWN-WORLD names is the target and the same warmer-or-cooler judgment applies; when OWN-WORLD names none, there is no GROUND authority, and the review says so in place of a verdict, because a target the reviewer invents turns the check into taste. A critique-reference comp on such a build is provocation, not spec: no element matrix, no adaptation citations, no asset obligations; its one contribution is what the image dared that the build did not, and dares worth adopting enter material_fixes as ordinary ordered fixes. An adaptation counts as intentional only when it cites the user answer, surface brief, accessibility need, or product truth that forced it; an uncited deviation is a defect. A missing signature element, a changed topology, or content added without approval fails fidelity and outranks every craft point in material_fixes. When MATERIAL is contradicted on the focal element, or contradiction is the page rather than the exception, stop ordering repairs: make the first material fix a rebuild directive naming the comp regions to re-derive and the assets to produce; a list of patches against a rejected page launders the rejection into an approval. A fix that requires producing an asset says so explicitly (\"produce: <region> as a raster asset\"), never phrased as a style adjustment the parent will answer with CSS. The comp is the spec for composition, topology, element inventory, density, lettering character, and material; it is not a pixel spec for semantics, accessibility, or responsive reflow, and that allowance covers translation, never replacement.\n3. **Ceiling.** Against the QUALITY BAR card: name the world's native devices the build left unused, frame, depth, lettering treatment, ornament density, motion. The card governs commitment and finish, never composition.\n4. **Contract, promise by promise.** First verify FORM carries the seed reference the concept roll printed (`seed:` and 16 hex), corroborated against the roll output the parent saw or with `impeccable concept-seed --check-seed <reference>` (exit 0 means this machine rolled it). A raw seed key in FORM is itself a material fix: the brief is committed, and the key must not be. `seed: none (unavailable)` stands only when the roll printed SEED REFERENCE unavailable, which `--check-seed none` confirms with exit 0. Any other contract with no reference, or one neither source corroborates, means the roll was skipped, a material fix ahead of any craft point. Then, for each of the five blocks: does the render keep the promise? Apply the memory test to the first viewport.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-4369f38a40e84bdaa4d14cf4f1bac0d4",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/degraded/finish-reviewer.md",
+        "start_line": 20,
+        "end_line": null
+      },
+      "finding": "without approval",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\n0. **Evidence.** Before any other check, verify the required captures exist and every capture is valid. Required: the platform's full viewport set (web: `desktop.png` and `mobile.png`; native: one capture per shipped device class), plus every capture the calling brief names as required, a reported user viewport (`user-<width>.png`) included. Valid: no black or blank regions, content matching what the filename claims (a visit capture showing the About section is invalid), the document top visible where the file claims a full page, dimensions that make sense for the named viewport. A required capture that is absent fails exactly like one that is malformed: a viewport nobody captured is a viewport nobody inspected, and it cannot ship. When any capture fails, the whole review changes shape: return `disposition: recapture` as the first line, then one section, `recapture`, listing each missing or invalid file and what a valid capture of it shows, and stop. Never build a matrix on malformed evidence; a verdict derived from a broken capture launders the breakage into an approval, and the parent owes you a full re-review on valid captures, not a scoring round.\n1. **Persistence.** PRODUCT.md exists. On a comp-led build, `.impeccable/build/state.json` exists and every phase before `review` is `closed` or explicitly `skipped`; an open or failed phase is a material finding. A comp-led config with no state file, or a state whose `comps` phase is neither `closed` nor `skipped`, means the comp round was skipped and the build ran from a world description alone, a material finding that outranks craft; a phase closed with a `forced` record is disclosed as a material finding unless the user downgraded the comp in words the packet quotes; a state file whose `hero.gate.score` sits under 0.72, or a missing state file, means the reproduction ran unproven, a material finding, and `.impeccable/review/hero-repro.png` must exist either way. When DESIGN.md predates this build (an extension or redesign), it matches the built world; on a new world it is written after this review by the documenter, so its absence here is not a finding. When comp-round comps exist under `.impeccable/mocks/`, an approval record exists too: the surface brief naming the approved comp, or an `approved` flag in its sidecar. Comp-round comps with no recorded pick mean the approval point was skipped, a material finding. Files under `.impeccable/mocks/decision/` are exempt: they are the direction round's dealt hand, produced before any comp round, and imply no approval whatever the build path; a code-led build has no comp round at all.\n2. **Fidelity.** Start from the measurement, then judge what it cannot: read `.impeccable/review/diff/final/report.json` (and hero) first; every region scored `missing` or `contradicted` is a matrix row in that state unless the paired crop under `regions/` shows the score is wrong, and you say why; a region scored `match` still gets your eye for lettering character and material, which the numbers do not measure. Then, against your own element inventory of the approved comp, never against the contract's summary of it: topology, reading order, focal scale, overlaps and z-order, density, signature geometry, the primary action's treatment (a CTA the comp physically works, dissolves, or stamps is a signature element; its plain-rectangle rendition is contradicted), navigation items and icons, headline levels and scale relationships. Classify every salient element: match, acceptable adaptation, missing, contradicted, or added without approval. Three rows are mandatory in every matrix. TYPE: the display lettering's character, compression, width, weight, contrast, terminals, against the comp's; a face of a different character is contradicted however the layout matches. MATERIAL: an element rendered as flat CSS or clean vector where the comp shows painted, textured, dimensional, or photographic material is contradicted regardless of placement; medium is part of the promise. GROUND: the page field's value and temperature against the comp's, sampled from pixels on both sides when tooling allows rather than judged from memory, and read as the net on-screen result where a texture or tile paints over the base color; a ground warmer or cooler than the comp's is contradicted however faithfully the layout matches, and drift toward the rendition prior (warm cream on light grounds, blue-black slate on dark) is the direction to hunt. With no approved comp, TYPE and MATERIAL do not lapse: judge them against the contract's OWN-WORLD and the world's real materials, and treat faked physicality (CSS bevels, embossing, stamped-metal or chalk effects imitating a material the page never renders) as contradicted on its face; imitation material is the single most reliable mark of machine-made design. GROUND narrows rather than lapses: with no comp to sample, a color OWN-WORLD names is the target and the same warmer-or-cooler judgment applies; when OWN-WORLD names none, there is no GROUND authority, and the review says so in place of a verdict, because a target the reviewer invents turns the check into taste. A critique-reference comp on such a build is provocation, not spec: no element matrix, no adaptation citations, no asset obligations; its one contribution is what the image dared that the build did not, and dares worth adopting enter material_fixes as ordinary ordered fixes. An adaptation counts as intentional only when it cites the user answer, surface brief, accessibility need, or product truth that forced it; an uncited deviation is a defect. A missing signature element, a changed topology, or content added without approval fails fidelity and outranks every craft point in material_fixes. When MATERIAL is contradicted on the focal element, or contradiction is the page rather than the exception, stop ordering repairs: make the first material fix a rebuild directive naming the comp regions to re-derive and the assets to produce; a list of patches against a rejected page launders the rejection into an approval. A fix that requires producing an asset says so explicitly (\"produce: <region> as a raster asset\"), never phrased as a style adjustment the parent will answer with CSS. The comp is the spec for composition, topology, element inventory, density, lettering character, and material; it is not a pixel spec for semantics, accessibility, or responsive reflow, and that allowance covers translation, never replacement.\n3. **Ceiling.** Against the QUALITY BAR card: name the world's native devices the build left unused, frame, depth, lettering treatment, ornament density, motion. The card governs commitment and finish, never composition.\n4. **Contract, promise by promise.** First verify FORM carries the seed reference the concept roll printed (`seed:` and 16 hex), corroborated against the roll output the parent saw or with `impeccable concept-seed --check-seed <reference>` (exit 0 means this machine rolled it). A raw seed key in FORM is itself a material fix: the brief is committed, and the key must not be. `seed: none (unavailable)` stands only when the roll printed SEED REFERENCE unavailable, which `--check-seed none` confirms with exit 0. Any other contract with no reference, or one neither source corroborates, means the roll was skipped, a material fix ahead of any craft point. Then, for each of the five blocks: does the render keep the promise? Apply the memory test to the first viewport.\n5. **Truth.** Demonstration data authored and labeled synthetic; no invented commercial claims; unanswered claims present as marked placeholders, not omissions. Every raster region of the spec shipped as its plate (the spec names the file; the page references it; the region's diff row is not `missing`), not a gradient, an inline SVG, or a many-vertex `clip-path` standing in for it, and every produced asset visibly present in the screenshots; an asset applied at near-zero opacity or buried behind a wash is a compliance token, not a shipped material, and the detector's `buried-raster` and `organic-clip-path` findings in the packet are material fixes.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-544ef9b817e64228b5af3c11d1ec4c98",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/degraded/finish-reviewer.md",
+        "start_line": 20,
+        "end_line": null
+      },
+      "finding": "without approval",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\n0. **Evidence.** Before any other check, verify the required captures exist and every capture is valid. Required: the platform's full viewport set (web: `desktop.png` and `mobile.png`; native: one capture per shipped device class), plus every capture the calling brief names as required, a reported user viewport (`user-<width>.png`) included. Valid: no black or blank regions, content matching what the filename claims (a visit capture showing the About section is invalid), the document top visible where the file claims a full page, dimensions that make sense for the named viewport. A required capture that is absent fails exactly like one that is malformed: a viewport nobody captured is a viewport nobody inspected, and it cannot ship. When any capture fails, the whole review changes shape: return `disposition: recapture` as the first line, then one section, `recapture`, listing each missing or invalid file and what a valid capture of it shows, and stop. Never build a matrix on malformed evidence; a verdict derived from a broken capture launders the breakage into an approval, and the parent owes you a full re-review on valid captures, not a scoring round.\n1. **Persistence.** PRODUCT.md exists. On a comp-led build, `.impeccable/build/state.json` exists and every phase before `review` is `closed` or explicitly `skipped`; an open or failed phase is a material finding. A comp-led config with no state file, or a state whose `comps` phase is neither `closed` nor `skipped`, means the comp round was skipped and the build ran from a world description alone, a material finding that outranks craft; a phase closed with a `forced` record is disclosed as a material finding unless the user downgraded the comp in words the packet quotes; a state file whose `hero.gate.score` sits under 0.72, or a missing state file, means the reproduction ran unproven, a material finding, and `.impeccable/review/hero-repro.png` must exist either way. When DESIGN.md predates this build (an extension or redesign), it matches the built world; on a new world it is written after this review by the documenter, so its absence here is not a finding. When comp-round comps exist under `.impeccable/mocks/`, an approval record exists too: the surface brief naming the approved comp, or an `approved` flag in its sidecar. Comp-round comps with no recorded pick mean the approval point was skipped, a material finding. Files under `.impeccable/mocks/decision/` are exempt: they are the direction round's dealt hand, produced before any comp round, and imply no approval whatever the build path; a code-led build has no comp round at all.\n2. **Fidelity.** Start from the measurement, then judge what it cannot: read `.impeccable/review/diff/final/report.json` (and hero) first; every region scored `missing` or `contradicted` is a matrix row in that state unless the paired crop under `regions/` shows the score is wrong, and you say why; a region scored `match` still gets your eye for lettering character and material, which the numbers do not measure. Then, against your own element inventory of the approved comp, never against the contract's summary of it: topology, reading order, focal scale, overlaps and z-order, density, signature geometry, the primary action's treatment (a CTA the comp physically works, dissolves, or stamps is a signature element; its plain-rectangle rendition is contradicted), navigation items and icons, headline levels and scale relationships. Classify every salient element: match, acceptable adaptation, missing, contradicted, or added without approval. Three rows are mandatory in every matrix. TYPE: the display lettering's character, compression, width, weight, contrast, terminals, against the comp's; a face of a different character is contradicted however the layout matches. MATERIAL: an element rendered as flat CSS or clean vector where the comp shows painted, textured, dimensional, or photographic material is contradicted regardless of placement; medium is part of the promise. GROUND: the page field's value and temperature against the comp's, sampled from pixels on both sides when tooling allows rather than judged from memory, and read as the net on-screen result where a texture or tile paints over the base color; a ground warmer or cooler than the comp's is contradicted however faithfully the layout matches, and drift toward the rendition prior (warm cream on light grounds, blue-black slate on dark) is the direction to hunt. With no approved comp, TYPE and MATERIAL do not lapse: judge them against the contract's OWN-WORLD and the world's real materials, and treat faked physicality (CSS bevels, embossing, stamped-metal or chalk effects imitating a material the page never renders) as contradicted on its face; imitation material is the single most reliable mark of machine-made design. GROUND narrows rather than lapses: with no comp to sample, a color OWN-WORLD names is the target and the same warmer-or-cooler judgment applies; when OWN-WORLD names none, there is no GROUND authority, and the review says so in place of a verdict, because a target the reviewer invents turns the check into taste. A critique-reference comp on such a build is provocation, not spec: no element matrix, no adaptation citations, no asset obligations; its one contribution is what the image dared that the build did not, and dares worth adopting enter material_fixes as ordinary ordered fixes. An adaptation counts as intentional only when it cites the user answer, surface brief, accessibility need, or product truth that forced it; an uncited deviation is a defect. A missing signature element, a changed topology, or content added without approval fails fidelity and outranks every craft point in material_fixes. When MATERIAL is contradicted on the focal element, or contradiction is the page rather than the exception, stop ordering repairs: make the first material fix a rebuild directive naming the comp regions to re-derive and the assets to produce; a list of patches against a rejected page launders the rejection into an approval. A fix that requires producing an asset says so explicitly (\"produce: <region> as a raster asset\"), never phrased as a style adjustment the parent will answer with CSS. The comp is the spec for composition, topology, element inventory, density, lettering character, and material; it is not a pixel spec for semantics, accessibility, or responsive reflow, and that allowance covers translation, never replacement.\n3. **Ceiling.** Against the QUALITY BAR card: name the world's native devices the build left unused, frame, depth, lettering treatment, ornament density, motion. The card governs commitment and finish, never composition.\n4. **Contract, promise by promise.** First verify FORM carries the seed reference the concept roll printed (`seed:` and 16 hex), corroborated against the roll output the parent saw or with `impeccable concept-seed --check-seed <reference>` (exit 0 means this machine rolled it). A raw seed key in FORM is itself a material fix: the brief is committed, and the key must not be. `seed: none (unavailable)` stands only when the roll printed SEED REFERENCE unavailable, which `--check-seed none` confirms with exit 0. Any other contract with no reference, or one neither source corroborates, means the roll was skipped, a material fix ahead of any craft point. Then, for each of the five blocks: does the render keep the promise? Apply the memory test to the first viewport.\n5. **Truth.** Demonstration data authored and labeled synthetic; no invented commercial claims; unanswered claims present as marked placeholders, not omissions. Every raster region of the spec shipped as its plate (the spec names the file; the page references it; the region's diff row is not `missing`), not a gradient, an inline SVG, or a many-vertex `clip-path` standing in for it, and every produced asset visibly present in the screenshots; an asset applied at near-zero opacity or buried behind a wash is a compliance token, not a shipped material, and the detector's `buried-raster` and `organic-clip-path` findings in the packet are material fixes.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-16ad7ccec63c4e6c8cc407b8fa247d3b",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/degraded/finish-reviewer.md",
+        "start_line": 34,
+        "end_line": null
+      },
+      "finding": "without approval",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\n## Output Contract\n\nReturn the disposition line first, then exactly five sections: `persistence` (pass/fail with specifics), `fidelity` (the element matrix: match, adaptation, missing, contradicted, or added without approval per salient element, adaptations citing their evidence, or \"faithful\"), `ceiling` (unused native devices, or \"reached\"), `material_fixes` (ordered, most material first, fidelity failures ahead of craft, each one line tied to a check or contract promise, at most eight), and `keep` (one line naming what must not be diluted while fixing). A recapture return replaces the five sections with the single `recapture` section from check 0. Missing inputs are named in one line above the sections. No praise, no summary prose.\n\n## Verdict Pass\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-6ba8b4ae354442c3a5881763215c22f4",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/delight.md",
+        "start_line": 55,
+        "end_line": null
+      },
+      "finding": "without consent",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "- delay, block, or obscure the primary task;\n- override platform conventions or accessibility;\n- add unrequested factual claims;\n- play sound without consent or ignore mute settings;\n- become mandatory, unskippable, or exhausting on repeat;\n- add a dependency or asset cost disproportionate to the moment.\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-ae9b90ede5c845e78272b48fc9686b0f",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/document.md",
+        "start_line": 411,
+        "end_line": null
+      },
+      "finding": "without asking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "- Don't paste raw CSS class names. Translate to descriptive language.\n- Don't extract every token. Stop at what's actually reused; one-offs pollute the system.\n- Don't invent components that don't exist. If the project only has buttons and cards, only document those.\n- Don't overwrite an existing DESIGN.md without asking.\n- Don't duplicate content from PRODUCT.md. DESIGN.md is strictly visual.\n- Don't replace canonical sections with near-synonyms. Put layout and responsive behavior in `Layout`; put motion with the affected world or component.\n- Don't rename sections even slightly. \"Colors\" not \"Color Palette & Roles\". \"Typography\" not \"Typography Rules\". Tooling parsing depends on exact headers.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-83d8e44848024f72bc2c9889e3be7c09",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/init.md",
+        "start_line": 112,
+        "end_line": null
+      },
+      "finding": "no consent",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\n## Step 5: Record workflow defaults\n\nWhen image generation is available and no `buildPath` is recorded yet, ask once how new surfaces should be built. Availability means a harness-native image tool or the API fallback that `impeccable context` reports as `IMAGE_GEN_AVAILABLE`, and the first of those leaves no trace in the boot output: `impeccable context` only sees the key, so a silent boot on a harness that generates images is not evidence there is nothing to ask about. This is its own question, never a clause riding inside another one. The stack round asks what to build with; this asks how the building starts, and an answer to the first carries no consent about the second. State the trade in the question the user actually reads, because the two names mean nothing to someone meeting them for the first time: **comp-first** (an image sets the bar before any code; bolder composition, slower, and the build must match the image) or **code-first** (build directly; the ambition is written into the direction contract and audited at the finish; leaner, faster). Say in the same question what the choice covers: landing pages and showcase surfaces. App screens and documents are built code-first either way.\n\nWrite the answer to `.impeccable/config.json` as `\"buildPath\": \"comp\"` or `\"buildPath\": \"code\"`, merging with the keys already there. Write only the value the user chose. A recommendation you made is not an answer you received, and a value taken from silence is a standing default nobody set: it then rides every future round in the project, which is the opposite of asking once. When the question goes unanswered, record nothing and say in one line which path this session is taking and that it is not stored. That path is comp-first on a landing page or showcase surface, the default new-work applies wherever image generation exists and nothing is recorded, and code-first on an app screen or document; name it rather than choosing a quieter one, because a silent default invented here is the same failure as a value written without an answer. Unset is a working state, not a gap: the decision page's toggle governs each session, and new-work's one-time offer records the answer the first time the user flips it. The config is the only place this lives. It is a workflow setting, not product truth, so it never joins `## Stack` or any other PRODUCT.md section, where a second copy would outlive the setting and steer rounds nobody could trace back to it.\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-4dc3d117c1c149519cc7f6a1d9f7ce88",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/new-work.md",
+        "start_line": 55,
+        "end_line": null
+      },
+      "finding": "without asking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\nWhen image generation exists, every card also declares a `comp` path under `.impeccable/mocks/decision/`, the canon card included. Where the harness sandboxes its shell, start the page through the least-sandboxed command path it offers: a sandboxed shell cannot bind the board's port, and the first-attempt failure costs a retry every session. Serve the page first, then produce the comps; the page shimmer-waits per slot and the user may answer before they land. Load [visualize.md](visualize.md) before writing the first decision comp prompt, not at the comp round: each card's image is that direction's north-star comp at full fidelity under its comp discipline and the MODE RULES block concept-seed printed, and a prompt written before reading them misses every rule there: the requested surface as the real page, its first viewport and the start of the section below it, held like every comp to visualize.md's rule that a template skeleton stays the template whatever world paints it (your own pick included: a safe layout under a world skin is the template), a short prompt in visualize.md's shape, real product name and real content, no invented commercial claims, in that card's own palette, type character, and material world, committed all the way. Once a round declares comps it has not generated yet, `impeccable serve-question --start` (and `--update`, and a flip to comp) prints a `NEXT read <path>/visualize.md` line; read that file then, before the first prompt. `--wait` prints `COMP SIDECAR MISSING` for any landed decision comp with no prompt sidecar (the image's full file name plus `.json`: `a.png` gets `a.png.json`); write the missing sidecar before you continue. `COMP STALE` names a file an earlier round left at one of this hand's slots; regenerate it there. Generation takes the same time at any fidelity, so an unfinished draft pays comp cost for draft quality; fairness between cards is equal fidelity in each card's own grammar, one surface, one aspect, never shared unfinishedness. The frame's aspect is the surface's own: portrait at device viewport for a native app or mobile-first surface, landscape for desktop web; the decision page adapts to either, and a phone screen comped landscape is a broken frame, not a neutral default. Produce in reading order, the assigned card, then the pick, then the full-card hand, then canon, each file written with its prompt sidecar the moment it is done, so a re-roll's spend front-loads onto the cards read first; declined challengers get no comp, their catalog thumb is their face. With parallel subagents, fan out one agent per card: each spawn is the shipped asset producer with a single-comp packet, that card's fields, its world's card images when the NEXT line names them, PRODUCT.md, the shared frame, the path to visualize.md for its comp discipline, the COMPS section of the MODE RULES block copied verbatim (the subagent never sees the roll's output), and the card's declared path, up to four in flight. Regenerate inline any slot still empty when its agent returns; drop without ceremony any slot still empty when the user answers. No other supervision is owed. Without parallel subagents, generate in the main thread after serving, same order, and let the harness's own generation display carry the progress; the wait for the answer follows the last file. The chosen card's comp is not spent by the choice: comp-led, it enters the comp round as compositional option one; code-led, it returns at the finish review as the critique reference, what the image dared that the build did not. Unchosen comps stay in `.impeccable/mocks/decision/` as the round's spent hand; they carry no approval and imply none. With no image generation, cards carry their identity in palette chips and facts, and that page is complete, not a lesser version; the page then also demotes every challenger's catalog art to a labeled thumbnail on its own, because salience must encode the verdict, never the accident of which cards have images.\n\nThe execution contract, comp-led or code-led, is never asked inside a round; the page's toggle handles the exception. An Operate or Read surface is code-led whatever the project records: working screens and documents come out better built than pictured. A Persuade or Experience surface takes the recorded default: read it from `.impeccable/config.json` (`buildPath`), the gitignored `.impeccable/config.local.json` winning where one machine differs from the team's committed value; with neither, comp-led is the default whenever image generation exists. concept-seed's PRESENTATION block prints the path for the surface in hand; follow that line. Author every direction and surface payload with `buildPath: { \"value\": <default>, \"toggle\": true }`; the page renders a footer toggle with the trade stated beside it, and the ANSWER returns `buildPath` plus `buildPathFlipped`. A flipped value binds that session only and is never written back, with one exception, the only question this preference ever earns inside a round (init records it up front on projects that get the chance): when `buildPathFlipped` comes back true on a Persuade or Experience surface in a project that records no `buildPath` at all, ask once after the round closes whether to keep it as the standing default; a flip on an Operate or Read surface is one round's choice and is never offered for recording. Either answer writes `.impeccable/config.json`; the answer picks the value, never whether to record one. Yes writes the flipped value; \"no, just this once\" writes the value they flipped away from, the standing default they just confirmed by declining. Ask on the flip, never on the untouched default: a user who left the toggle alone told you nothing. A declined offer nothing writes down is an offer the next session makes again. When the user asks in words to change the standing default, update the file without asking. **Comp-led**: the chosen card's comp is law, generated before building when it does not yet exist, and the finish review audits the build against it; boldest composition on the table, fix rounds expected, and the comp is non-optional, no silent skipping. **Code-led**: no comp of this page and no apology for it; each card's HTML sketch is what the user chooses from, and the picked one is the composition the build matches and the finish review audits; the QUALITY BAR boards still calibrate finish, and the ambition moves into the written contract, the FIRST VIEWPORT block plus a named signature interaction and motion grammar, which the finish reviewer audits in behavior; code-led is not a discount on commitment. A code-led round still declares each card's comp path as a flip reserve: when the user flips the toggle to comp mid-round, `--wait` returns once with BUILD PATH FLIPPED while the page shimmers the slots; generate each open card's comp into its declared path then, lead first, and wait again. The flip back is free, and a comp that already rendered rides at the finish review as the critique reference. Without image generation there is no toggle and no choice: code-led is the only path, stated in one line rather than asked. The structured-tool fallback has no toggle either: it builds on the path the PRESENTATION block printed for the surface and asks nothing about the build path. The old two-card execution-contract round is retired; `followup: true` remains the general mechanism for delivering any later round over the same table via `--update`.\n\nCatalog worlds are working systems, not mood references. When one survives, carry its palette and material, type and composition, topology, controls and state, and responsive rules into the product, as far as the surface's mode allows. How far a source that is itself an interface language may carry its grammar is the mode's call, in the MODE RULES block. Open the QUALITY BAR board and hero for the world you build the moment the choice lands, even if you viewed another card earlier; the ANSWER line names the chosen card's images (when the harness only reads files or runs sandboxed, download them into the workspace and open the relative path; sandboxed viewers reject absolute paths outside it). They set the craft level the build must reach, a rendered reference's finish, commitment, and art direction, never the composition; your surface serves this product.\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-65e5867351144591a2b762efd146d4fd",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/visualize.md",
+        "start_line": 31,
+        "end_line": null
+      },
+      "finding": "no approval",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\nDo not begin code until the user approves a direction or explicitly delegates the choice. If they delegate, choose using the task brief, PRODUCT.md, and DESIGN.md, and state the evidence. Approval refines the task concept; it does not modify DESIGN.md.\n\nThis approval point has no substitute and no skip condition. When the structured question tool errors, fall back to the decision page; only after both fail may you treat the choice as delegated, and a delegated pick is recorded exactly as an approval is and disclosed in your first reply, not your last. The finish reviewer treats comp-round comps with no recorded approval as a material finding; decision comps under `.impeccable/mocks/decision/` are the direction round's hand, not comp-round output, and imply no approval on their own.\n\nAfter approval, record the choice where tools can find it: the approved comp's path goes in the surface brief, and its prompt sidecar (the image's full file name plus `.json`: `a.png` gets `a.png.json`) gains `\"approved\": true` (every comp generated through `impeccable generate-image` has one; create it if a native tool didn't). The sidecar travels with the mocks folder, so the approval survives sessions and machines that never see the brief, and it is what `impeccable build-phase advance` reads to close the comps phase. Summarize the composition and the parts of the comp that must not be literalized, return to new-work.md, record the direction contract from the approved concept, and build.\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-d8e9b5f0d2724f0f83ae441635a504dc",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "reference/visualize.md",
+        "start_line": 37,
+        "end_line": null
+      },
+      "finding": "without asking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "\n## After approval: the comp becomes a spec\n\nThe approved comp is a north star for translation into semantic, responsive, accessible code, never a license to recompose: keeping the palette and mood while redrawing the topology is a second art direction. Do not rasterize core UI text or controls. Do not substitute a different visual driver after approval without asking.\n\nWhat the comp shows is measured, not remembered. new-work.md section 6 runs the build as phases (`impeccable build-phase`): the spec phase turns the comp into region boxes with sampled palettes (`impeccable comp-spec`), and the medium of every region follows from what the pixels are, never from what feels buildable: a figure, a product object, machinery, any illustration with perspective, shading, or drawing skill in it, and any texture by name (woven cloth, paper grain, fabric, leather, brushed metal) is a `plate` / `image` / `texture` region and ships as a raster; text, controls, chrome, diagrams with countable elements, flat shape systems, and anything that must move, scale, or respond are semantic. Writing \"CSS\" for a sculpted panel's finish, or a many-vertex `clip-path` for a torn edge, is the quiet deletion of the approved design; the detector's organic-clip-path and buried-raster rules and the hero gate's region scores catch it. Dropping an image-native region is a scope decision the user makes at the approval point, never a silent flattening after it. Generated imagery is a material, not a claim: evidence rules bind assertions, specs, testimonials, and photographs presented as real, never render fidelity.\n",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "MP3",
+      "finding_id": "finding-a8582e4bcd10450aa4ba49ee46f07a8c",
+      "category": "Memory Poisoning",
+      "pattern": "Memory Manipulation",
+      "severity": "HIGH",
+      "confidence": 0.8,
+      "location": {
+        "file": "reference/colorize.md",
+        "start_line": 23,
+        "end_line": null
+      },
+      "finding": "new identity is",
+      "explanation": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules, or cause unpredictable behavior.",
+      "remediation": "Protect agent memory and state from modification by untrusted content. Use read-only memory for critical instructions and validate all state changes.",
+      "code_snippet": "- light/dark or data-visualization requirements;\n- whether the task asks for more color or a new identity.\n\nIf a new identity is required, use [new-work.md](new-work.md). Ask only when a binding brand decision cannot be inferred.\n\n## Choose a strategy\n",
+      "intent": null,
+      "tags": [
+        "Memory Poisoning"
+      ]
+    },
+    {
+      "id": "MP3",
+      "finding_id": "finding-e5b2343b2c4e4d31a7eed7186990a25d",
+      "category": "Memory Poisoning",
+      "pattern": "Memory Manipulation",
+      "severity": "HIGH",
+      "confidence": 0.8,
+      "location": {
+        "file": "reference/mode-operate.md",
+        "start_line": 15,
+        "end_line": null
+      },
+      "finding": "clear state",
+      "explanation": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules, or cause unpredictable behavior.",
+      "remediation": "Protect agent memory and state from modification by untrusted content. Use read-only memory for critical instructions and validate all state changes.",
+      "code_snippet": "\n## Comps\n\nThe comp is the product screen, in the direction's committed palette: its shell and navigation with a distinct area for each job and, where there is data, filters over what they scope and charts and tables with clear states. The world enters only through type, palette, density, and the one signature move; it never supplies the page's organisation, so a working screen never reads as a newspaper, a poster, or any other artifact of the world. Every control is a standard one the visitor already knows how to use, a web component on the web and the platform's native control in an app: buttons, tabs, inputs, selects, filters, tables with sortable headers, navigation that reads as navigation. Never a costume of the world's own interface: a terminal's function-key bar or command prompt, an instrument's bezel, ruled ledger paper standing in for a table. A comp an engineer could not build from the platform's standard components is a picture of the tool, not the tool. The finish bar is the best product in the category: an aligned grid, consistent spacing, a real type scale, and clear hierarchy. The signature move adds to a screen that is already that clean; it never stands in for it.\n\nPrompt with the screen's real content: the product name, realistic data with plausible values and units, real labels, and one state worth seeing (an alert, a degraded service, an empty filter result), never placeholder tiles. State colours (red for critical, amber for degraded) sit on top of the world's palette only where they carry meaning, and a headline number that moves over time shows its recent history, with the onset marked when something changed.\n",
+      "intent": null,
+      "tags": [
+        "Memory Poisoning"
+      ]
+    },
+    {
+      "id": "MP1",
+      "finding_id": "finding-0daa20ac371948249d43620afbbe432b",
+      "category": "Memory Poisoning",
+      "pattern": "Persistent Context Injection",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 1008,
+        "end_line": null
+      },
+      "finding": "lasting rule",
+      "explanation": "Skill injects content designed to persist in agent memory or context across interactions. Persistent injection can alter agent behavior long after the initial interaction.",
+      "remediation": "Do not allow untrusted input to persist in agent memory or context. Validate all content before storing and implement memory isolation between sessions.",
+      "code_snippet": "        }\n      } catch { /* cross-origin */ }\n    }\n    // The selector a mechanical bake would anchor lasting rules on, and how\n    // many elements it matches right now: the bake refuses anything but one,\n    // since its rules would restyle every match, not just this element.\n    const cssIdent = (s) => /^[A-Za-z_-][\\w-]*$/.test(s);",
+      "intent": null,
+      "tags": [
+        "Memory Poisoning"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-1a1d93274b3f4047a05cb3d9374da58e",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 3825,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "      // Token in the query string as well as the body: the URL token is what\n      // authorizes the CORS preflight when the page runs on a non-loopback\n      // dev host (ddev, Valet), since the preflight carries no request body.\n      const res = await fetch('http://localhost:' + PORT + '/manual-edit-stash?token=' + encodeURIComponent(TOKEN), {\n        method: 'POST',\n        headers: { 'Content-Type': 'application/json' },\n        body: JSON.stringify({",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-6cd7779bea014e55b38cbe33fef250d1",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 4141,
+        "end_line": null
+      },
+      "finding": "fetch(\n        'http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "\n  async function fetchPendingCount() {\n    try {\n      const res = await fetch(\n        'http://localhost:' + PORT + '/manual-edit-stash?token=' + encodeURIComponent(TOKEN) + '&pageUrl=' + encodeURIComponent(location.pathname),\n      );\n      if (!res.ok) return;",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-17117a1aa9a14ca482c2c44ca1f8f8ea",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 4161,
+        "end_line": null
+      },
+      "finding": "fetch(\n        'http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "    resetManualApplyProgress(count);\n    setPendingApplyLoading(true, count);\n    try {\n      const res = await fetch(\n        'http://localhost:' + PORT + '/manual-edit-commit?token=' + encodeURIComponent(TOKEN) + '&pageUrl=' + encodeURIComponent(location.pathname) + '&async=1',\n        { method: 'POST', keepalive: true },\n      );",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-b9353bf9dd72429d9740fed1009b146a",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 4205,
+        "end_line": null
+      },
+      "finding": "fetch(\n        'http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "    const ok = confirm('Discard ' + count + ' copy edit' + (count === 1 ? '' : 's') + ' on this page?');\n    if (!ok) return;\n    try {\n      const res = await fetch(\n        'http://localhost:' + PORT + '/manual-edit-discard?token=' + encodeURIComponent(TOKEN) + '&pageUrl=' + encodeURIComponent(location.pathname),\n        { method: 'POST' },\n      );",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-3cc085ba358c465dba955bc1fe5eecb5",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 4254,
+        "end_line": null
+      },
+      "finding": "fetch(\n        'http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "    if (count <= 0) return;\n    updateManualApplyRepairState({ attempt: 1, maxAttempts: 3 }, 'repairing');\n    try {\n      const res = await fetch(\n        'http://localhost:' + PORT + '/manual-edit-commit?token=' + encodeURIComponent(TOKEN) + '&pageUrl=' + encodeURIComponent(location.pathname) + '&async=1&repair=1',\n        { method: 'POST', keepalive: true },\n      );",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-e9e88e331f404ccf8e23e77c6813bb02",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 4273,
+        "end_line": null
+      },
+      "finding": "fetch(\n        'http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "    const ok = confirm('Rollback source files to before this Apply and keep the edits staged?');\n    if (!ok) return;\n    try {\n      const res = await fetch(\n        'http://localhost:' + PORT + '/manual-edit-repair-decision?token=' + encodeURIComponent(TOKEN) + '&pageUrl=' + encodeURIComponent(location.pathname),\n        {\n          method: 'POST',",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-7a51c7e0b87b45d99537be7ca00313af",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 7168,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "  // the agent's held-open CLI call.\n\n  function postAgentTargetResult(targetId, result) {\n    fetch('http://localhost:' + PORT + '/agent-target-result?token=' + TOKEN, {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ token: TOKEN, targetId, clientId: AGENT_TARGET_CLIENT_ID, ...result }),",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-737ddf6511fc48b39e822b93df4c2baf",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 7290,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "  }\n\n  function claimAgentTarget(targetId, report) {\n    return fetch('http://localhost:' + PORT + '/agent-target-claim?token=' + TOKEN, {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ token: TOKEN, targetId, clientId: AGENT_TARGET_CLIENT_ID, ...report }),",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-15050ce698ad48a3aa678b805ed5e7ea",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 7815,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "    // Token in the query string as well as the body: the URL token is what\n    // authorizes the CORS preflight when the page runs on a non-loopback\n    // dev host (ddev, Valet), since the preflight carries no request body.\n    const doSend = () => fetch('http://localhost:' + PORT + '/events?token=' + encodeURIComponent(TOKEN), {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify(msg),",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-4ecd6e98572b4b939b37050fd84af664",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 8748,
+        "end_line": null
+      },
+      "finding": "fetch(\n          'http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "    // three-distinct-directions brief.\n    if (blob && hasAnnotations) {\n      try {\n        const uploadRes = await fetch(\n          'http://localhost:' + PORT + '/annotation?token=' + encodeURIComponent(TOKEN) +\n          '&eventId=' + encodeURIComponent(basePayload.id),\n          { method: 'POST', headers: { 'Content-Type': 'image/png' }, body: blob },",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-412776915aa647bca7ac444fb037f1b4",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 11577,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "  // the agent already replied done before the reload. The helper's session\n  // record settles it; otherwise the done reply on SSE does.\n  function settleParameterStateFromHelper(sessionId) {\n    fetch('http://localhost:' + PORT + '/status?token=' + TOKEN, { cache: 'no-store' })\n      .then((res) => (res.ok ? res.json() : null))\n      .then((data) => {\n        if (!data || sessionId !== currentSessionId) return;",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    },
+    {
+      "id": "SSRF2",
+      "finding_id": "finding-3e34dc7ac4eb4aba8284b658701413b6",
+      "category": "Server-Side Request Forgery",
+      "pattern": "Internal Network Request",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "scripts/live-browser.js",
+        "start_line": 11589,
+        "end_line": null
+      },
+      "finding": "fetch('http://localhost",
+      "explanation": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be exposed and is a common SSRF pivot.",
+      "remediation": "Avoid requests to loopback/link-local/private hosts from skill code. If internal access is intended, document it and validate the target against an allowlist.",
+      "code_snippet": "  }\n\n  function fetchAgentPollingStatus() {\n    fetch('http://localhost:' + PORT + '/status?token=' + TOKEN, { cache: 'no-store' })\n      .then((res) => (res.ok ? res.json() : null))\n      .then((data) => {\n        if (data && typeof data.agentPolling === 'boolean') {",
+      "intent": null,
+      "tags": [
+        "Server-Side Request Forgery"
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": true,
+    "skillspector_version": "2.9.6",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 57,
+    "scanned_components": 56,
+    "coverage_percent": 98.2,
+    "is_complete": false,
+    "execution_successful": true,
+    "fully_inspected_files": 56,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 1,
+    "ledger_exceptions": [
+      {
+        "outcome": "skipped",
+        "phase": "static",
+        "reason_code": "size_limit",
+        "message": "File exceeds this analyzer's character limit.",
+        "path": "scripts/data/font-index.json",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_agent_snooping",
+          "static_patterns_anti_refusal",
+          "static_patterns_data_exfiltration",
+          "static_patterns_deserialization",
+          "static_patterns_excessive_agency",
+          "static_patterns_harmful_content",
+          "static_patterns_memory_poisoning",
+          "static_patterns_output_handling",
+          "static_patterns_privilege_escalation",
+          "static_patterns_prompt_injection",
+          "static_patterns_rogue_agent",
+          "static_patterns_ssrf",
+          "static_patterns_supply_chain",
+          "static_patterns_system_prompt_leakage",
+          "static_patterns_tool_misuse",
+          "static_yara"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "degraded",
+        "planned_work": 57,
+        "completed": 56,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "limitations": [
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer static_patterns_agent_snooping status: degraded.",
+      "Analyzer static_patterns_anti_refusal status: degraded.",
+      "Analyzer static_patterns_data_exfiltration status: degraded.",
+      "Analyzer static_patterns_deserialization status: degraded.",
+      "Analyzer static_patterns_excessive_agency status: degraded.",
+      "Analyzer static_patterns_harmful_content status: degraded.",
+      "Analyzer static_patterns_memory_poisoning status: degraded.",
+      "Analyzer static_patterns_output_handling status: degraded.",
+      "Analyzer static_patterns_privilege_escalation status: degraded.",
+      "Analyzer static_patterns_prompt_injection status: degraded.",
+      "Analyzer static_patterns_rogue_agent status: degraded.",
+      "Analyzer static_patterns_ssrf status: degraded.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
+      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+      "Analyzer static_patterns_tool_misuse status: degraded.",
+      "Analyzer static_yara status: degraded.",
+      "Analyzer was disabled by the requested configuration."
+    ],
+    "findings_before_filtering": 39,
+    "findings_after_filtering": 39
+  }
+}

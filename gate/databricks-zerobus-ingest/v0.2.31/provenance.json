@@ -1,0 +1,11 @@
+{
+  "id": "databricks-zerobus-ingest",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-zerobus-ingest",
+  "version": "v0.2.31",
+  "sha": "aea6a1b9bd88eefc7e858941fb98b2d3b01fbd80",
+  "contentHash": "sha256-099717e3d2db015184b350706dd9fea9925e1ef6e779646317f26c3de783747f",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-18T18:00:11.772Z",
+  "description": "Push records from apps, services, devices, or scripts directly into Unity Catalog Delta tables with Zerobus Ingest: SDKs (Python, TypeScript, Go, Java, Rust, C++, .NET), REST, OTLP, MQTT, Arrow Flight, or Apache Kafka-compatible producer APIs, with no message bus to run. Use to stream events, telemetry, logs, IoT data, CDC, or columnar batches into Databricks in near real time; connect existing collectors and log shippers (OpenTelemetry, Debezium, Vector, Telegraf, Cribl); replace a message bus that only feeds the lakehouse; or debug Zerobus auth, schema, throughput, or delivery issues."
+}

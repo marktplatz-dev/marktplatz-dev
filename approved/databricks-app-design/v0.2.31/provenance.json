@@ -1,0 +1,10 @@
+{
+  "id": "databricks-app-design",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-app-design",
+  "version": "v0.2.31",
+  "sha": "aea6a1b9bd88eefc7e858941fb98b2d3b01fbd80",
+  "contentHash": "sha256-a582dbd1b887a6e8c8069d8eaa545dab239535e8202a0cd0097cc25187422bd5",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-18T18:00:09.338Z"
+}

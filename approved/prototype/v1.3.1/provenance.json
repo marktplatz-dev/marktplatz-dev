@@ -1,0 +1,10 @@
+{
+  "id": "prototype",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/prototype",
+  "version": "v1.3.1",
+  "sha": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "contentHash": "sha256-e86eb0efd570ab11acc4bfe064888e3a1ab56d956404edc27f19645b69b29a7e",
+  "license": "MIT",
+  "promotedAt": "2026-10-18T18:00:12.730Z"
+}

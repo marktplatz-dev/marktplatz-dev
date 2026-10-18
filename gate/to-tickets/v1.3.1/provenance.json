@@ -1,0 +1,11 @@
+{
+  "id": "to-tickets",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/to-tickets",
+  "version": "v1.3.1",
+  "sha": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "contentHash": "sha256-425bd28cab65edbe49b4247725d9f9d172a125d71d19e930d6e01c7d374b5d6a",
+  "license": "MIT",
+  "promotedAt": "2026-10-18T18:00:13.387Z",
+  "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker)."
+}

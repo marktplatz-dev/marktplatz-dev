@@ -1,0 +1,117 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": true
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "E1",
+      "severity": "medium",
+      "message": "Data Exfiltration: https://api.github.com/",
+      "file": "databricks-cli-install.md",
+      "line": 173
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: Access Tokens",
+      "file": "databricks-cli-auth.md",
+      "line": 7
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE2",
+      "severity": "medium",
+      "message": "Privilege Escalation: sudo ",
+      "file": "databricks-cli-install.md",
+      "line": 3
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE2",
+      "severity": "medium",
+      "message": "Privilege Escalation: sudo ",
+      "file": "databricks-cli-install.md",
+      "line": 11
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE2",
+      "severity": "medium",
+      "message": "Privilege Escalation: sudo ",
+      "file": "databricks-cli-install.md",
+      "line": 106
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE2",
+      "severity": "medium",
+      "message": "Privilege Escalation: sudo ",
+      "file": "databricks-cli-install.md",
+      "line": 107
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE2",
+      "severity": "medium",
+      "message": "Privilege Escalation: sudo ",
+      "file": "databricks-cli-install.md",
+      "line": 207
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE2",
+      "severity": "medium",
+      "message": "Privilege Escalation: sudo ",
+      "file": "databricks-cli-install.md",
+      "line": 209
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RA2",
+      "severity": "medium",
+      "message": "Rogue Agent: create a new profile if needed\n   - Retry the command with `--profile <selected-profile-name>`\n   - **In Claude Code, always use the `--profile` flag** rather than setting environment variables\n\n3. **",
+      "file": "databricks-cli-auth.md",
+      "line": 69
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "PIPELINE_TAINT_FLOW",
+      "severity": "high",
+      "message": "Dangerous data flow in command pipeline",
+      "file": "databricks-cli-install.md",
+      "line": 1
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "COMPOUND_EXTRACT_EXECUTE",
+      "severity": "high",
+      "message": "Archive extraction followed by execution",
+      "file": "databricks-cli-install.md",
+      "line": 120
+    }
+  ]
+}

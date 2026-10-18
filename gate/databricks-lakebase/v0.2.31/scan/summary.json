@@ -1,0 +1,77 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/off-platform.md",
+      "line": 196
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/off-platform.md",
+      "line": 197
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/off-platform.md",
+      "line": 197
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without asking",
+      "file": "SKILL.md",
+      "line": 246
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: .env ",
+      "file": "references/connectivity.md",
+      "line": 84
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: .env.local ",
+      "file": "references/off-platform.md",
+      "line": 197
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    }
+  ]
+}

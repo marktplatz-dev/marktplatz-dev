@@ -1,0 +1,6 @@
+{
+  "name": "databricks-lakeflow-connect",
+  "description": "Build managed ingestion pipelines into Databricks using Lakeflow Connect. Use when ingesting from SaaS apps (Salesforce, Workday Reports, ServiceNow, Google Analytics 4, HubSpot, Confluence) or databases (SQL Server cloud and on-prem; PostgreSQL/MySQL CDC in PuPr) into Unity Catalog with serverless pipelines.",
+  "license": "LicenseRef-Databricks",
+  "repository": "https://github.com/databricks/databricks-agent-skills"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "tdd",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/tdd",
+  "version": "v1.3.1",
+  "sha": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "contentHash": "sha256-1289fe8710521503a953e2940792bf3fc3a6231a7a2c1347e58bf80267263748",
+  "license": "MIT",
+  "promotedAt": "2026-10-18T18:00:13.014Z"
+}
