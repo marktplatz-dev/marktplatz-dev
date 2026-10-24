@@ -1,0 +1,45 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: .env ",
+      "file": "references/GOTCHAS.md",
+      "line": 277
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "YR4",
+      "severity": "high",
+      "message": "YARA Match: Model; Model; MODEL; system prompt; assistant; Ignore previous instructions",
+      "file": "references/patterns-datasets.md",
+      "line": 61
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    }
+  ]
+}

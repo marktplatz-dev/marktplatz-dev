@@ -1,0 +1,535 @@
+{
+  "skill": {
+    "name": "databricks-lakebase",
+    "source": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-lakebase/skill",
+    "scanned_at": "2026-10-24T08:59:34.841056+00:00"
+  },
+  "risk_assessment": {
+    "score": 24,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 351,
+      "executable": false,
+      "size_bytes": 19892
+    },
+    {
+      "path": "agents/openai.yaml",
+      "type": "yaml",
+      "lines": 7,
+      "executable": false,
+      "size_bytes": 298
+    },
+    {
+      "path": "assets/databricks.png",
+      "type": "other",
+      "lines": 378,
+      "executable": false,
+      "size_bytes": 15366
+    },
+    {
+      "path": "assets/databricks.svg",
+      "type": "other",
+      "lines": 3,
+      "executable": false,
+      "size_bytes": 582
+    },
+    {
+      "path": "references/computes-and-scaling.md",
+      "type": "markdown",
+      "lines": 118,
+      "executable": false,
+      "size_bytes": 4898
+    },
+    {
+      "path": "references/connectivity.md",
+      "type": "markdown",
+      "lines": 217,
+      "executable": false,
+      "size_bytes": 8084
+    },
+    {
+      "path": "references/lakehouse-sync.md",
+      "type": "markdown",
+      "lines": 202,
+      "executable": false,
+      "size_bytes": 7994
+    },
+    {
+      "path": "references/medallion-from-cdc.md",
+      "type": "markdown",
+      "lines": 143,
+      "executable": false,
+      "size_bytes": 4465
+    },
+    {
+      "path": "references/off-platform.md",
+      "type": "markdown",
+      "lines": 203,
+      "executable": false,
+      "size_bytes": 7066
+    },
+    {
+      "path": "references/pgvector.md",
+      "type": "markdown",
+      "lines": 149,
+      "executable": false,
+      "size_bytes": 4700
+    },
+    {
+      "path": "references/synced-tables.md",
+      "type": "markdown",
+      "lines": 232,
+      "executable": false,
+      "size_bytes": 12237
+    }
+  ],
+  "issues": [
+    {
+      "id": "RP1",
+      "finding_id": "finding-8371dfe7ba384f3c83a58d45b6a611bd",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/off-platform.md",
+        "start_line": 196,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-45486dc734a4431688f5bd0307df0293",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/off-platform.md",
+        "start_line": 197,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-94e8addd22e44d5ba3403f7250c1d4d6",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/off-platform.md",
+        "start_line": 197,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-a4b6026c85e04ec1b9657784f14be340",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 246,
+        "end_line": null
+      },
+      "finding": "without asking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "2. **Grant local access** *(if needed)*: assign `databricks_superuser` via UI (project creators already have access)\n3. **Develop locally**: your credentials get DML access to SP-owned schemas\n\n**If you already ran locally first** and hit `permission denied`: the schema is owned by your credentials, not the SP. **Do NOT drop the schema without asking the user** -- dropping it deletes all data.\n\nAsk the user to choose:\n- **(A) Drop and redeploy:** `databricks psql --project <PROJECT_ID> -- -c \"DROP SCHEMA IF EXISTS <SCHEMA_NAME> CASCADE;\"`, then `databricks apps deploy` from the app directory. The SP recreates the schema on startup.",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-3250e9a40e97400d8063154d18d85e7a",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.09,
+      "location": {
+        "file": "references/connectivity.md",
+        "start_line": 84,
+        "end_line": null
+      },
+      "finding": ".env ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "> **Local dev only.** Store the URL in a `.env` file excluded from version control \u2014 never commit real credentials or paste them into shell history. Do not use this pattern in production; use OAuth token refresh (Pattern 1/2) instead.\n\n```bash\n# .env (add to .gitignore)\nLAKEBASE_PG_URL=\"postgresql://user:password@host:5432/database?sslmode=require\"\n```\n",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-fed2c9f60a8a4bad9df72d985a9c8c64",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.18,
+      "location": {
+        "file": "references/off-platform.md",
+        "start_line": 197,
+        "end_line": null
+      },
+      "finding": ".env.local ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "\n**Commands:**\n- Generate: `npx drizzle-kit generate`\n- Migrate: `npx dotenv -e .env.local -- npx tsx scripts/db-migrate.ts`\n\n## Cross-references\n",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.9.6",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 11,
+    "scanned_components": 10,
+    "coverage_percent": 90.9,
+    "is_complete": false,
+    "execution_successful": true,
+    "fully_inspected_files": 10,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "skipped",
+        "phase": "static",
+        "reason_code": "binary_content",
+        "message": "Binary content is unsupported by this analyzer.",
+        "path": "assets/databricks.png",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_agent_snooping",
+          "static_patterns_anti_refusal",
+          "static_patterns_data_exfiltration",
+          "static_patterns_deserialization",
+          "static_patterns_excessive_agency",
+          "static_patterns_harmful_content",
+          "static_patterns_memory_poisoning",
+          "static_patterns_output_handling",
+          "static_patterns_privilege_escalation",
+          "static_patterns_prompt_injection",
+          "static_patterns_rogue_agent",
+          "static_patterns_ssrf",
+          "static_patterns_supply_chain",
+          "static_patterns_system_prompt_leakage",
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 11,
+        "completed": 10,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 11,
+        "completed": 11,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "limitations": [
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer static_patterns_agent_snooping status: degraded.",
+      "Analyzer static_patterns_anti_refusal status: degraded.",
+      "Analyzer static_patterns_data_exfiltration status: degraded.",
+      "Analyzer static_patterns_deserialization status: degraded.",
+      "Analyzer static_patterns_excessive_agency status: degraded.",
+      "Analyzer static_patterns_harmful_content status: degraded.",
+      "Analyzer static_patterns_memory_poisoning status: degraded.",
+      "Analyzer static_patterns_output_handling status: degraded.",
+      "Analyzer static_patterns_privilege_escalation status: degraded.",
+      "Analyzer static_patterns_prompt_injection status: degraded.",
+      "Analyzer static_patterns_rogue_agent status: degraded.",
+      "Analyzer static_patterns_ssrf status: degraded.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
+      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+      "Analyzer static_patterns_tool_misuse status: degraded.",
+      "Analyzer was disabled by the requested configuration."
+    ],
+    "findings_before_filtering": 8,
+    "findings_after_filtering": 6
+  }
+}

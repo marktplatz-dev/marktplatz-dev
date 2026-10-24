@@ -1,0 +1,6 @@
+{
+  "name": "databricks-unstructured-pdf-generation",
+  "description": "Build RAG / unstructured-document evaluation datasets and demo documents (e.g. for Knowledge Assistant) on Databricks: generate synthetic PDFs locally, upload to Unity Catalog volumes, and pair each document with test questions for retrieval evaluation.",
+  "license": "LicenseRef-Databricks",
+  "repository": "https://github.com/databricks/databricks-agent-skills"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "databricks-pipelines",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-pipelines",
+  "version": "v0.2.34",
+  "sha": "5c988a4d9b44b74bf3d638f31fc0447cf486e96b",
+  "contentHash": "sha256-fdd7d90ba1e71613816688639e537cfa9549310128bc0b408541aecca9264ce6",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-24T09:02:49.441Z"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "grilling",
+  "repo": "mattpocock/skills",
+  "path": "skills/productivity/grilling",
+  "version": "v1.3.1",
+  "sha": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "contentHash": "sha256-d6ae2cc9cd9778557069d88eff3bbb733ef7f4d6645bb6786c101236d7d422ce",
+  "license": "MIT",
+  "promotedAt": "2026-10-24T09:02:50.379Z"
+}

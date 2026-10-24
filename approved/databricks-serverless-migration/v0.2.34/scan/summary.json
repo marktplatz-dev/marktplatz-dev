@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": false
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "RA2",
+      "severity": "medium",
+      "message": "Rogue Agent: write to DataFrame API (see fixes below)\n    ├── Uses DBFS paths? → Category 2: migrate to UC Volumes\n    ├── Uses Hive Metastore? → Category 2: migrate to Unity Catalog (or use HMS Federation)\n    ├─",
+      "file": "SKILL.md",
+      "line": 54
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RA2",
+      "severity": "medium",
+      "message": "Rogue Agent: Write a JSON file to `~/.databricks-migration-skill",
+      "file": "SKILL.md",
+      "line": 683
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    }
+  ]
+}

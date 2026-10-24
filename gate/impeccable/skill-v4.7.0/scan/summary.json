@@ -1,0 +1,534 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": true
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "LP3",
+      "severity": "medium",
+      "message": "MCP Least Privilege: null",
+      "file": "SKILL.md",
+      "line": 1
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "reference/doctor.md",
+      "line": 9
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "AS1",
+      "severity": "high",
+      "message": "Agent Snooping: ~/.claude/settings.json",
+      "file": "reference/hooks.md",
+      "line": 17
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "AS1",
+      "severity": "high",
+      "message": "Agent Snooping: ~/.claude/settings.json",
+      "file": "reference/hooks.md",
+      "line": 108
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "AR2",
+      "severity": "high",
+      "message": "Anti-Refusal: Never judge",
+      "file": "reference/new-work.md",
+      "line": 138
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "E1",
+      "severity": "medium",
+      "message": "Data Exfiltration: fetch('http://localhost:' + PORT + '/agent-target-result?token=' + TOKEN, {\n      method: 'POST'",
+      "file": "scripts/live-browser.js",
+      "line": 7181
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "E1",
+      "severity": "medium",
+      "message": "Data Exfiltration: fetch('http://localhost:' + PORT + '/agent-target-claim?token=' + TOKEN, {\n      method: 'POST'",
+      "file": "scripts/live-browser.js",
+      "line": 7303
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without verification",
+      "file": "reference/audit.md",
+      "line": 139
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without verification",
+      "file": "reference/audit.native.md",
+      "line": 139
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: No confirmation",
+      "file": "reference/critique.md",
+      "line": 700
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: no approval",
+      "file": "reference/degraded/finish-reviewer.md",
+      "line": 19
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without approval",
+      "file": "reference/degraded/finish-reviewer.md",
+      "line": 20
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without approval",
+      "file": "reference/degraded/finish-reviewer.md",
+      "line": 20
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without approval",
+      "file": "reference/degraded/finish-reviewer.md",
+      "line": 34
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without consent",
+      "file": "reference/delight.md",
+      "line": 55
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without asking",
+      "file": "reference/document.md",
+      "line": 411
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: no consent",
+      "file": "reference/init.md",
+      "line": 112
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without asking",
+      "file": "reference/new-work.md",
+      "line": 55
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: no approval",
+      "file": "reference/visualize.md",
+      "line": 31
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without asking",
+      "file": "reference/visualize.md",
+      "line": 37
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "MP3",
+      "severity": "high",
+      "message": "Memory Poisoning: new identity is",
+      "file": "reference/colorize.md",
+      "line": 23
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "MP3",
+      "severity": "high",
+      "message": "Memory Poisoning: clear state",
+      "file": "reference/mode-operate.md",
+      "line": 15
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "MP1",
+      "severity": "medium",
+      "message": "Memory Poisoning: lasting rule",
+      "file": "scripts/live-browser.js",
+      "line": 1017
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch('http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 3834
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch(\n        'http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 4150
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch(\n        'http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 4170
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch(\n        'http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 4214
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch(\n        'http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 4263
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch(\n        'http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 4282
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch('http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 7181
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch('http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 7303
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch('http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 7828
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch(\n          'http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 8761
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch('http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 11590
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "SSRF2",
+      "severity": "medium",
+      "message": "Server-Side Request Forgery: fetch('http://localhost",
+      "file": "scripts/live-browser.js",
+      "line": 11602
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "PROMPT_INJECTION_CONCEALMENT",
+      "severity": "high",
+      "message": "Attempts to conceal actions from the user",
+      "file": "reference/craft.md",
+      "line": 5
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "YARA_capability_inflation_generic",
+      "severity": "medium",
+      "message": "SKILL DISCOVERY ABUSE detected by YARA",
+      "file": "reference/live.md",
+      "line": 172
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 3834
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 4150
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "scripts/live-browser.js",
+      "line": 4151
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 4170
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "scripts/live-browser.js",
+      "line": 4171
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 4214
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "scripts/live-browser.js",
+      "line": 4215
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 4263
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "scripts/live-browser.js",
+      "line": 4264
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 4282
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "scripts/live-browser.js",
+      "line": 4283
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 5350
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 5823
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 6319
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 6451
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 7181
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 7303
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 7828
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 8473
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 8500
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 8761
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 11590
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "scripts/live-browser.js",
+      "line": 11590
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 11602
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "scripts/live-browser.js",
+      "line": 11602
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 12780
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_JS_NETWORK",
+      "severity": "medium",
+      "message": "Outbound network request primitives in JavaScript/TypeScript",
+      "file": "scripts/live-browser.js",
+      "line": 12781
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": true
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "TT3",
+      "severity": "critical",
+      "message": "Data Flow:         resp = requests.post(\n            f\"{WORKSPACE_URL}/oidc/v1/token\",\n            auth=(CLIENT_ID, CLIENT_SECRET),\n            data={\n                \"grant_type\": \"client_credentials\",\n        ",
+      "file": "examples/grpc_client.py",
+      "line": 75
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "TT3",
+      "severity": "critical",
+      "message": "Data Flow:     response = requests.post(\n        f\"{workspace_url}/oidc/v1/token\",\n        auth=(os.environ[\"DATABRICKS_CLIENT_ID\"], os.environ[\"DATABRICKS_CLIENT_SECRET\"]),\n        data={\n            \"grant_typ",
+      "file": "examples/mqtt_producer.py",
+      "line": 48
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "LP3",
+      "severity": "medium",
+      "message": "MCP Least Privilege: null",
+      "file": "SKILL.md",
+      "line": 1
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/protobuf-schema.md",
+      "line": 46
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA4",
+      "severity": "medium",
+      "message": "Excessive Agency: timeout=None",
+      "file": "examples/mqtt_producer.py",
+      "line": 106
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA4",
+      "severity": "medium",
+      "message": "Excessive Agency: timeout=None",
+      "file": "examples/mqtt_producer.py",
+      "line": 119
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "LAZY_LOAD_DEEP_NESTING",
+      "severity": "medium",
+      "message": "Deeply nested file references detected",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "TOOL_ABUSE_UNDECLARED_NETWORK",
+      "severity": "medium",
+      "message": "Undeclared network usage",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "CORRELATED_SENSITIVE_NETWORK_FLOW",
+      "severity": "high",
+      "message": "Sensitive source reaches a network sink",
+      "file": "examples/grpc_client.py",
+      "line": 75
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_NETWORK_REQUESTS",
+      "severity": "medium",
+      "message": "Outbound network request primitives that can transmit data externally",
+      "file": "examples/grpc_client.py",
+      "line": 75
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "severity": "high",
+      "message": "Infinite loop without clear exit condition",
+      "file": "examples/grpc_client.py",
+      "line": 129
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "severity": "high",
+      "message": "Infinite loop without clear exit condition",
+      "file": "examples/grpc_client.py",
+      "line": 263
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "severity": "high",
+      "message": "Infinite loop without clear exit condition",
+      "file": "examples/grpc_client.py",
+      "line": 271
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "CORRELATED_SENSITIVE_NETWORK_FLOW",
+      "severity": "high",
+      "message": "Sensitive source reaches a network sink",
+      "file": "examples/mqtt_producer.py",
+      "line": 48
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_NETWORK_REQUESTS",
+      "severity": "medium",
+      "message": "Outbound network request primitives that can transmit data externally",
+      "file": "examples/mqtt_producer.py",
+      "line": 48
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "severity": "high",
+      "message": "Infinite loop without clear exit condition",
+      "file": "examples/mqtt_producer.py",
+      "line": 109
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "severity": "high",
+      "message": "Infinite loop without clear exit condition",
+      "file": "examples/mqtt_producer.py",
+      "line": 141
+    }
+  ]
+}
