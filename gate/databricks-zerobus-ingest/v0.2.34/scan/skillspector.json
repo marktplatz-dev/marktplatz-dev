@@ -1,0 +1,662 @@
+{
+  "skill": {
+    "name": "databricks-zerobus-ingest",
+    "source": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-zerobus-ingest/skill",
+    "scanned_at": "2026-10-24T09:01:57.801971+00:00"
+  },
+  "risk_assessment": {
+    "score": 100,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 216,
+      "executable": false,
+      "size_bytes": 25010
+    },
+    {
+      "path": "agents/openai.yaml",
+      "type": "yaml",
+      "lines": 7,
+      "executable": false,
+      "size_bytes": 611
+    },
+    {
+      "path": "assets/databricks.png",
+      "type": "other",
+      "lines": 378,
+      "executable": false,
+      "size_bytes": 15366
+    },
+    {
+      "path": "assets/databricks.svg",
+      "type": "other",
+      "lines": 3,
+      "executable": false,
+      "size_bytes": 582
+    },
+    {
+      "path": "examples/grpc_client.py",
+      "type": "python",
+      "lines": 284,
+      "executable": true,
+      "size_bytes": 12661
+    },
+    {
+      "path": "examples/mqtt_producer.py",
+      "type": "python",
+      "lines": 276,
+      "executable": true,
+      "size_bytes": 12412
+    },
+    {
+      "path": "references/arrow-flight.md",
+      "type": "markdown",
+      "lines": 130,
+      "executable": false,
+      "size_bytes": 9692
+    },
+    {
+      "path": "references/authentication.md",
+      "type": "markdown",
+      "lines": 187,
+      "executable": false,
+      "size_bytes": 14042
+    },
+    {
+      "path": "references/build-from-source.md",
+      "type": "markdown",
+      "lines": 110,
+      "executable": false,
+      "size_bytes": 10149
+    },
+    {
+      "path": "references/choose-an-interface.md",
+      "type": "markdown",
+      "lines": 71,
+      "executable": false,
+      "size_bytes": 7843
+    },
+    {
+      "path": "references/databricks-apps.md",
+      "type": "markdown",
+      "lines": 105,
+      "executable": false,
+      "size_bytes": 5293
+    },
+    {
+      "path": "references/go-sdk.md",
+      "type": "markdown",
+      "lines": 89,
+      "executable": false,
+      "size_bytes": 3603
+    },
+    {
+      "path": "references/grpc-api.md",
+      "type": "markdown",
+      "lines": 106,
+      "executable": false,
+      "size_bytes": 8170
+    },
+    {
+      "path": "references/how-it-works.md",
+      "type": "markdown",
+      "lines": 191,
+      "executable": false,
+      "size_bytes": 15264
+    },
+    {
+      "path": "references/java-sdk.md",
+      "type": "markdown",
+      "lines": 90,
+      "executable": false,
+      "size_bytes": 4462
+    },
+    {
+      "path": "references/kafka.md",
+      "type": "markdown",
+      "lines": 117,
+      "executable": false,
+      "size_bytes": 7551
+    },
+    {
+      "path": "references/migration-from-kafka-compatible-systems.md",
+      "type": "markdown",
+      "lines": 108,
+      "executable": false,
+      "size_bytes": 6981
+    },
+    {
+      "path": "references/mqtt.md",
+      "type": "markdown",
+      "lines": 118,
+      "executable": false,
+      "size_bytes": 7146
+    },
+    {
+      "path": "references/networking.md",
+      "type": "markdown",
+      "lines": 78,
+      "executable": false,
+      "size_bytes": 6253
+    },
+    {
+      "path": "references/new-to-databricks.md",
+      "type": "markdown",
+      "lines": 85,
+      "executable": false,
+      "size_bytes": 6423
+    },
+    {
+      "path": "references/observability.md",
+      "type": "markdown",
+      "lines": 125,
+      "executable": false,
+      "size_bytes": 8467
+    },
+    {
+      "path": "references/other-sdks.md",
+      "type": "markdown",
+      "lines": 45,
+      "executable": false,
+      "size_bytes": 3676
+    },
+    {
+      "path": "references/performance.md",
+      "type": "markdown",
+      "lines": 116,
+      "executable": false,
+      "size_bytes": 5054
+    },
+    {
+      "path": "references/protobuf-schema.md",
+      "type": "markdown",
+      "lines": 88,
+      "executable": false,
+      "size_bytes": 4790
+    },
+    {
+      "path": "references/python-sdk.md",
+      "type": "markdown",
+      "lines": 71,
+      "executable": false,
+      "size_bytes": 3531
+    },
+    {
+      "path": "references/recovery.md",
+      "type": "markdown",
+      "lines": 92,
+      "executable": false,
+      "size_bytes": 6027
+    },
+    {
+      "path": "references/rest.md",
+      "type": "markdown",
+      "lines": 96,
+      "executable": false,
+      "size_bytes": 6273
+    },
+    {
+      "path": "references/schema-management.md",
+      "type": "markdown",
+      "lines": 92,
+      "executable": false,
+      "size_bytes": 6317
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "type": "markdown",
+      "lines": 93,
+      "executable": false,
+      "size_bytes": 5831
+    },
+    {
+      "path": "references/typescript-sdk.md",
+      "type": "markdown",
+      "lines": 57,
+      "executable": false,
+      "size_bytes": 2915
+    }
+  ],
+  "issues": [
+    {
+      "id": "TT3",
+      "finding_id": "finding-ca44685886244742b14dcc43ea0c4828",
+      "category": "Data Flow",
+      "pattern": "Tainted flow: 'WORKSPACE_URL' from os.environ.get (line 40, credential/environment) \u2192 requests.post (network output)",
+      "severity": "CRITICAL",
+      "confidence": 0.9,
+      "location": {
+        "file": "examples/grpc_client.py",
+        "start_line": 75,
+        "end_line": 85
+      },
+      "finding": "        resp = requests.post(\n            f\"{WORKSPACE_URL}/oidc/v1/token\",\n            auth=(CLIENT_ID, CLIENT_SECRET),\n            data={\n                \"grant_type\": \"client_credentials\",\n        ",
+      "explanation": "Credentials or environment variables flow to a network sink. This is a high-confidence indicator of credential exfiltration.",
+      "remediation": "Never send credentials or environment variables over the network. Use secure credential stores and avoid transmitting secrets in request bodies or URLs.",
+      "code_snippet": "             \"object_type\": \"TABLE\", \"object_full_path\": TABLE_NAME,\n             \"operations\": [\"zerobuswrite\"]},\n        ]\n        resp = requests.post(\n            f\"{WORKSPACE_URL}/oidc/v1/token\",\n            auth=(CLIENT_ID, CLIENT_SECRET),\n            data={",
+      "intent": null,
+      "tags": [
+        "Data Flow"
+      ]
+    },
+    {
+      "id": "TT3",
+      "finding_id": "finding-6a145b9b4ce34803ab7c07c6f60c3ff2",
+      "category": "Data Flow",
+      "pattern": "Tainted flow: 'authorization_details' from os.environ (line 40, credential/environment) \u2192 requests.post (network output)",
+      "severity": "CRITICAL",
+      "confidence": 0.9,
+      "location": {
+        "file": "examples/mqtt_producer.py",
+        "start_line": 48,
+        "end_line": 58
+      },
+      "finding": "    response = requests.post(\n        f\"{workspace_url}/oidc/v1/token\",\n        auth=(os.environ[\"DATABRICKS_CLIENT_ID\"], os.environ[\"DATABRICKS_CLIENT_SECRET\"]),\n        data={\n            \"grant_typ",
+      "explanation": "Credentials or environment variables flow to a network sink. This is a high-confidence indicator of credential exfiltration.",
+      "remediation": "Never send credentials or environment variables over the network. Use secure credential stores and avoid transmitting secrets in request bodies or URLs.",
+      "code_snippet": "        {\"type\": \"unity_catalog_privileges\", \"privileges\": [\"SELECT\", \"MODIFY\"],\n         \"object_type\": \"TABLE\", \"object_full_path\": table_name},\n    ]\n    response = requests.post(\n        f\"{workspace_url}/oidc/v1/token\",\n        auth=(os.environ[\"DATABRICKS_CLIENT_ID\"], os.environ[\"DATABRICKS_CLIENT_SECRET\"]),\n        data={",
+      "intent": null,
+      "tags": [
+        "Data Flow"
+      ]
+    },
+    {
+      "id": "LP3",
+      "finding_id": "finding-b6fbee3c3bf8485baaeb76aad58ada2a",
+      "category": "MCP Least Privilege",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 1,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "Without declared permissions the skill's intent is opaque and cannot be validated.",
+      "remediation": "Declare the skill's tool scope: for Claude Code / Agent Skills SKILL.md, list the tools the skill may invoke in the 'allowed-tools' frontmatter field; for MCP server manifests, add a 'permissions' list naming the required capabilities.",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI02"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-6588be68f3e04de79ab2f39b18f5f798",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/protobuf-schema.md",
+        "start_line": 46,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "EA4",
+      "finding_id": "finding-8b279fcbfc2b4948a1c4d323dd552f3c",
+      "category": "Excessive Agency",
+      "pattern": "Unbounded Resource Access",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "examples/mqtt_producer.py",
+        "start_line": 106,
+        "end_line": null
+      },
+      "finding": "timeout=None",
+      "explanation": "Skill allows unbounded resource consumption (API calls, storage, compute). Without rate limits or quotas, a compromised or misbehaving agent can cause denial-of-service or cost overruns.",
+      "remediation": "Set explicit rate limits, timeouts, and resource quotas for API calls, file operations, and compute. Implement circuit breakers for runaway loops.",
+      "code_snippet": "            self._slots.release()\n            raise\n\n    def flush(self, timeout=None):\n        \"\"\"Durability boundary: return once every published record has a PUBACK.\"\"\"\n        deadline = None if timeout is None else time.monotonic() + timeout\n        while True:",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    },
+    {
+      "id": "EA4",
+      "finding_id": "finding-ee19ca69629246c9a3a8f209e8af7921",
+      "category": "Excessive Agency",
+      "pattern": "Unbounded Resource Access",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "examples/mqtt_producer.py",
+        "start_line": 119,
+        "end_line": null
+      },
+      "finding": "timeout=None",
+      "explanation": "Skill allows unbounded resource consumption (API calls, storage, compute). Without rate limits or quotas, a compromised or misbehaving agent can cause denial-of-service or cost overruns.",
+      "remediation": "Set explicit rate limits, timeouts, and resource quotas for API calls, file operations, and compute. Implement circuit breakers for runaway loops.",
+      "code_snippet": "            if deadline is not None and time.monotonic() > deadline:\n                raise TimeoutError(\"records still waiting for PUBACK\")\n\n    def close(self, timeout=None):\n        try:\n            self.flush(timeout)\n        finally:",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": true,
+    "skillspector_version": "2.9.6",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 30,
+    "scanned_components": 29,
+    "coverage_percent": 96.7,
+    "is_complete": false,
+    "execution_successful": true,
+    "fully_inspected_files": 29,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "skipped",
+        "phase": "static",
+        "reason_code": "binary_content",
+        "message": "Binary content is unsupported by this analyzer.",
+        "path": "assets/databricks.png",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_agent_snooping",
+          "static_patterns_anti_refusal",
+          "static_patterns_data_exfiltration",
+          "static_patterns_deserialization",
+          "static_patterns_excessive_agency",
+          "static_patterns_harmful_content",
+          "static_patterns_memory_poisoning",
+          "static_patterns_output_handling",
+          "static_patterns_privilege_escalation",
+          "static_patterns_prompt_injection",
+          "static_patterns_rogue_agent",
+          "static_patterns_ssrf",
+          "static_patterns_supply_chain",
+          "static_patterns_system_prompt_leakage",
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "completed",
+        "planned_work": 2,
+        "completed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 30,
+        "completed": 29,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 30,
+        "completed": 30,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "limitations": [
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer static_patterns_agent_snooping status: degraded.",
+      "Analyzer static_patterns_anti_refusal status: degraded.",
+      "Analyzer static_patterns_data_exfiltration status: degraded.",
+      "Analyzer static_patterns_deserialization status: degraded.",
+      "Analyzer static_patterns_excessive_agency status: degraded.",
+      "Analyzer static_patterns_harmful_content status: degraded.",
+      "Analyzer static_patterns_memory_poisoning status: degraded.",
+      "Analyzer static_patterns_output_handling status: degraded.",
+      "Analyzer static_patterns_privilege_escalation status: degraded.",
+      "Analyzer static_patterns_prompt_injection status: degraded.",
+      "Analyzer static_patterns_rogue_agent status: degraded.",
+      "Analyzer static_patterns_ssrf status: degraded.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
+      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+      "Analyzer static_patterns_tool_misuse status: degraded.",
+      "Analyzer was disabled by the requested configuration."
+    ],
+    "findings_before_filtering": 7,
+    "findings_after_filtering": 6
+  }
+}

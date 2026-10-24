@@ -1,0 +1,116 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": true
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "LP3",
+      "severity": "medium",
+      "message": "MCP Least Privilege: null",
+      "file": "SKILL.md",
+      "line": 1
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA4",
+      "severity": "medium",
+      "message": "Excessive Agency: unlimited requests",
+      "file": "examples/fm-parallel-calls.py",
+      "line": 256
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: access token",
+      "file": "SKILL.md",
+      "line": 67
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: access token",
+      "file": "examples/llm_config.py",
+      "line": 268
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: access token",
+      "file": "references/1-authorization.md",
+      "line": 38
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "TOOL_ABUSE_UNDECLARED_NETWORK",
+      "severity": "medium",
+      "message": "Undeclared network usage",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "CORRELATED_SENSITIVE_NETWORK_FLOW",
+      "severity": "high",
+      "message": "Sensitive source reaches a network sink",
+      "file": "examples/llm_config.py",
+      "line": 220
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_NETWORK_REQUESTS",
+      "severity": "medium",
+      "message": "Outbound network request primitives that can transmit data externally",
+      "file": "examples/llm_config.py",
+      "line": 220
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_NETWORK_REQUESTS",
+      "severity": "medium",
+      "message": "Outbound network request primitives that can transmit data externally",
+      "file": "examples/llm_config.py",
+      "line": 283
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_NETWORK_REQUESTS",
+      "severity": "medium",
+      "message": "Outbound network request primitives that can transmit data externally",
+      "file": "examples/llm_config.py",
+      "line": 332
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "DATA_EXFIL_NETWORK_REQUESTS",
+      "severity": "medium",
+      "message": "Outbound network request primitives that can transmit data externally",
+      "file": "examples/llm_config.py",
+      "line": 341
+    }
+  ]
+}

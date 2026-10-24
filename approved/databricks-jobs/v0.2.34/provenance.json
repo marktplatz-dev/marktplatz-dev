@@ -1,0 +1,10 @@
+{
+  "id": "databricks-jobs",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-jobs",
+  "version": "v0.2.34",
+  "sha": "5c988a4d9b44b74bf3d638f31fc0447cf486e96b",
+  "contentHash": "sha256-1bee522a23797ce521d94d05d7ac0313b8533ff624ce1040fa6a3da6d70e864c",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-24T09:02:48.907Z"
+}

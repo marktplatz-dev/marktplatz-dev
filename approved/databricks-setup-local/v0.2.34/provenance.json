@@ -1,0 +1,10 @@
+{
+  "id": "databricks-setup-local",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-setup-local",
+  "version": "v0.2.34",
+  "sha": "5c988a4d9b44b74bf3d638f31fc0447cf486e96b",
+  "contentHash": "sha256-e5c6f74c0ec0296baa41ec7145db36b012980c63ce55cafcfae15472e24538b2",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-24T09:02:49.728Z"
+}

@@ -1,0 +1,260 @@
+{
+  "skill_name": "databricks-core",
+  "skill_path": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-core/skill",
+  "is_safe": false,
+  "max_severity": "HIGH",
+  "findings_count": 3,
+  "findings": [
+    {
+      "id": "MANIFEST_MISSING_LICENSE_c5ae9be793",
+      "rule_id": "MANIFEST_MISSING_LICENSE",
+      "category": "policy_violation",
+      "severity": "INFO",
+      "title": "Skill does not specify a license",
+      "description": "Skill manifest does not include a 'license' field. Specifying a license helps users understand usage terms.",
+      "file_path": "SKILL.md",
+      "line_number": null,
+      "snippet": null,
+      "remediation": "Add 'license' field to SKILL.md frontmatter (e.g., MIT, Apache-2.0)",
+      "analyzer": "static",
+      "metadata": {}
+    },
+    {
+      "id": "PIPELINE_TAINT_5bc5c278ca",
+      "rule_id": "PIPELINE_TAINT_FLOW",
+      "category": "data_exfiltration",
+      "severity": "HIGH",
+      "title": "Dangerous data flow in command pipeline",
+      "description": "Pipeline downloads data from the network and executes it: `curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh`. This is a remote code execution pattern.",
+      "file_path": "databricks-cli-install.md",
+      "line_number": 1,
+      "snippet": "curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh",
+      "remediation": "Review the command pipeline. Avoid piping sensitive data to network commands or shell execution.",
+      "analyzer": "pipeline",
+      "metadata": {
+        "pipeline": "curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh",
+        "source_taints": [
+          "NETWORK_DATA"
+        ],
+        "sink_command": "sh",
+        "chain_length": 2,
+        "in_documentation": false,
+        "behavior_category": "command_injection",
+        "semantic_facts": {
+          "evidence_kind": "command_pipeline",
+          "evidence_value_class": "untrusted_fetch_execute",
+          "evidence_count": 2,
+          "context_kind": "code",
+          "signal_kind": "taint_flow",
+          "commands": [
+            {
+              "executable": "curl",
+              "argument_classes": [
+                "script_path",
+                "url"
+              ],
+              "downloads": true,
+              "executes": false,
+              "destructive": false,
+              "privilege_change": false,
+              "source_class": "network",
+              "sink_class": "",
+              "file_path": "databricks-cli-install.md"
+            },
+            {
+              "executable": "sh",
+              "argument_classes": [],
+              "downloads": false,
+              "executes": true,
+              "destructive": false,
+              "privilege_change": false,
+              "source_class": "",
+              "sink_class": "execution",
+              "file_path": "databricks-cli-install.md"
+            }
+          ],
+          "urls": [
+            {
+              "scheme": "https",
+              "host": "raw.githubusercontent.com",
+              "domain_class": "public",
+              "trusted_installer": false,
+              "method": "GET",
+              "direction": "inbound",
+              "file_path": "databricks-cli-install.md"
+            }
+          ],
+          "flows": [
+            {
+              "source_class": "network",
+              "sink_class": "execution",
+              "transforms": [],
+              "cross_file": false,
+              "source_path": "databricks-cli-install.md",
+              "sink_path": "databricks-cli-install.md"
+            }
+          ],
+          "candidate_command": {
+            "executable": "sh",
+            "argument_classes": [],
+            "downloads": false,
+            "executes": true,
+            "destructive": false,
+            "privilege_change": false,
+            "source_class": "",
+            "sink_class": "execution",
+            "file_path": "databricks-cli-install.md"
+          },
+          "candidate_flow": {
+            "source_class": "network",
+            "sink_class": "execution",
+            "transforms": [],
+            "cross_file": false,
+            "source_path": "databricks-cli-install.md",
+            "sink_path": "databricks-cli-install.md"
+          },
+          "candidate_url": {
+            "scheme": "https",
+            "host": "raw.githubusercontent.com",
+            "domain_class": "public",
+            "trusted_installer": false,
+            "method": "GET",
+            "direction": "inbound",
+            "file_path": "databricks-cli-install.md"
+          }
+        }
+      }
+    },
+    {
+      "id": "COMPOUND_EXTRACT_EXECUTE_bf8a748308",
+      "rule_id": "COMPOUND_EXTRACT_EXECUTE",
+      "category": "supply_chain_attack",
+      "severity": "HIGH",
+      "title": "Archive extraction followed by execution",
+      "description": "An archive is extracted and its contents are then executed. This pattern can deliver and run malicious payloads hidden in archives.",
+      "file_path": "databricks-cli-install.md",
+      "line_number": 120,
+      "snippet": "   mkdir -p ~/.local/bin\n   cd ~/.local/bin\n   curl -L \"<download-url>\" -o databricks.tar.gz\n   tar -xzf databricks.tar.gz\n   rm databricks.tar.gz\n   chmod +x databricks\n   ",
+      "remediation": "Review the command sequence for potential multi-step attacks. Ensure all steps are necessary and safe.",
+      "analyzer": "pipeline",
+      "metadata": {
+        "pattern": "COMPOUND_EXTRACT_EXECUTE",
+        "matched_lines": [
+          3,
+          5
+        ],
+        "in_documentation": false,
+        "semantic_facts": {
+          "evidence_kind": "command_sequence",
+          "context_kind": "code",
+          "signal_kind": "compound_flow",
+          "commands": [
+            {
+              "executable": "tar",
+              "argument_classes": [
+                "archive_path"
+              ],
+              "downloads": false,
+              "executes": false,
+              "destructive": false,
+              "privilege_change": false,
+              "source_class": "archive",
+              "sink_class": "",
+              "file_path": "databricks-cli-install.md"
+            },
+            {
+              "executable": "chmod",
+              "argument_classes": [
+                "executable_permission"
+              ],
+              "downloads": false,
+              "executes": true,
+              "destructive": false,
+              "privilege_change": true,
+              "source_class": "",
+              "sink_class": "execution",
+              "file_path": "databricks-cli-install.md"
+            }
+          ],
+          "urls": [],
+          "flows": [
+            {
+              "source_class": "archive",
+              "sink_class": "execution",
+              "transforms": [
+                "extraction"
+              ],
+              "cross_file": false,
+              "source_path": "databricks-cli-install.md",
+              "sink_path": "databricks-cli-install.md"
+            }
+          ],
+          "candidate_flow": {
+            "source_class": "archive",
+            "sink_class": "execution",
+            "transforms": [
+              "extraction"
+            ],
+            "cross_file": false,
+            "source_path": "databricks-cli-install.md",
+            "sink_path": "databricks-cli-install.md"
+          },
+          "candidate_command": {
+            "executable": "chmod",
+            "argument_classes": [
+              "executable_permission"
+            ],
+            "downloads": false,
+            "executes": true,
+            "destructive": false,
+            "privilege_change": true,
+            "source_class": "",
+            "sink_class": "execution",
+            "file_path": "databricks-cli-install.md"
+          }
+        }
+      }
+    }
+  ],
+  "scan_duration_seconds": 0.5259430408477783,
+  "duration_ms": 525,
+  "analyzers_used": [
+    "static_analyzer",
+    "bytecode",
+    "pipeline",
+    "correlation"
+  ],
+  "timestamp": "2026-10-24T08:58:15.454539+00:00",
+  "scan_metadata": {
+    "policy_name": "default",
+    "policy_version": "1.0",
+    "policy_preset_base": "balanced",
+    "policy_fingerprint_sha256": "26ada30a1f502eecdbe7b7e35a3fe7a324be2298494208e1019b75e72b0bc516",
+    "cel": {
+      "mode": "shadow",
+      "runtime": "cel-go",
+      "runtime_version": "v0.32.0;helper=2.1.0",
+      "fact_schema": "v1",
+      "expression_set_hash": "f26459b8f4a46a974d7ab0aaae34127b5b6a40d693e266e12fca03a69a6d26aa",
+      "evaluated": 0,
+      "retained": 3,
+      "would_suppress": 0,
+      "suppressed": 0,
+      "fallbacks": 0,
+      "projection_incomplete": 0,
+      "elapsed_ms": 0.0,
+      "projection_ms": 0.0,
+      "evaluation_ms": 0.0,
+      "errors": [],
+      "per_rule": {},
+      "suppressed_candidates": []
+    },
+    "rule_contract": {
+      "status": "passed",
+      "schema_version": 2,
+      "checked": 3,
+      "invalid_findings": 0,
+      "errors": []
+    }
+  }
+}
