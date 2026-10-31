@@ -1,0 +1,1352 @@
+{
+  "skill_name": "impeccable",
+  "skill_path": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/impeccable/skill",
+  "is_safe": false,
+  "max_severity": "HIGH",
+  "findings_count": 29,
+  "findings": [
+    {
+      "id": "PROMPT_INJECTION_CONCEALMENT_49f9c09279",
+      "rule_id": "PROMPT_INJECTION_CONCEALMENT",
+      "category": "prompt_injection",
+      "severity": "HIGH",
+      "title": "Attempts to conceal actions from the user",
+      "description": "Pattern detected: Do not tell user",
+      "file_path": "reference/craft.md",
+      "line_number": 5,
+      "snippet": "Do not tell users they need to invoke `craft`. Natural requests such as \u201cbuild this feature,\u201d \u201cmake a landing page,\u201d or \u201credesign this screen\u201d use the same flow.",
+      "remediation": "Ensure transparency - do not hide skill usage from users",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?i)do\\s+not\\s+(tell|inform|mention|notify)\\s+(the\\s+)?user",
+        "matched_text": "Do not tell user",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 16,
+        "signature_pattern_sha256": "02a23c8d1dd2bea7cd87ba47cc291a9fcfd4575cf1aa0c8972ed16e95ddcc655",
+        "aitech": "AITech-1.1",
+        "aitech_name": "Direct Prompt Injection",
+        "scanner_category": "PROMPT INJECTION",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "prompt_injection",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "PROMPT_INJECTION_CONCEALMENT",
+              "kind": "signature_polarity",
+              "file_path": "reference/craft.md",
+              "value_class": "illustrative"
+            }
+          ]
+        },
+        "reference_depth": 0
+      }
+    },
+    {
+      "id": "YARA_capability_inflation_generic_781f2cc4b5",
+      "rule_id": "YARA_capability_inflation_generic",
+      "category": "skill_discovery_abuse",
+      "severity": "MEDIUM",
+      "title": "SKILL DISCOVERY ABUSE detected by YARA",
+      "description": "Capability inflation patterns: easter egg",
+      "file_path": "reference/live.md",
+      "line_number": 172,
+      "snippet": "- `delight`: different flavor of personality (micro-interaction / typographic surprise / illustrated accent / sonic-or-haptic / easter egg).",
+      "remediation": "Review and remove skill discovery abuse pattern",
+      "analyzer": "static",
+      "metadata": {
+        "yara_rule": "capability_inflation_generic",
+        "yara_namespace": "capability_inflation_generic",
+        "matched_string": "$hidden_triggers",
+        "threat_type": "SKILL DISCOVERY ABUSE"
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_bd168873ca",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 3901,
+      "snippet": "const res = await fetch('http://localhost:' + PORT + '/manual-edit-stash?token=' + encodeURIComponent(TOKEN), {",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_6bd24301b0",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4217,
+      "snippet": "const res = await fetch(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_d9f77d2720",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: toke****",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4218,
+      "snippet": "'http://localhost:' + PORT + '/manual-edit-stash?toke****&pageUrl=' + encodeURIComponent(location.pathname),",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "toke****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 49,
+        "signature_match_end": 88,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_3049d34706",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4237,
+      "snippet": "const res = await fetch(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_3dad9e3384",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: toke****",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4238,
+      "snippet": "'http://localhost:' + PORT + '/manual-edit-commit?toke****&pageUrl=' + encodeURIComponent(location.pathname) + '&async=1',",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "toke****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 50,
+        "signature_match_end": 89,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_ef24d39519",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4281,
+      "snippet": "const res = await fetch(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_a1f7c70979",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: toke****",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4282,
+      "snippet": "'http://localhost:' + PORT + '/manual-edit-discard?toke****&pageUrl=' + encodeURIComponent(location.pathname),",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "toke****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 51,
+        "signature_match_end": 90,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_f4343073b2",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4330,
+      "snippet": "const res = await fetch(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_e4fac15578",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: toke****",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4331,
+      "snippet": "'http://localhost:' + PORT + '/manual-edit-commit?toke****&pageUrl=' + encodeURIComponent(location.pathname) + '&async=1&repair=1',",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "toke****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 50,
+        "signature_match_end": 89,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_17f4fc72b8",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4349,
+      "snippet": "const res = await fetch(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_86e66b55be",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: toke****",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 4350,
+      "snippet": "'http://localhost:' + PORT + '/manual-edit-repair-decision?toke****&pageUrl=' + encodeURIComponent(location.pathname),",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "toke****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 59,
+        "signature_match_end": 98,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_d8b016e873",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 5421,
+      "snippet": "const res = await fetch(url);",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_221cff2bda",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 5894,
+      "snippet": "const res = await fetch(url);",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_1dea8e3e06",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 6390,
+      "snippet": "fetch(url)",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 6,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_a232cad801",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 6522,
+      "snippet": "fetch(url)",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 6,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_4403929917",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 7252,
+      "snippet": "fetch('http://localhost:' + PORT + '/agent-target-result?token=' + TOKEN, {",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 6,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_40d2ef5d19",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 7374,
+      "snippet": "return fetch('http://localhost:' + PORT + '/agent-target-claim?token=' + TOKEN, {",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 7,
+        "signature_match_end": 13,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_fae0e4b67c",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 7899,
+      "snippet": "const doSend = () => fetch('http://localhost:' + PORT + '/events?token=' + encodeURIComponent(TOKEN), {",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 21,
+        "signature_match_end": 27,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_57a16d9501",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 8544,
+      "snippet": "const res = await fetch(url);",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_69fd4fcc9f",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 8571,
+      "snippet": "const res = await fetch(sheet.href);",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 18,
+        "signature_match_end": 24,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_e401ce64ea",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 8832,
+      "snippet": "const uploadRes = await fetch(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 24,
+        "signature_match_end": 30,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_51d3d33942",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 11668,
+      "snippet": "fetch('http://localhost:' + PORT + '/status?token=' + TOKEN, { cache: 'no-store' })",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 6,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_7fb011665b",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: toke****",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 11668,
+      "snippet": "fetch('http://localhost:' + PORT + '/status?toke****no-store' })",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "toke****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 44,
+        "signature_match_end": 71,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_ad5e48a4f0",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 11680,
+      "snippet": "fetch('http://localhost:' + PORT + '/status?token=' + TOKEN, { cache: 'no-store' })",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 6,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_edc1e62385",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: toke****",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 11680,
+      "snippet": "fetch('http://localhost:' + PORT + '/status?toke****no-store' })",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "toke****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 44,
+        "signature_match_end": 71,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_be330ea4ae",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 12858,
+      "snippet": "fetch(`http://localhost:${PORT}/design-system.json?token=${TOKEN}`, { cache: 'no-store' }),",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 6,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_JS_NETWORK_711889758b",
+      "rule_id": "DATA_EXFIL_JS_NETWORK",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives in JavaScript/TypeScript",
+      "description": "Pattern detected: fetch(",
+      "file_path": "scripts/live-browser.js",
+      "line_number": 12859,
+      "snippet": "fetch(`http://localhost:${PORT}/design-system/raw?token=${TOKEN}`, { cache: 'no-store' }),",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "\\bfetch\\s*\\(",
+        "matched_text": "fetch(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 6,
+        "signature_pattern_sha256": "57220410873979f73624c44365682301491cb30501bab8d40d073a07386ad701",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "code",
+        "signature_polarity": "active",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "code",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "signature_polarity",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "active"
+            },
+            {
+              "rule_id": "DATA_EXFIL_JS_NETWORK",
+              "kind": "unreferenced_executable",
+              "file_path": "scripts/live-browser.js",
+              "value_class": "javascript"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "scan_duration_seconds": 2.708068609237671,
+  "duration_ms": 2708,
+  "analyzers_used": [
+    "static_analyzer",
+    "bytecode",
+    "pipeline",
+    "correlation"
+  ],
+  "timestamp": "2026-10-31T10:34:32.655494+00:00",
+  "scan_metadata": {
+    "policy_name": "default",
+    "policy_version": "1.0",
+    "policy_preset_base": "balanced",
+    "policy_fingerprint_sha256": "26ada30a1f502eecdbe7b7e35a3fe7a324be2298494208e1019b75e72b0bc516",
+    "cel": {
+      "mode": "shadow",
+      "runtime": "cel-go",
+      "runtime_version": "v0.32.0;helper=2.1.0",
+      "fact_schema": "v1",
+      "expression_set_hash": "f26459b8f4a46a974d7ab0aaae34127b5b6a40d693e266e12fca03a69a6d26aa",
+      "evaluated": 0,
+      "retained": 29,
+      "would_suppress": 0,
+      "suppressed": 0,
+      "fallbacks": 0,
+      "projection_incomplete": 0,
+      "elapsed_ms": 0.0,
+      "projection_ms": 0.0,
+      "evaluation_ms": 0.0,
+      "errors": [],
+      "per_rule": {},
+      "suppressed_candidates": []
+    },
+    "rule_contract": {
+      "status": "passed",
+      "schema_version": 2,
+      "checked": 0,
+      "invalid_findings": 0,
+      "errors": []
+    }
+  }
+}

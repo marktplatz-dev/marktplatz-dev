@@ -1,0 +1,10 @@
+{
+  "id": "databricks-dbsql",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-dbsql",
+  "version": "v0.2.39",
+  "sha": "4ef2b7fe5385a5ceb7ca8abaf5e319ad6f98a33a",
+  "contentHash": "sha256-503d8ac7e3dcf49730a2605c2c22f5c2624bc6ab4e75f640fbdbd5dec3827680",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-31T10:37:27.478Z"
+}

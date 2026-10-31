@@ -1,0 +1,11 @@
+{
+  "id": "wizard",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/wizard",
+  "version": "v1.3.2",
+  "sha": "d1478fcb140db0b93c0c8df17bcfd311844749d0",
+  "contentHash": "sha256-618c71e734c2c04c9904fc6b9fb2668c8d9603902434e41203128f4a3802c219",
+  "license": "MIT",
+  "promotedAt": "2026-10-31T10:37:31.164Z",
+  "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself."
+}

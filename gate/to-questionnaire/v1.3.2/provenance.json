@@ -1,0 +1,11 @@
+{
+  "id": "to-questionnaire",
+  "repo": "mattpocock/skills",
+  "path": "skills/productivity/to-questionnaire",
+  "version": "v1.3.2",
+  "sha": "d1478fcb140db0b93c0c8df17bcfd311844749d0",
+  "contentHash": "sha256-bea06bbc77c5a926ad61ae63eb6bca55d485ee9546cf41e8d0b7911843bd09b6",
+  "license": "MIT",
+  "promotedAt": "2026-10-31T10:37:30.648Z",
+  "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in."
+}

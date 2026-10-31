@@ -1,0 +1,11 @@
+{
+  "id": "implement",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/implement",
+  "version": "v1.3.2",
+  "sha": "d1478fcb140db0b93c0c8df17bcfd311844749d0",
+  "contentHash": "sha256-e90dd3a5cadf32cc4f847857c29f7acb7d6eb288fdc01e49246917c61bc378c1",
+  "license": "MIT",
+  "promotedAt": "2026-10-31T10:37:29.958Z",
+  "description": "Implement a piece of work based on a spec or set of tickets."
+}

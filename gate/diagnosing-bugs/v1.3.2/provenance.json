@@ -1,0 +1,11 @@
+{
+  "id": "diagnosing-bugs",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/diagnosing-bugs",
+  "version": "v1.3.2",
+  "sha": "d1478fcb140db0b93c0c8df17bcfd311844749d0",
+  "contentHash": "sha256-3314cd62e50cf688d13abdc4eb4cedcbcfdfe6f053fe3331f4a79928a0fe3c7f",
+  "license": "MIT",
+  "promotedAt": "2026-10-31T10:37:29.363Z",
+  "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow."
+}

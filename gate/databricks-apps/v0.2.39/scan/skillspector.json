@@ -1,0 +1,1410 @@
+{
+  "skill": {
+    "name": "databricks-apps",
+    "source": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-apps/skill",
+    "scanned_at": "2026-10-31T10:29:50.932476+00:00"
+  },
+  "risk_assessment": {
+    "score": 16,
+    "severity": "LOW",
+    "recommendation": "SAFE"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 241,
+      "executable": false,
+      "size_bytes": 21686
+    },
+    {
+      "path": "agents/openai.yaml",
+      "type": "yaml",
+      "lines": 7,
+      "executable": false,
+      "size_bytes": 294
+    },
+    {
+      "path": "assets/databricks.png",
+      "type": "other",
+      "lines": 378,
+      "executable": false,
+      "size_bytes": 15366
+    },
+    {
+      "path": "assets/databricks.svg",
+      "type": "other",
+      "lines": 3,
+      "executable": false,
+      "size_bytes": 582
+    },
+    {
+      "path": "references/appkit/agents.md",
+      "type": "markdown",
+      "lines": 228,
+      "executable": false,
+      "size_bytes": 15824
+    },
+    {
+      "path": "references/appkit/appkit-sdk.md",
+      "type": "markdown",
+      "lines": 153,
+      "executable": false,
+      "size_bytes": 6192
+    },
+    {
+      "path": "references/appkit/custom-endpoints.md",
+      "type": "markdown",
+      "lines": 163,
+      "executable": false,
+      "size_bytes": 6339
+    },
+    {
+      "path": "references/appkit/files.md",
+      "type": "markdown",
+      "lines": 323,
+      "executable": false,
+      "size_bytes": 13604
+    },
+    {
+      "path": "references/appkit/frontend.md",
+      "type": "markdown",
+      "lines": 174,
+      "executable": false,
+      "size_bytes": 7406
+    },
+    {
+      "path": "references/appkit/genie.md",
+      "type": "markdown",
+      "lines": 313,
+      "executable": false,
+      "size_bytes": 11308
+    },
+    {
+      "path": "references/appkit/image-generation.md",
+      "type": "markdown",
+      "lines": 420,
+      "executable": false,
+      "size_bytes": 22407
+    },
+    {
+      "path": "references/appkit/jobs.md",
+      "type": "markdown",
+      "lines": 141,
+      "executable": false,
+      "size_bytes": 6639
+    },
+    {
+      "path": "references/appkit/lakebase.md",
+      "type": "markdown",
+      "lines": 452,
+      "executable": false,
+      "size_bytes": 21224
+    },
+    {
+      "path": "references/appkit/metric-views.md",
+      "type": "markdown",
+      "lines": 103,
+      "executable": false,
+      "size_bytes": 5151
+    },
+    {
+      "path": "references/appkit/model-serving.md",
+      "type": "markdown",
+      "lines": 314,
+      "executable": false,
+      "size_bytes": 13313
+    },
+    {
+      "path": "references/appkit/overview.md",
+      "type": "markdown",
+      "lines": 164,
+      "executable": false,
+      "size_bytes": 9806
+    },
+    {
+      "path": "references/appkit/proto-contracts.md",
+      "type": "markdown",
+      "lines": 201,
+      "executable": false,
+      "size_bytes": 7841
+    },
+    {
+      "path": "references/appkit/proto-first.md",
+      "type": "markdown",
+      "lines": 306,
+      "executable": false,
+      "size_bytes": 9388
+    },
+    {
+      "path": "references/appkit/sql-queries.md",
+      "type": "markdown",
+      "lines": 271,
+      "executable": false,
+      "size_bytes": 10149
+    },
+    {
+      "path": "references/other-frameworks.md",
+      "type": "markdown",
+      "lines": 281,
+      "executable": false,
+      "size_bytes": 9285
+    },
+    {
+      "path": "references/platform-guide.md",
+      "type": "markdown",
+      "lines": 224,
+      "executable": false,
+      "size_bytes": 15515
+    },
+    {
+      "path": "references/testing.md",
+      "type": "markdown",
+      "lines": 104,
+      "executable": false,
+      "size_bytes": 4528
+    }
+  ],
+  "issues": [
+    {
+      "id": "RP1",
+      "finding_id": "finding-fbe4b0c3509e4670a79dbf8aed6cc9f7",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 61,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-417eef861a0446efbf7cfd2823c7ef4e",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 157,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-2703713c7329460c89799530bc37a98d",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 158,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-b50febdbbaa342d480ace01df66d82a5",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 159,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-83dd77ca5f264b3491fd03e2a7e33081",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 160,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-155a010171a44fbc9a2ff999da03c390",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 161,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-d8d4c8c5933f4ad1a8dd854ad0b0608e",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/agents.md",
+        "start_line": 7,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-fd1c524f9e1e4f5da75f44487fd87191",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/agents.md",
+        "start_line": 174,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-0fbc53c714fd4ae59bfefbda58fd4d81",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/agents.md",
+        "start_line": 194,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-2971995741f645d9bb797f9d53faaa20",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/agents.md",
+        "start_line": 227,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-3899363ba5b043089b017eda4a4c2203",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/appkit-sdk.md",
+        "start_line": 19,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-7306712c0beb4745aae700d3ee77ab2c",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/custom-endpoints.md",
+        "start_line": 36,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-1aed5f5e361f4c43a168d34fd09b7b79",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/files.md",
+        "start_line": 3,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-db0c53d345384a4c85f11b8f898ff5fb",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/files.md",
+        "start_line": 97,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-1ea0675461b4478b92f317cae876cb80",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/files.md",
+        "start_line": 113,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-99b239d4e9f94b4b8f13d3e9efb73605",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/files.md",
+        "start_line": 121,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-a576394a5c2243679c3ba1340988e7c4",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/frontend.md",
+        "start_line": 3,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-14b183963a2a4ffe9681e7cc368d8e47",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/frontend.md",
+        "start_line": 37,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-b2cea9e7b01c47c1b2017ed6e484bb01",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/frontend.md",
+        "start_line": 75,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-3aa5f6c83de44c61bd5f5f28bd94297c",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/frontend.md",
+        "start_line": 118,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-0afca36969ab4501abc4d116852952d4",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/genie.md",
+        "start_line": 158,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-f9a138364d924e7fa0422a4158c44e12",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/genie.md",
+        "start_line": 162,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-ae70f7e8be264591a28e496426576ee5",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/genie.md",
+        "start_line": 263,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-621253756d8c463f857fb7949dddad1d",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/genie.md",
+        "start_line": 265,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-0a910403a6b94b3c9d6d4c96fc6e2a7b",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/image-generation.md",
+        "start_line": 420,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-4b8b73be21614b0b8dbeb390295cc478",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/jobs.md",
+        "start_line": 3,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-27eef0abf2d94dfb8bbf46bbb22c50a4",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/jobs.md",
+        "start_line": 78,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-a47892679da34de3a859e57baa4a2190",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/jobs.md",
+        "start_line": 82,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-6de02792458b4319832f0505b9381a6e",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/jobs.md",
+        "start_line": 105,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-40fe0385b6124f9d84ceaaf538fea611",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/lakebase.md",
+        "start_line": 82,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-6fe50262f2f94913a481a24368f7de9f",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/metric-views.md",
+        "start_line": 52,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-dc07f0b71a1540e8b6be9a256f74670f",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/metric-views.md",
+        "start_line": 74,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-118700d64e2348c4b7ce2f087981b4dd",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/model-serving.md",
+        "start_line": 209,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-403f206547d041e7858c95911f55ccf9",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/overview.md",
+        "start_line": 52,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-f58d02924a454d3987757bcd0bcc5e45",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/overview.md",
+        "start_line": 98,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-54bf854874644769a50dd58cf0fc8b30",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/overview.md",
+        "start_line": 127,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-c98b912cdce64c0c81680e9be434429a",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/overview.md",
+        "start_line": 128,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-0c8a03beec334bdf966510e17a51bcfa",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/proto-first.md",
+        "start_line": 262,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-0222a21c497440d6a73756ff0197380d",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/sql-queries.md",
+        "start_line": 17,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-a287a5f642de400aaf4b2651ce754156",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/appkit/sql-queries.md",
+        "start_line": 99,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-49666d8942f847c48670632a5fa103b4",
+      "category": "MCP Rug Pull",
+      "pattern": null,
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/testing.md",
+        "start_line": 103,
+        "end_line": null
+      },
+      "finding": null,
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-cc8e6c5037b74845a5811fcb157b930f",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.09,
+      "location": {
+        "file": "references/appkit/agents.md",
+        "start_line": 120,
+        "end_line": null
+      },
+      "finding": ".env\n",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "\n# 3. Local env + develop\ncd <APP_NAME>\necho \"DATABRICKS_SERVING_ENDPOINT_NAME=<STREAMING_ENDPOINT>\" >> server/.env\n<pm> install && <pm> run dev\n```\n",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-11e8ad96f1fd4aa68d9ac7e24d9aa236",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.09,
+      "location": {
+        "file": "references/appkit/genie.md",
+        "start_line": 80,
+        "end_line": null
+      },
+      "finding": ".env\n",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "\n# 5. Set local env + develop\ncd <APP_NAME>\necho \"DATABRICKS_GENIE_SPACE_ID=<SPACE_ID>\" >> server/.env\n<pm> install && <pm> run dev\n```\n",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ]
+    },
+    {
+      "id": "PE3",
+      "finding_id": "finding-a1ff623da50643ad8332ff4d6bc0daef",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.18,
+      "location": {
+        "file": "references/appkit/overview.md",
+        "start_line": 72,
+        "end_line": null
+      },
+      "finding": ".env ",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "my-app/\n\u251c\u2500\u2500 server/\n\u2502   \u251c\u2500\u2500 server.ts             # Backend entry point (AppKit)\n\u2502   \u2514\u2500\u2500 .env                  # Optional local dev env vars (do not commit)\n\u251c\u2500\u2500 client/\n\u2502   \u251c\u2500\u2500 index.html\n\u2502   \u251c\u2500\u2500 vite.config.ts",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.9.6",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 22,
+    "scanned_components": 21,
+    "coverage_percent": 95.5,
+    "is_complete": false,
+    "execution_successful": true,
+    "fully_inspected_files": 21,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "skipped",
+        "phase": "static",
+        "reason_code": "binary_content",
+        "message": "Binary content is unsupported by this analyzer.",
+        "path": "assets/databricks.png",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_agent_snooping",
+          "static_patterns_anti_refusal",
+          "static_patterns_data_exfiltration",
+          "static_patterns_deserialization",
+          "static_patterns_excessive_agency",
+          "static_patterns_harmful_content",
+          "static_patterns_memory_poisoning",
+          "static_patterns_output_handling",
+          "static_patterns_privilege_escalation",
+          "static_patterns_prompt_injection",
+          "static_patterns_rogue_agent",
+          "static_patterns_ssrf",
+          "static_patterns_supply_chain",
+          "static_patterns_system_prompt_leakage",
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 22,
+        "completed": 21,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 22,
+        "completed": 22,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "limitations": [
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer static_patterns_agent_snooping status: degraded.",
+      "Analyzer static_patterns_anti_refusal status: degraded.",
+      "Analyzer static_patterns_data_exfiltration status: degraded.",
+      "Analyzer static_patterns_deserialization status: degraded.",
+      "Analyzer static_patterns_excessive_agency status: degraded.",
+      "Analyzer static_patterns_harmful_content status: degraded.",
+      "Analyzer static_patterns_memory_poisoning status: degraded.",
+      "Analyzer static_patterns_output_handling status: degraded.",
+      "Analyzer static_patterns_privilege_escalation status: degraded.",
+      "Analyzer static_patterns_prompt_injection status: degraded.",
+      "Analyzer static_patterns_rogue_agent status: degraded.",
+      "Analyzer static_patterns_ssrf status: degraded.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
+      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+      "Analyzer static_patterns_tool_misuse status: degraded.",
+      "Analyzer was disabled by the requested configuration."
+    ],
+    "findings_before_filtering": 47,
+    "findings_after_filtering": 44
+  }
+}
