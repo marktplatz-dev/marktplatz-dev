@@ -1,0 +1,104 @@
+{
+  "skill_name": "databricks-python-sdk",
+  "skill_path": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-python-sdk/skill",
+  "is_safe": true,
+  "max_severity": "MEDIUM",
+  "findings_count": 2,
+  "findings": [
+    {
+      "id": "MANIFEST_MISSING_LICENSE_c5ae9be793",
+      "rule_id": "MANIFEST_MISSING_LICENSE",
+      "category": "policy_violation",
+      "severity": "INFO",
+      "title": "Skill does not specify a license",
+      "description": "Skill manifest does not include a 'license' field. Specifying a license helps users understand usage terms.",
+      "file_path": "SKILL.md",
+      "line_number": null,
+      "snippet": null,
+      "remediation": "Add 'license' field to SKILL.md frontmatter (e.g., MIT, Apache-2.0)",
+      "analyzer": "static",
+      "metadata": {}
+    },
+    {
+      "id": "SECRET_PASSWORD_VAR_742b39ec3d",
+      "rule_id": "SECRET_PASSWORD_VAR",
+      "category": "hardcoded_secrets",
+      "severity": "MEDIUM",
+      "title": "Hardcoded password or secret in variable",
+      "description": "Pattern detected: secr****",
+      "file_path": "examples/1-authentication.py",
+      "line_number": 53,
+      "snippet": "azure_client_secr****",
+      "remediation": "Use environment variables or secure vaults for secrets",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "(?:secret|token)\\s*=\\s*['\\\"][^'\\\"]{16,}['\\\"]",
+        "matched_text": "secr****",
+        "signature_pattern_index": 2,
+        "signature_match_start": 13,
+        "signature_match_end": 40,
+        "signature_pattern_sha256": "6d611f9ede54cbe95c37c5713db649cac9165a7b348a05957b6c92a3dcf1926f",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "CREDENTIAL HARVESTING",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "hardcoded_secrets",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "SECRET_PASSWORD_VAR",
+              "kind": "signature_polarity",
+              "file_path": "examples/1-authentication.py",
+              "value_class": "illustrative"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "scan_duration_seconds": 0.8220765590667725,
+  "duration_ms": 822,
+  "analyzers_used": [
+    "static_analyzer",
+    "bytecode",
+    "pipeline",
+    "correlation"
+  ],
+  "timestamp": "2026-10-31T10:32:11.923279+00:00",
+  "scan_metadata": {
+    "policy_name": "default",
+    "policy_version": "1.0",
+    "policy_preset_base": "balanced",
+    "policy_fingerprint_sha256": "26ada30a1f502eecdbe7b7e35a3fe7a324be2298494208e1019b75e72b0bc516",
+    "cel": {
+      "mode": "shadow",
+      "runtime": "cel-go",
+      "runtime_version": "v0.32.0;helper=2.1.0",
+      "fact_schema": "v1",
+      "expression_set_hash": "f26459b8f4a46a974d7ab0aaae34127b5b6a40d693e266e12fca03a69a6d26aa",
+      "evaluated": 0,
+      "retained": 2,
+      "would_suppress": 0,
+      "suppressed": 0,
+      "fallbacks": 0,
+      "projection_incomplete": 0,
+      "elapsed_ms": 0.0,
+      "projection_ms": 0.0,
+      "evaluation_ms": 0.0,
+      "errors": [],
+      "per_rule": {},
+      "suppressed_candidates": []
+    },
+    "rule_contract": {
+      "status": "passed",
+      "schema_version": 2,
+      "checked": 1,
+      "invalid_findings": 0,
+      "errors": []
+    }
+  }
+}

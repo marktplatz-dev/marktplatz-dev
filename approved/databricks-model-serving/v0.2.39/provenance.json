@@ -1,0 +1,10 @@
+{
+  "id": "databricks-model-serving",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-model-serving",
+  "version": "v0.2.39",
+  "sha": "4ef2b7fe5385a5ceb7ca8abaf5e319ad6f98a33a",
+  "contentHash": "sha256-e67265acacef3feb921a348d58ed55e324a58067c201bbc1c056fcba95c60d98",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-10-31T10:37:28.461Z"
+}

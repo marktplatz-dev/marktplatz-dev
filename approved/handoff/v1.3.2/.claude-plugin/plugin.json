@@ -1,0 +1,6 @@
+{
+  "name": "handoff",
+  "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+  "license": "MIT",
+  "repository": "https://github.com/mattpocock/skills"
+}

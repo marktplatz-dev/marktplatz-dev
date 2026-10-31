@@ -1,0 +1,10 @@
+{
+  "id": "setup-matt-pocock-skills",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/setup-matt-pocock-skills",
+  "version": "v1.3.2",
+  "sha": "d1478fcb140db0b93c0c8df17bcfd311844749d0",
+  "contentHash": "sha256-774efd7ec312e8e082393332ff12421b208fbdf2519e8ea0b341c330a7ac4bc1",
+  "license": "MIT",
+  "promotedAt": "2026-10-31T10:37:30.368Z"
+}

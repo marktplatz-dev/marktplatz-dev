@@ -1,0 +1,435 @@
+{
+  "skill": {
+    "name": "databricks-spark-structured-streaming",
+    "source": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-spark-structured-streaming/skill",
+    "scanned_at": "2026-10-31T10:32:34.242869+00:00"
+  },
+  "risk_assessment": {
+    "score": 0,
+    "severity": "LOW",
+    "recommendation": "SAFE"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 71,
+      "executable": false,
+      "size_bytes": 3826
+    },
+    {
+      "path": "agents/openai.yaml",
+      "type": "yaml",
+      "lines": 7,
+      "executable": false,
+      "size_bytes": 414
+    },
+    {
+      "path": "assets/databricks.png",
+      "type": "other",
+      "lines": 378,
+      "executable": false,
+      "size_bytes": 15366
+    },
+    {
+      "path": "assets/databricks.svg",
+      "type": "other",
+      "lines": 3,
+      "executable": false,
+      "size_bytes": 582
+    },
+    {
+      "path": "references/checkpoint-best-practices.md",
+      "type": "markdown",
+      "lines": 318,
+      "executable": false,
+      "size_bytes": 8560
+    },
+    {
+      "path": "references/kafka-streaming.md",
+      "type": "markdown",
+      "lines": 452,
+      "executable": false,
+      "size_bytes": 16341
+    },
+    {
+      "path": "references/lakebase-sink-python.md",
+      "type": "markdown",
+      "lines": 337,
+      "executable": false,
+      "size_bytes": 21142
+    },
+    {
+      "path": "references/merge-operations.md",
+      "type": "markdown",
+      "lines": 365,
+      "executable": false,
+      "size_bytes": 10947
+    },
+    {
+      "path": "references/multi-sink-writes.md",
+      "type": "markdown",
+      "lines": 436,
+      "executable": false,
+      "size_bytes": 12935
+    },
+    {
+      "path": "references/real-time-mode.md",
+      "type": "markdown",
+      "lines": 227,
+      "executable": false,
+      "size_bytes": 19214
+    },
+    {
+      "path": "references/stateful-operations.md",
+      "type": "markdown",
+      "lines": 397,
+      "executable": false,
+      "size_bytes": 12013
+    },
+    {
+      "path": "references/stream-static-joins.md",
+      "type": "markdown",
+      "lines": 519,
+      "executable": false,
+      "size_bytes": 14237
+    },
+    {
+      "path": "references/stream-stream-joins.md",
+      "type": "markdown",
+      "lines": 588,
+      "executable": false,
+      "size_bytes": 16880
+    },
+    {
+      "path": "references/streaming-best-practices.md",
+      "type": "markdown",
+      "lines": 316,
+      "executable": false,
+      "size_bytes": 9606
+    },
+    {
+      "path": "references/trigger-and-cost-optimization.md",
+      "type": "markdown",
+      "lines": 486,
+      "executable": false,
+      "size_bytes": 13961
+    }
+  ],
+  "issues": [],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.9.6",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 15,
+    "scanned_components": 14,
+    "coverage_percent": 93.3,
+    "is_complete": false,
+    "execution_successful": true,
+    "fully_inspected_files": 14,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "skipped",
+        "phase": "static",
+        "reason_code": "binary_content",
+        "message": "Binary content is unsupported by this analyzer.",
+        "path": "assets/databricks.png",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_agent_snooping",
+          "static_patterns_anti_refusal",
+          "static_patterns_data_exfiltration",
+          "static_patterns_deserialization",
+          "static_patterns_excessive_agency",
+          "static_patterns_harmful_content",
+          "static_patterns_memory_poisoning",
+          "static_patterns_output_handling",
+          "static_patterns_privilege_escalation",
+          "static_patterns_prompt_injection",
+          "static_patterns_rogue_agent",
+          "static_patterns_ssrf",
+          "static_patterns_supply_chain",
+          "static_patterns_system_prompt_leakage",
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 15,
+        "completed": 14,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 15,
+        "completed": 15,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "limitations": [
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer static_patterns_agent_snooping status: degraded.",
+      "Analyzer static_patterns_anti_refusal status: degraded.",
+      "Analyzer static_patterns_data_exfiltration status: degraded.",
+      "Analyzer static_patterns_deserialization status: degraded.",
+      "Analyzer static_patterns_excessive_agency status: degraded.",
+      "Analyzer static_patterns_harmful_content status: degraded.",
+      "Analyzer static_patterns_memory_poisoning status: degraded.",
+      "Analyzer static_patterns_output_handling status: degraded.",
+      "Analyzer static_patterns_privilege_escalation status: degraded.",
+      "Analyzer static_patterns_prompt_injection status: degraded.",
+      "Analyzer static_patterns_rogue_agent status: degraded.",
+      "Analyzer static_patterns_ssrf status: degraded.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
+      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+      "Analyzer static_patterns_tool_misuse status: degraded."
+    ],
+    "findings_before_filtering": 0,
+    "findings_after_filtering": 0
+  }
+}

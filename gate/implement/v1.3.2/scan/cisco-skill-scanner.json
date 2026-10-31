@@ -1,0 +1,117 @@
+{
+  "skill_name": "implement",
+  "skill_path": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/implement/skill",
+  "is_safe": false,
+  "max_severity": "HIGH",
+  "findings_count": 2,
+  "findings": [
+    {
+      "id": "MANIFEST_MISSING_LICENSE_c5ae9be793",
+      "rule_id": "MANIFEST_MISSING_LICENSE",
+      "category": "policy_violation",
+      "severity": "INFO",
+      "title": "Skill does not specify a license",
+      "description": "Skill manifest does not include a 'license' field. Specifying a license helps users understand usage terms.",
+      "file_path": "SKILL.md",
+      "line_number": null,
+      "snippet": null,
+      "remediation": "Add 'license' field to SKILL.md frontmatter (e.g., MIT, Apache-2.0)",
+      "analyzer": "static",
+      "metadata": {}
+    },
+    {
+      "id": "ACTIVE_REMOTE_ACQUIRE_EXECUTE_832ca8fd40",
+      "rule_id": "ACTIVE_REMOTE_ACQUIRE_EXECUTE",
+      "category": "command_injection",
+      "severity": "HIGH",
+      "title": "Active instruction acquires and executes remote content",
+      "description": "SKILL.md contains an operative statement that explicitly coordinates remote content acquisition with execution.",
+      "file_path": "SKILL.md",
+      "line_number": 9,
+      "snippet": "If the user passes a ticket reference, fetch it from the issue tracker and state its title before starting. If the reference is ambiguous, ask.",
+      "remediation": "Remove remote execution, or require a locally pinned artifact whose digest or signature is verified before a fixed allowlisted invocation.",
+      "analyzer": "static",
+      "metadata": {
+        "analysis_basis": "bounded_commonmark_statement_grammar",
+        "acquisition_verbs": [
+          "fetch"
+        ],
+        "execution_verbs": [
+          "starting"
+        ],
+        "statement_shapes": [
+          "paragraph"
+        ],
+        "binding_kinds": [
+          "coordinated_action"
+        ],
+        "semantic_facts": {
+          "evidence_kind": "correlated_behavior",
+          "context_kind": "active_instruction",
+          "evidence_value_class": "untrusted_fetch_execute",
+          "evidence_count": 1,
+          "signal_kind": "compound_flow",
+          "flows": [
+            {
+              "source_class": "network",
+              "sink_class": "execution",
+              "transforms": [],
+              "cross_file": false,
+              "source_path": "SKILL.md",
+              "sink_path": "SKILL.md"
+            }
+          ],
+          "candidate_flow": {
+            "source_class": "network",
+            "sink_class": "execution",
+            "transforms": [],
+            "cross_file": false,
+            "source_path": "SKILL.md",
+            "sink_path": "SKILL.md"
+          }
+        }
+      }
+    }
+  ],
+  "scan_duration_seconds": 0.4737277030944824,
+  "duration_ms": 473,
+  "analyzers_used": [
+    "static_analyzer",
+    "bytecode",
+    "pipeline",
+    "correlation"
+  ],
+  "timestamp": "2026-10-31T10:34:43.104858+00:00",
+  "scan_metadata": {
+    "policy_name": "default",
+    "policy_version": "1.0",
+    "policy_preset_base": "balanced",
+    "policy_fingerprint_sha256": "26ada30a1f502eecdbe7b7e35a3fe7a324be2298494208e1019b75e72b0bc516",
+    "cel": {
+      "mode": "shadow",
+      "runtime": "cel-go",
+      "runtime_version": "v0.32.0;helper=2.1.0",
+      "fact_schema": "v1",
+      "expression_set_hash": "f26459b8f4a46a974d7ab0aaae34127b5b6a40d693e266e12fca03a69a6d26aa",
+      "evaluated": 0,
+      "retained": 2,
+      "would_suppress": 0,
+      "suppressed": 0,
+      "fallbacks": 0,
+      "projection_incomplete": 0,
+      "elapsed_ms": 0.0,
+      "projection_ms": 0.0,
+      "evaluation_ms": 0.0,
+      "errors": [],
+      "per_rule": {},
+      "suppressed_candidates": []
+    },
+    "rule_contract": {
+      "status": "passed",
+      "schema_version": 2,
+      "checked": 2,
+      "invalid_findings": 0,
+      "errors": []
+    }
+  }
+}

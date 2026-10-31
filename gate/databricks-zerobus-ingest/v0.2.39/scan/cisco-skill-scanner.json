@@ -1,0 +1,542 @@
+{
+  "skill_name": "databricks-zerobus-ingest",
+  "skill_path": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-zerobus-ingest/skill",
+  "is_safe": false,
+  "max_severity": "HIGH",
+  "findings_count": 12,
+  "findings": [
+    {
+      "id": "LAZY_LOAD_DEEP_28acb9506b",
+      "rule_id": "LAZY_LOAD_DEEP_NESTING",
+      "category": "obfuscation",
+      "severity": "MEDIUM",
+      "title": "Deeply nested file references detected",
+      "description": "Skill has file references nested more than 5 levels deep. This could be an attempt to hide malicious content in files that are only loaded under specific conditions.",
+      "file_path": "SKILL.md",
+      "line_number": null,
+      "snippet": null,
+      "remediation": "Flatten the reference structure or ensure all nested files are safe",
+      "analyzer": "static",
+      "metadata": {}
+    },
+    {
+      "id": "TOOL_MISMATCH_NETWORK_687b280ea5",
+      "rule_id": "TOOL_ABUSE_UNDECLARED_NETWORK",
+      "category": "unauthorized_tool_use",
+      "severity": "MEDIUM",
+      "title": "Undeclared network usage",
+      "description": "Skill code uses network libraries but doesn't declare network requirement",
+      "file_path": "SKILL.md",
+      "line_number": null,
+      "snippet": null,
+      "remediation": "Declare network usage in compatibility field or remove network calls",
+      "analyzer": "static",
+      "metadata": {
+        "semantic_facts": {
+          "evidence_kind": "capability_mismatch",
+          "context_kind": "manifest",
+          "signals": [
+            {
+              "rule_id": "TOOL_ABUSE_UNDECLARED_NETWORK",
+              "kind": "undeclared_network",
+              "file_path": "SKILL.md",
+              "value_class": "external_network"
+            }
+          ],
+          "candidate_flow": {
+            "source_class": "skill_code",
+            "sink_class": "external_network",
+            "transforms": [],
+            "cross_file": false,
+            "source_path": "examples/mqtt_producer.py",
+            "sink_path": "examples/mqtt_producer.py"
+          },
+          "flows": [
+            {
+              "source_class": "skill_code",
+              "sink_class": "external_network",
+              "transforms": [],
+              "cross_file": false,
+              "source_path": "examples/mqtt_producer.py",
+              "sink_path": "examples/mqtt_producer.py"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "MANIFEST_MISSING_LICENSE_c5ae9be793",
+      "rule_id": "MANIFEST_MISSING_LICENSE",
+      "category": "policy_violation",
+      "severity": "INFO",
+      "title": "Skill does not specify a license",
+      "description": "Skill manifest does not include a 'license' field. Specifying a license helps users understand usage terms.",
+      "file_path": "SKILL.md",
+      "line_number": null,
+      "snippet": null,
+      "remediation": "Add 'license' field to SKILL.md frontmatter (e.g., MIT, Apache-2.0)",
+      "analyzer": "static",
+      "metadata": {}
+    },
+    {
+      "id": "CORRELATED_SENSITIVE_NETWORK_FLOW_cd73a9a4d4ce",
+      "rule_id": "CORRELATED_SENSITIVE_NETWORK_FLOW",
+      "category": "data_exfiltration",
+      "severity": "HIGH",
+      "title": "Sensitive source reaches a network sink",
+      "description": "Correlated sensitive_environment \u2192 network behavior across examples/grpc_client.py.",
+      "file_path": "examples/grpc_client.py",
+      "line_number": 75,
+      "snippet": null,
+      "remediation": "Remove the transmission or constrain it to explicitly declared, trusted destinations.",
+      "analyzer": "correlation",
+      "metadata": {
+        "files_involved": [
+          "examples/grpc_client.py"
+        ],
+        "semantic_facts": {
+          "evidence_kind": "correlated_behavior",
+          "context_kind": "code",
+          "commands": [
+            {
+              "executable": "requests",
+              "argument_classes": [
+                "request_method",
+                "credential_authentication",
+                "destination_dynamic"
+              ],
+              "downloads": false,
+              "executes": false,
+              "destructive": false,
+              "privilege_change": false,
+              "source_class": "",
+              "sink_class": "network",
+              "file_path": "examples/grpc_client.py"
+            }
+          ],
+          "urls": [],
+          "flows": [
+            {
+              "source_class": "sensitive_environment",
+              "sink_class": "network",
+              "transforms": [],
+              "cross_file": false,
+              "source_path": "examples/grpc_client.py",
+              "sink_path": "examples/grpc_client.py"
+            }
+          ],
+          "reference_edges": [],
+          "signals": [
+            {
+              "rule_id": "CORRELATION_SIGNAL",
+              "kind": "correlated_behavior",
+              "file_path": "examples/grpc_client.py",
+              "value_class": "sensitive_source"
+            }
+          ],
+          "candidate_flow": {
+            "source_class": "sensitive_environment",
+            "sink_class": "network",
+            "transforms": [],
+            "cross_file": false,
+            "source_path": "examples/grpc_client.py",
+            "sink_path": "examples/grpc_client.py"
+          }
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_NETWORK_REQUESTS_2f06a197da",
+      "rule_id": "DATA_EXFIL_NETWORK_REQUESTS",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives that can transmit data externally",
+      "description": "Pattern detected: requests.post(",
+      "file_path": "examples/grpc_client.py",
+      "line_number": 75,
+      "snippet": "resp = requests.post(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "requests\\.(?:get|post|put|delete|patch|request)\\s*\\(",
+        "matched_text": "requests.post(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 7,
+        "signature_match_end": 21,
+        "signature_pattern_sha256": "cacd60a0c4b378765820016ec26f039b156d34fcbf13f99d9c0cc464990279b6",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_NETWORK_REQUESTS",
+              "kind": "signature_polarity",
+              "file_path": "examples/grpc_client.py",
+              "value_class": "illustrative"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "RESOURCE_ABUSE_INFINITE_LOOP_4dfc84674d",
+      "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "category": "resource_abuse",
+      "severity": "HIGH",
+      "title": "Infinite loop without clear exit condition",
+      "description": "Pattern detected: while True:",
+      "file_path": "examples/grpc_client.py",
+      "line_number": 129,
+      "snippet": "while True:",
+      "remediation": "Add proper exit conditions or limits to loops",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "while\\s+True\\s*:",
+        "matched_text": "while True:",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 11,
+        "signature_pattern_sha256": "9cba9ba996ebf23d2460119d56cc3893566226b4a6467645c621a7405d75595b",
+        "aitech": "AITech-13.1",
+        "aitech_name": "Disruption of Availability",
+        "scanner_category": "RESOURCE ABUSE",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "resource_abuse",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+              "kind": "signature_polarity",
+              "file_path": "examples/grpc_client.py",
+              "value_class": "illustrative"
+            }
+          ]
+        },
+        "reference_depth": 0
+      }
+    },
+    {
+      "id": "RESOURCE_ABUSE_INFINITE_LOOP_35b981bc7c",
+      "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "category": "resource_abuse",
+      "severity": "HIGH",
+      "title": "Infinite loop without clear exit condition",
+      "description": "Pattern detected: while True:",
+      "file_path": "examples/grpc_client.py",
+      "line_number": 263,
+      "snippet": "while True:",
+      "remediation": "Add proper exit conditions or limits to loops",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "while\\s+True\\s*:",
+        "matched_text": "while True:",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 11,
+        "signature_pattern_sha256": "9cba9ba996ebf23d2460119d56cc3893566226b4a6467645c621a7405d75595b",
+        "aitech": "AITech-13.1",
+        "aitech_name": "Disruption of Availability",
+        "scanner_category": "RESOURCE ABUSE",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "resource_abuse",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+              "kind": "signature_polarity",
+              "file_path": "examples/grpc_client.py",
+              "value_class": "illustrative"
+            }
+          ]
+        },
+        "reference_depth": 0
+      }
+    },
+    {
+      "id": "RESOURCE_ABUSE_INFINITE_LOOP_d5eb3a54de",
+      "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "category": "resource_abuse",
+      "severity": "HIGH",
+      "title": "Infinite loop without clear exit condition",
+      "description": "Pattern detected: while True:",
+      "file_path": "examples/grpc_client.py",
+      "line_number": 271,
+      "snippet": "while True:                              # flush at the boundary, then half-close",
+      "remediation": "Add proper exit conditions or limits to loops",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "while\\s+True\\s*:",
+        "matched_text": "while True:",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 11,
+        "signature_pattern_sha256": "9cba9ba996ebf23d2460119d56cc3893566226b4a6467645c621a7405d75595b",
+        "aitech": "AITech-13.1",
+        "aitech_name": "Disruption of Availability",
+        "scanner_category": "RESOURCE ABUSE",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "resource_abuse",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+              "kind": "signature_polarity",
+              "file_path": "examples/grpc_client.py",
+              "value_class": "illustrative"
+            }
+          ]
+        },
+        "reference_depth": 0
+      }
+    },
+    {
+      "id": "CORRELATED_SENSITIVE_NETWORK_FLOW_1eb432b809cb",
+      "rule_id": "CORRELATED_SENSITIVE_NETWORK_FLOW",
+      "category": "data_exfiltration",
+      "severity": "HIGH",
+      "title": "Sensitive source reaches a network sink",
+      "description": "Correlated sensitive_environment \u2192 network behavior across examples/mqtt_producer.py.",
+      "file_path": "examples/mqtt_producer.py",
+      "line_number": 48,
+      "snippet": null,
+      "remediation": "Remove the transmission or constrain it to explicitly declared, trusted destinations.",
+      "analyzer": "correlation",
+      "metadata": {
+        "files_involved": [
+          "examples/mqtt_producer.py"
+        ],
+        "semantic_facts": {
+          "evidence_kind": "correlated_behavior",
+          "context_kind": "code",
+          "commands": [
+            {
+              "executable": "requests",
+              "argument_classes": [
+                "request_method",
+                "credential_authentication",
+                "destination_dynamic"
+              ],
+              "downloads": false,
+              "executes": false,
+              "destructive": false,
+              "privilege_change": false,
+              "source_class": "",
+              "sink_class": "network",
+              "file_path": "examples/mqtt_producer.py"
+            }
+          ],
+          "urls": [],
+          "flows": [
+            {
+              "source_class": "sensitive_environment",
+              "sink_class": "network",
+              "transforms": [],
+              "cross_file": false,
+              "source_path": "examples/mqtt_producer.py",
+              "sink_path": "examples/mqtt_producer.py"
+            }
+          ],
+          "reference_edges": [],
+          "signals": [
+            {
+              "rule_id": "CORRELATION_SIGNAL",
+              "kind": "correlated_behavior",
+              "file_path": "examples/mqtt_producer.py",
+              "value_class": "sensitive_source"
+            }
+          ],
+          "candidate_flow": {
+            "source_class": "sensitive_environment",
+            "sink_class": "network",
+            "transforms": [],
+            "cross_file": false,
+            "source_path": "examples/mqtt_producer.py",
+            "sink_path": "examples/mqtt_producer.py"
+          }
+        }
+      }
+    },
+    {
+      "id": "DATA_EXFIL_NETWORK_REQUESTS_e171ec4f61",
+      "rule_id": "DATA_EXFIL_NETWORK_REQUESTS",
+      "category": "data_exfiltration",
+      "severity": "MEDIUM",
+      "title": "Outbound network request primitives that can transmit data externally",
+      "description": "Pattern detected: requests.post(",
+      "file_path": "examples/mqtt_producer.py",
+      "line_number": 48,
+      "snippet": "response = requests.post(",
+      "remediation": "Ensure network operations are necessary and document allowed destinations",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "requests\\.(?:get|post|put|delete|patch|request)\\s*\\(",
+        "matched_text": "requests.post(",
+        "signature_pattern_index": 0,
+        "signature_match_start": 11,
+        "signature_match_end": 25,
+        "signature_pattern_sha256": "cacd60a0c4b378765820016ec26f039b156d34fcbf13f99d9c0cc464990279b6",
+        "aitech": "AITech-8.2",
+        "aitech_name": "Data Exfiltration / Exposure",
+        "scanner_category": "SECURITY VIOLATION",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "data_exfiltration",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "DATA_EXFIL_NETWORK_REQUESTS",
+              "kind": "signature_polarity",
+              "file_path": "examples/mqtt_producer.py",
+              "value_class": "illustrative"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "RESOURCE_ABUSE_INFINITE_LOOP_8785fbc9ca",
+      "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "category": "resource_abuse",
+      "severity": "HIGH",
+      "title": "Infinite loop without clear exit condition",
+      "description": "Pattern detected: while True:",
+      "file_path": "examples/mqtt_producer.py",
+      "line_number": 109,
+      "snippet": "while True:",
+      "remediation": "Add proper exit conditions or limits to loops",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "while\\s+True\\s*:",
+        "matched_text": "while True:",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 11,
+        "signature_pattern_sha256": "9cba9ba996ebf23d2460119d56cc3893566226b4a6467645c621a7405d75595b",
+        "aitech": "AITech-13.1",
+        "aitech_name": "Disruption of Availability",
+        "scanner_category": "RESOURCE ABUSE",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "resource_abuse",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+              "kind": "signature_polarity",
+              "file_path": "examples/mqtt_producer.py",
+              "value_class": "illustrative"
+            }
+          ]
+        },
+        "reference_depth": 0
+      }
+    },
+    {
+      "id": "RESOURCE_ABUSE_INFINITE_LOOP_dab9a1ce51",
+      "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+      "category": "resource_abuse",
+      "severity": "HIGH",
+      "title": "Infinite loop without clear exit condition",
+      "description": "Pattern detected: while True:",
+      "file_path": "examples/mqtt_producer.py",
+      "line_number": 141,
+      "snippet": "while True:                           # resend unacknowledged records, oldest first",
+      "remediation": "Add proper exit conditions or limits to loops",
+      "analyzer": "static",
+      "metadata": {
+        "matched_pattern": "while\\s+True\\s*:",
+        "matched_text": "while True:",
+        "signature_pattern_index": 0,
+        "signature_match_start": 0,
+        "signature_match_end": 11,
+        "signature_pattern_sha256": "9cba9ba996ebf23d2460119d56cc3893566226b4a6467645c621a7405d75595b",
+        "aitech": "AITech-13.1",
+        "aitech_name": "Disruption of Availability",
+        "scanner_category": "RESOURCE ABUSE",
+        "signature_context": "example",
+        "signature_polarity": "illustrative",
+        "source_category": "resource_abuse",
+        "category_normalization": "native",
+        "semantic_facts": {
+          "evidence_kind": "signature_pattern",
+          "context_kind": "example",
+          "signals": [
+            {
+              "rule_id": "RESOURCE_ABUSE_INFINITE_LOOP",
+              "kind": "signature_polarity",
+              "file_path": "examples/mqtt_producer.py",
+              "value_class": "illustrative"
+            }
+          ]
+        },
+        "reference_depth": 0
+      }
+    }
+  ],
+  "scan_duration_seconds": 1.2206814289093018,
+  "duration_ms": 1220,
+  "analyzers_used": [
+    "static_analyzer",
+    "bytecode",
+    "pipeline",
+    "correlation"
+  ],
+  "timestamp": "2026-10-31T10:33:24.817119+00:00",
+  "scan_metadata": {
+    "policy_name": "default",
+    "policy_version": "1.0",
+    "policy_preset_base": "balanced",
+    "policy_fingerprint_sha256": "26ada30a1f502eecdbe7b7e35a3fe7a324be2298494208e1019b75e72b0bc516",
+    "cel": {
+      "mode": "shadow",
+      "runtime": "cel-go",
+      "runtime_version": "v0.32.0;helper=2.1.0",
+      "fact_schema": "v1",
+      "expression_set_hash": "f26459b8f4a46a974d7ab0aaae34127b5b6a40d693e266e12fca03a69a6d26aa",
+      "evaluated": 0,
+      "retained": 12,
+      "would_suppress": 0,
+      "suppressed": 0,
+      "fallbacks": 0,
+      "projection_incomplete": 0,
+      "elapsed_ms": 0.0,
+      "projection_ms": 0.0,
+      "evaluation_ms": 0.0,
+      "errors": [],
+      "per_rule": {},
+      "suppressed_candidates": []
+    },
+    "rule_contract": {
+      "status": "passed",
+      "schema_version": 2,
+      "checked": 5,
+      "invalid_findings": 0,
+      "errors": []
+    }
+  }
+}

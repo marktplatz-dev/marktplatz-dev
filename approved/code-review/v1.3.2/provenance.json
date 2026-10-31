@@ -1,0 +1,10 @@
+{
+  "id": "code-review",
+  "repo": "mattpocock/skills",
+  "path": "skills/engineering/code-review",
+  "version": "v1.3.2",
+  "sha": "d1478fcb140db0b93c0c8df17bcfd311844749d0",
+  "contentHash": "sha256-5cf1a4aca73fc2fc8eaeab0dbddf280b0a4e355d2243fab96abf549414789702",
+  "license": "MIT",
+  "promotedAt": "2026-10-31T10:37:26.583Z"
+}
