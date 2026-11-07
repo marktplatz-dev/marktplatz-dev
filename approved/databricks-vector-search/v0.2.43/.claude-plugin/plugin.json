@@ -1,0 +1,6 @@
+{
+  "name": "databricks-vector-search",
+  "description": "Databricks AI Search (formerly Vector Search) endpoints and indexes for RAG and semantic search. Use when asked to: create Standard or Storage-Optimized endpoints and Delta Sync or Direct Access indexes with AISearchClient; query with ANN, hybrid, or full-text search and filters; sync, monitor, or migrate indexes; set a target QPS, triage 429s, or load-test an endpoint; wire an index into an agent as a retriever tool. NOT for: no-code document Q&A (databricks-genie-agents); serving-endpoint CRUD (databricks-model-serving); custom ResponsesAgent authoring and deployment (databricks-ml-training).",
+  "license": "LicenseRef-Databricks",
+  "repository": "https://github.com/databricks/databricks-agent-skills"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "databricks-lakeflow-connect",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-lakeflow-connect",
+  "version": "v0.2.43",
+  "sha": "ddf785ffc6afc805e4fc6e48835d8da6f912b402",
+  "contentHash": "sha256-6985d99680f6b83a9cea5ee0156547482e28be34edf13913bbbae2b7f4893a6a",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-07T11:19:17.448Z"
+}
