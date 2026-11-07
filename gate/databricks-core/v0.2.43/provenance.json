@@ -1,0 +1,11 @@
+{
+  "id": "databricks-core",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-core",
+  "version": "v0.2.43",
+  "sha": "ddf785ffc6afc805e4fc6e48835d8da6f912b402",
+  "contentHash": "sha256-17ba5d5ea17d633d65f16814d06bd8f5fb05bea540d0b29f5053249159bccff1",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-07T11:19:16.676Z",
+  "description": "Databricks CLI operations and the parent/entry-point skill for Databricks CLI use: authentication, profile selection, and bundles. Load this first for CLI, auth, profile, and bundle tasks, then load the matching product skill. For finding or exploring data, answering questions about the data, or generating SQL, load the databricks-data-discovery skill (it routes to Genie One). Contains up-to-date guidelines for Databricks-related CLI tasks."
+}

@@ -1,0 +1,6 @@
+{
+  "name": "databricks-mlflow-evaluation",
+  "description": "MLflow GenAI evaluation and agent improvement on Databricks. Use when running mlflow.genai.evaluate(), building scorers or datasets, aligning judges with MemAlign, optimizing prompts, or monitoring production quality.",
+  "license": "LicenseRef-Databricks",
+  "repository": "https://github.com/databricks/databricks-agent-skills"
+}

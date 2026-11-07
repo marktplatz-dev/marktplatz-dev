@@ -1,0 +1,10 @@
+{
+  "id": "databricks-ai-functions",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-ai-functions",
+  "version": "v0.2.43",
+  "sha": "ddf785ffc6afc805e4fc6e48835d8da6f912b402",
+  "contentHash": "sha256-113f5fe810530522bc071e53cb2dbf9f8e8aaa2176c470c868e801ab99408cff",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-07T11:19:16.292Z"
+}
