@@ -1,0 +1,10 @@
+{
+  "id": "databricks-vector-search",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-vector-search",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-ced71d9c6950b91aba4c266ae5e073f599e6552bb56402448c3557789dafc75a",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:20.627Z"
+}

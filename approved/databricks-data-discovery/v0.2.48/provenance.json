@@ -1,0 +1,10 @@
+{
+  "id": "databricks-data-discovery",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-data-discovery",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-484149f0d3e39bf7301b28e2c9d41afb53b9d469e798d906e370bcfad8301ce1",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:18.627Z"
+}
