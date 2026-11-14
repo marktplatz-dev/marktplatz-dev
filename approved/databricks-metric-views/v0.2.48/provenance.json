@@ -1,0 +1,10 @@
+{
+  "id": "databricks-metric-views",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-metric-views",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-817c51023df29e1b97857ef2733cc44acce28ce4247da1f70690d85dbcaa4e00",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:19.284Z"
+}

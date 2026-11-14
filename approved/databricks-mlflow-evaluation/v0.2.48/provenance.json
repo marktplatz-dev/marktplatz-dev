@@ -1,0 +1,10 @@
+{
+  "id": "databricks-mlflow-evaluation",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-mlflow-evaluation",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-5807fa7e1267063d7c0616e27c038190485dd6e9588720952a975f9d0b0c6d20",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:19.428Z"
+}

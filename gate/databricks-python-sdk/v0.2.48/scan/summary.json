@@ -1,0 +1,53 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: Access Token",
+      "file": "SKILL.md",
+      "line": 143
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RA2",
+      "severity": "medium",
+      "message": "Rogue Agent: create one\n- For Spark operations: `uv pip install databricks-connect`\n- For SDK operations: `uv pip install databricks-sdk`\n- Databricks CLI version should be 0.278.0 or higher\n\n## Configuration\n\n- D",
+      "file": "SKILL.md",
+      "line": 21
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "SECRET_PASSWORD_VAR",
+      "severity": "medium",
+      "message": "Hardcoded password or secret in variable",
+      "file": "examples/1-authentication.py",
+      "line": 53
+    }
+  ]
+}

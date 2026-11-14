@@ -1,0 +1,10 @@
+{
+  "id": "databricks-ml-training",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-ml-training",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-1b08b54a81c295f6da5a6ce66ec13d88fa9ac04f55dd8f527dbd312ee9fba780",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:19.356Z"
+}

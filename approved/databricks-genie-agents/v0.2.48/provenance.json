@@ -1,0 +1,10 @@
+{
+  "id": "databricks-genie-agents",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-genie-agents",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-da8ea7ba924c2e5d5061608092c42d5ddd13898c20c7f652ee389d06f71e6732",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:18.915Z"
+}

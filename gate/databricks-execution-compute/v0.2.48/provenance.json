@@ -1,0 +1,11 @@
+{
+  "id": "databricks-execution-compute",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-execution-compute",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-cb41e3aeccb405edda572220a9a8a1eb3b9cb948f1a75e458657b222778a7c9d",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:18.855Z",
+  "description": "Execute code and manage compute on Databricks: run Python/Scala/SQL/R via serverless, classic, or interactive clusters, and create/resize/delete clusters and SQL warehouses."
+}

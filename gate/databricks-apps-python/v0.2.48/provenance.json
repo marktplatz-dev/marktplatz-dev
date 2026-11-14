@@ -1,0 +1,11 @@
+{
+  "id": "databricks-apps-python",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-apps-python",
+  "version": "v0.2.48",
+  "sha": "95beba3d09f7ff79807c4eef8feca6f7458786b0",
+  "contentHash": "sha256-0507203f93588b6c0715ff25236b99d3cff6b4a87f6c8a1efec3063a932c2c4a",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-14T11:45:18.346Z",
+  "description": "Python backend for Databricks Apps — FastAPI (default), Flask, Dash, Streamlit, Gradio, Reflex. **Default for a new Databricks App is `databricks-apps` (AppKit — Node/TypeScript/React) — reach for it first.** Use this skill only when the user asks for a Python backend, extends an existing Python app, or the team is Python-only. Covers OAuth auth, app resources, SQL warehouse and Lakebase connectivity, foundation-model / model-serving APIs (via `databricks-python-sdk`), AI Search (Vector Search) queries (via `databricks-vector-search`), and deployment via CLI or DABs."
+}

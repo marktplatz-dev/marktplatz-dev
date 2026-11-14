@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": false
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit-cheatsheet.md",
+      "line": 9
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit-cheatsheet.md",
+      "line": 10
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit-cheatsheet.md",
+      "line": 11
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/genie-ai-trust.md",
+      "line": 33
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/genie-ai-trust.md",
+      "line": 37
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/genie-ai-trust.md",
+      "line": 56
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    }
+  ]
+}
