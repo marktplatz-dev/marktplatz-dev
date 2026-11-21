@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": false
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": []
+}

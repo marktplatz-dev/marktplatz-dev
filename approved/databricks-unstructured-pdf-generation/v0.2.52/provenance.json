@@ -1,0 +1,10 @@
+{
+  "id": "databricks-unstructured-pdf-generation",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-unstructured-pdf-generation",
+  "version": "v0.2.52",
+  "sha": "5efd8435174798d1509d6b53e57a2918fc857b65",
+  "contentHash": "sha256-2f11c789f83d47d60eaae96d0dd585acee862b162460dfbf2199474183c04ea7",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-21T13:00:50.369Z"
+}

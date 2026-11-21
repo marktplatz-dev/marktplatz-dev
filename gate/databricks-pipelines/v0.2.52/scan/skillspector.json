@@ -1,0 +1,969 @@
+{
+  "skill": {
+    "name": "databricks-pipelines",
+    "source": "/home/runner/work/marktplatz-dev/marktplatz-dev/.quarantine/databricks-pipelines/skill",
+    "scanned_at": "2026-11-21T12:54:20.200995+00:00"
+  },
+  "risk_assessment": {
+    "score": 17,
+    "severity": "LOW",
+    "recommendation": "SAFE"
+  },
+  "components": [
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 185,
+      "executable": false,
+      "size_bytes": 22091
+    },
+    {
+      "path": "agents/openai.yaml",
+      "type": "yaml",
+      "lines": 7,
+      "executable": false,
+      "size_bytes": 300
+    },
+    {
+      "path": "assets/databricks.png",
+      "type": "other",
+      "lines": 378,
+      "executable": false,
+      "size_bytes": 15366
+    },
+    {
+      "path": "assets/databricks.svg",
+      "type": "other",
+      "lines": 3,
+      "executable": false,
+      "size_bytes": 582
+    },
+    {
+      "path": "references/1-project-initialization-with-dab.md",
+      "type": "markdown",
+      "lines": 270,
+      "executable": false,
+      "size_bytes": 9691
+    },
+    {
+      "path": "references/2-rapid-iteration-with-cli.md",
+      "type": "markdown",
+      "lines": 157,
+      "executable": false,
+      "size_bytes": 7548
+    },
+    {
+      "path": "references/auto-cdc-from-snapshot.md",
+      "type": "markdown",
+      "lines": 147,
+      "executable": false,
+      "size_bytes": 7355
+    },
+    {
+      "path": "references/auto-cdc-python.md",
+      "type": "markdown",
+      "lines": 393,
+      "executable": false,
+      "size_bytes": 19214
+    },
+    {
+      "path": "references/auto-cdc-sql.md",
+      "type": "markdown",
+      "lines": 353,
+      "executable": false,
+      "size_bytes": 16845
+    },
+    {
+      "path": "references/auto-loader-options-avro.md",
+      "type": "markdown",
+      "lines": 16,
+      "executable": false,
+      "size_bytes": 927
+    },
+    {
+      "path": "references/auto-loader-options-csv.md",
+      "type": "markdown",
+      "lines": 48,
+      "executable": false,
+      "size_bytes": 2605
+    },
+    {
+      "path": "references/auto-loader-options-json.md",
+      "type": "markdown",
+      "lines": 36,
+      "executable": false,
+      "size_bytes": 2263
+    },
+    {
+      "path": "references/auto-loader-options-orc.md",
+      "type": "markdown",
+      "lines": 7,
+      "executable": false,
+      "size_bytes": 552
+    },
+    {
+      "path": "references/auto-loader-options-parquet.md",
+      "type": "markdown",
+      "lines": 16,
+      "executable": false,
+      "size_bytes": 1099
+    },
+    {
+      "path": "references/auto-loader-options-text.md",
+      "type": "markdown",
+      "lines": 9,
+      "executable": false,
+      "size_bytes": 770
+    },
+    {
+      "path": "references/auto-loader-options-xml.md",
+      "type": "markdown",
+      "lines": 38,
+      "executable": false,
+      "size_bytes": 1987
+    },
+    {
+      "path": "references/auto-loader-python.md",
+      "type": "markdown",
+      "lines": 150,
+      "executable": false,
+      "size_bytes": 11991
+    },
+    {
+      "path": "references/auto-loader-schema.md",
+      "type": "markdown",
+      "lines": 140,
+      "executable": false,
+      "size_bytes": 7916
+    },
+    {
+      "path": "references/auto-loader-sql.md",
+      "type": "markdown",
+      "lines": 87,
+      "executable": false,
+      "size_bytes": 5673
+    },
+    {
+      "path": "references/changing-dataset-type.md",
+      "type": "markdown",
+      "lines": 17,
+      "executable": false,
+      "size_bytes": 2789
+    },
+    {
+      "path": "references/continuous-pipeline.md",
+      "type": "markdown",
+      "lines": 60,
+      "executable": false,
+      "size_bytes": 3816
+    },
+    {
+      "path": "references/decompose-materialized-view-python.md",
+      "type": "markdown",
+      "lines": 351,
+      "executable": false,
+      "size_bytes": 13917
+    },
+    {
+      "path": "references/decompose-materialized-view-sql.md",
+      "type": "markdown",
+      "lines": 281,
+      "executable": false,
+      "size_bytes": 10676
+    },
+    {
+      "path": "references/deserialization-python.md",
+      "type": "markdown",
+      "lines": 132,
+      "executable": false,
+      "size_bytes": 5045
+    },
+    {
+      "path": "references/deserialization-sql.md",
+      "type": "markdown",
+      "lines": 98,
+      "executable": false,
+      "size_bytes": 3756
+    },
+    {
+      "path": "references/dlt-migration.md",
+      "type": "markdown",
+      "lines": 166,
+      "executable": false,
+      "size_bytes": 6108
+    },
+    {
+      "path": "references/expectations-python.md",
+      "type": "markdown",
+      "lines": 215,
+      "executable": false,
+      "size_bytes": 8669
+    },
+    {
+      "path": "references/expectations-sql.md",
+      "type": "markdown",
+      "lines": 228,
+      "executable": false,
+      "size_bytes": 8711
+    },
+    {
+      "path": "references/file-ingestion.md",
+      "type": "markdown",
+      "lines": 57,
+      "executable": false,
+      "size_bytes": 3234
+    },
+    {
+      "path": "references/file-ingestion/auto-loader.md",
+      "type": "markdown",
+      "lines": 133,
+      "executable": false,
+      "size_bytes": 5559
+    },
+    {
+      "path": "references/file-ingestion/parse-unstructured.md",
+      "type": "markdown",
+      "lines": 106,
+      "executable": false,
+      "size_bytes": 4619
+    },
+    {
+      "path": "references/file-ingestion/sources.md",
+      "type": "markdown",
+      "lines": 180,
+      "executable": false,
+      "size_bytes": 8865
+    },
+    {
+      "path": "references/flow-reset-refresh.md",
+      "type": "markdown",
+      "lines": 38,
+      "executable": false,
+      "size_bytes": 3751
+    },
+    {
+      "path": "references/foreach-batch-sink-python.md",
+      "type": "markdown",
+      "lines": 123,
+      "executable": false,
+      "size_bytes": 5704
+    },
+    {
+      "path": "references/identity-columns-python.md",
+      "type": "markdown",
+      "lines": 137,
+      "executable": false,
+      "size_bytes": 7417
+    },
+    {
+      "path": "references/identity-columns-sql.md",
+      "type": "markdown",
+      "lines": 111,
+      "executable": false,
+      "size_bytes": 7015
+    },
+    {
+      "path": "references/kafka-auth-python.md",
+      "type": "markdown",
+      "lines": 248,
+      "executable": false,
+      "size_bytes": 11619
+    },
+    {
+      "path": "references/kafka-auth-sql.md",
+      "type": "markdown",
+      "lines": 188,
+      "executable": false,
+      "size_bytes": 9906
+    },
+    {
+      "path": "references/kafka-deserialization-python.md",
+      "type": "markdown",
+      "lines": 100,
+      "executable": false,
+      "size_bytes": 4167
+    },
+    {
+      "path": "references/kafka-streaming-python.md",
+      "type": "markdown",
+      "lines": 204,
+      "executable": false,
+      "size_bytes": 12396
+    },
+    {
+      "path": "references/kafka-streaming-sql.md",
+      "type": "markdown",
+      "lines": 223,
+      "executable": false,
+      "size_bytes": 11873
+    },
+    {
+      "path": "references/kinesis-streaming-python.md",
+      "type": "markdown",
+      "lines": 164,
+      "executable": false,
+      "size_bytes": 6041
+    },
+    {
+      "path": "references/kinesis-streaming-sql.md",
+      "type": "markdown",
+      "lines": 155,
+      "executable": false,
+      "size_bytes": 5323
+    },
+    {
+      "path": "references/materialized-view-python.md",
+      "type": "markdown",
+      "lines": 211,
+      "executable": false,
+      "size_bytes": 11896
+    },
+    {
+      "path": "references/materialized-view-sql.md",
+      "type": "markdown",
+      "lines": 258,
+      "executable": false,
+      "size_bytes": 16896
+    },
+    {
+      "path": "references/migrate-to-sdp.md",
+      "type": "markdown",
+      "lines": 154,
+      "executable": false,
+      "size_bytes": 9330
+    },
+    {
+      "path": "references/migrate-to-sdp/00-index.md",
+      "type": "markdown",
+      "lines": 29,
+      "executable": false,
+      "size_bytes": 1777
+    },
+    {
+      "path": "references/migrate-to-sdp/generate-phase.md",
+      "type": "markdown",
+      "lines": 90,
+      "executable": false,
+      "size_bytes": 4671
+    },
+    {
+      "path": "references/migrate-to-sdp/ir-schema.yml",
+      "type": "yaml",
+      "lines": 385,
+      "executable": false,
+      "size_bytes": 16907
+    },
+    {
+      "path": "references/migrate-to-sdp/research-phase.md",
+      "type": "markdown",
+      "lines": 152,
+      "executable": false,
+      "size_bytes": 6492
+    },
+    {
+      "path": "references/migrate-to-sdp/sdp-syntax.md",
+      "type": "markdown",
+      "lines": 252,
+      "executable": false,
+      "size_bytes": 9999
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/dbt/conversion-rules.md",
+      "type": "markdown",
+      "lines": 117,
+      "executable": false,
+      "size_bytes": 9249
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/dbt/decision-rules.md",
+      "type": "markdown",
+      "lines": 75,
+      "executable": false,
+      "size_bytes": 5836
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/dbt/examples/incremental_to_streaming.md",
+      "type": "markdown",
+      "lines": 83,
+      "executable": false,
+      "size_bytes": 1951
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/dbt/examples/macro_expansion.md",
+      "type": "markdown",
+      "lines": 205,
+      "executable": false,
+      "size_bytes": 4621
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/dbt/examples/snapshot_to_cdc.md",
+      "type": "markdown",
+      "lines": 251,
+      "executable": false,
+      "size_bytes": 7538
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/dbt/examples/table_and_view.md",
+      "type": "markdown",
+      "lines": 179,
+      "executable": false,
+      "size_bytes": 4124
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/dbt/overview.md",
+      "type": "markdown",
+      "lines": 71,
+      "executable": false,
+      "size_bytes": 3260
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/conversion-rules.md",
+      "type": "markdown",
+      "lines": 222,
+      "executable": false,
+      "size_bytes": 20523
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/decision-rules.md",
+      "type": "markdown",
+      "lines": 116,
+      "executable": false,
+      "size_bytes": 8342
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/examples/expression_to_columns.md",
+      "type": "markdown",
+      "lines": 95,
+      "executable": false,
+      "size_bytes": 3831
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/examples/filter_with_parameters.md",
+      "type": "markdown",
+      "lines": 86,
+      "executable": false,
+      "size_bytes": 3915
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/examples/join_and_aggregator.md",
+      "type": "markdown",
+      "lines": 124,
+      "executable": false,
+      "size_bytes": 4617
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/examples/update_strategy_to_auto_cdc.md",
+      "type": "markdown",
+      "lines": 122,
+      "executable": false,
+      "size_bytes": 5885
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/examples/validation_to_expectations.md",
+      "type": "markdown",
+      "lines": 117,
+      "executable": false,
+      "size_bytes": 4965
+    },
+    {
+      "path": "references/migrate-to-sdp/sources/informatica/overview.md",
+      "type": "markdown",
+      "lines": 117,
+      "executable": false,
+      "size_bytes": 6580
+    },
+    {
+      "path": "references/migrate-to-sdp/validate-repair-phase.md",
+      "type": "markdown",
+      "lines": 141,
+      "executable": false,
+      "size_bytes": 5833
+    },
+    {
+      "path": "references/parameters-sql.md",
+      "type": "markdown",
+      "lines": 46,
+      "executable": false,
+      "size_bytes": 2292
+    },
+    {
+      "path": "references/performance-tuning.md",
+      "type": "markdown",
+      "lines": 403,
+      "executable": false,
+      "size_bytes": 14774
+    },
+    {
+      "path": "references/pipeline-debugging.md",
+      "type": "markdown",
+      "lines": 69,
+      "executable": false,
+      "size_bytes": 6501
+    },
+    {
+      "path": "references/pipeline-settings.md",
+      "type": "markdown",
+      "lines": 287,
+      "executable": false,
+      "size_bytes": 17009
+    },
+    {
+      "path": "references/python-basics.md",
+      "type": "markdown",
+      "lines": 71,
+      "executable": false,
+      "size_bytes": 4786
+    },
+    {
+      "path": "references/real-time-mode-sdp.md",
+      "type": "markdown",
+      "lines": 227,
+      "executable": false,
+      "size_bytes": 13266
+    },
+    {
+      "path": "references/replace-using-flow-python.md",
+      "type": "markdown",
+      "lines": 139,
+      "executable": false,
+      "size_bytes": 7473
+    },
+    {
+      "path": "references/replace-using-flow-sql.md",
+      "type": "markdown",
+      "lines": 109,
+      "executable": false,
+      "size_bytes": 7128
+    },
+    {
+      "path": "references/replace-where-flow-python.md",
+      "type": "markdown",
+      "lines": 356,
+      "executable": false,
+      "size_bytes": 19604
+    },
+    {
+      "path": "references/replace-where-flow-sql.md",
+      "type": "markdown",
+      "lines": 307,
+      "executable": false,
+      "size_bytes": 18101
+    },
+    {
+      "path": "references/rewind-pipeline.md",
+      "type": "markdown",
+      "lines": 118,
+      "executable": false,
+      "size_bytes": 5989
+    },
+    {
+      "path": "references/scd-2-querying.md",
+      "type": "markdown",
+      "lines": 143,
+      "executable": false,
+      "size_bytes": 6062
+    },
+    {
+      "path": "references/setup-pipeline.md",
+      "type": "markdown",
+      "lines": 39,
+      "executable": false,
+      "size_bytes": 2210
+    },
+    {
+      "path": "references/sink-python.md",
+      "type": "markdown",
+      "lines": 137,
+      "executable": false,
+      "size_bytes": 5081
+    },
+    {
+      "path": "references/sql-basics.md",
+      "type": "markdown",
+      "lines": 63,
+      "executable": false,
+      "size_bytes": 4364
+    },
+    {
+      "path": "references/streaming-table-python.md",
+      "type": "markdown",
+      "lines": 431,
+      "executable": false,
+      "size_bytes": 20665
+    },
+    {
+      "path": "references/streaming-table-schema-evolution.md",
+      "type": "markdown",
+      "lines": 273,
+      "executable": false,
+      "size_bytes": 13755
+    },
+    {
+      "path": "references/streaming-table-sql.md",
+      "type": "markdown",
+      "lines": 482,
+      "executable": false,
+      "size_bytes": 23925
+    },
+    {
+      "path": "references/temporary-view-python.md",
+      "type": "markdown",
+      "lines": 72,
+      "executable": false,
+      "size_bytes": 2850
+    },
+    {
+      "path": "references/temporary-view-sql.md",
+      "type": "markdown",
+      "lines": 87,
+      "executable": false,
+      "size_bytes": 3888
+    },
+    {
+      "path": "references/view-sql.md",
+      "type": "markdown",
+      "lines": 76,
+      "executable": false,
+      "size_bytes": 2530
+    }
+  ],
+  "issues": [
+    {
+      "id": "TM2",
+      "finding_id": "finding-13c37b2fea394bb5a96abe0feb226909",
+      "category": "Tool Misuse",
+      "pattern": "Chaining Abuse",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/migrate-to-sdp/ir-schema.yml",
+        "start_line": 60,
+        "end_line": null
+      },
+      "finding": "| python\n",
+      "explanation": "Tool calls are chained to bypass individual safety checks or escalate capabilities beyond what any single tool call would allow.",
+      "remediation": "Limit tool chaining depth and validate the output of each tool before passing it to the next. Require explicit user approval for multi-step chains.",
+      "code_snippet": "  source_project_path: './my_dbt_project' # root of the source project (relative or absolute)\n\n  # Generation defaults \u2014 per-node overrides are possible\n  output_format: 'sql' # sql | python\n\n  # Pipeline display name\n  pipeline_name: 'migrated_my_analytics'",
+      "intent": null,
+      "tags": [
+        "Tool Misuse"
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.9.6",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 88,
+    "scanned_components": 87,
+    "coverage_percent": 98.9,
+    "is_complete": false,
+    "execution_successful": true,
+    "fully_inspected_files": 87,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "skipped",
+        "phase": "static",
+        "reason_code": "binary_content",
+        "message": "Binary content is unsupported by this analyzer.",
+        "path": "assets/databricks.png",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false,
+        "analyzers": [
+          "static_patterns_agent_snooping",
+          "static_patterns_anti_refusal",
+          "static_patterns_data_exfiltration",
+          "static_patterns_deserialization",
+          "static_patterns_excessive_agency",
+          "static_patterns_harmful_content",
+          "static_patterns_memory_poisoning",
+          "static_patterns_output_handling",
+          "static_patterns_privilege_escalation",
+          "static_patterns_prompt_injection",
+          "static_patterns_rogue_agent",
+          "static_patterns_ssrf",
+          "static_patterns_supply_chain",
+          "static_patterns_system_prompt_leakage",
+          "static_patterns_tool_misuse"
+        ]
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "degraded",
+        "planned_work": 88,
+        "completed": 87,
+        "skipped": 1,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 88,
+        "completed": 88,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "limitations": [
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer was disabled by the requested configuration.",
+      "Analyzer static_patterns_agent_snooping status: degraded.",
+      "Analyzer static_patterns_anti_refusal status: degraded.",
+      "Analyzer static_patterns_data_exfiltration status: degraded.",
+      "Analyzer static_patterns_deserialization status: degraded.",
+      "Analyzer static_patterns_excessive_agency status: degraded.",
+      "Analyzer static_patterns_harmful_content status: degraded.",
+      "Analyzer static_patterns_memory_poisoning status: degraded.",
+      "Analyzer static_patterns_output_handling status: degraded.",
+      "Analyzer static_patterns_privilege_escalation status: degraded.",
+      "Analyzer static_patterns_prompt_injection status: degraded.",
+      "Analyzer static_patterns_rogue_agent status: degraded.",
+      "Analyzer static_patterns_ssrf status: degraded.",
+      "Analyzer static_patterns_supply_chain status: degraded.",
+      "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+      "Analyzer static_patterns_tool_misuse status: degraded.",
+      "Analyzer was disabled by the requested configuration."
+    ],
+    "findings_before_filtering": 69,
+    "findings_after_filtering": 1
+  }
+}

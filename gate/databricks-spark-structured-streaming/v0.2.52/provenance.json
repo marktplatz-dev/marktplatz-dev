@@ -1,0 +1,11 @@
+{
+  "id": "databricks-spark-structured-streaming",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-spark-structured-streaming",
+  "version": "v0.2.52",
+  "sha": "5efd8435174798d1509d6b53e57a2918fc857b65",
+  "contentHash": "sha256-a6fbcdbf8741981f237f4f574494a4140aba0d159971cffaabd6d21ada3aca94",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-21T13:00:50.160Z",
+  "description": "Comprehensive guide to Spark Structured Streaming for production workloads. Use when building streaming pipelines, working with Kafka ingestion, implementing Real-Time Mode (RTM), configuring triggers (processingTime, availableNow), handling stateful operations with watermarks, writing custom stateful logic with transformWithState (timers, TTL, per-key state; preferred over applyInPandasWithState and flatMapGroupsWithState for new code), optimizing checkpoints, performing stream-stream or stream-static joins, writing to multiple sinks, or tuning streaming cost and performance."
+}
