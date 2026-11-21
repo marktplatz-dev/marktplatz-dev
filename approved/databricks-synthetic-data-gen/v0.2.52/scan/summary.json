@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": false
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "EA2",
+      "severity": "medium",
+      "message": "Excessive Agency: without confirmation",
+      "file": "SKILL.md",
+      "line": 59
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RA2",
+      "severity": "medium",
+      "message": "Rogue Agent: write to Unity Catalog\n- Works with serverless and classic compute\n\nPrerequisites:\n- Install dependencies locally: uv pip install faker pandas numpy holidays databricks-connect\n- Configure ~/.databric",
+      "file": "scripts/generate_synthetic_data.py",
+      "line": 6
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "teach",
+  "description": "Teach the user a new skill or concept, within this workspace.",
+  "license": "MIT",
+  "repository": "https://github.com/mattpocock/skills"
+}

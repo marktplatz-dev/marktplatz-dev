@@ -1,0 +1,381 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "SKILL.md",
+      "line": 61
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "SKILL.md",
+      "line": 157
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "SKILL.md",
+      "line": 158
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "SKILL.md",
+      "line": 159
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "SKILL.md",
+      "line": 160
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "SKILL.md",
+      "line": 161
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/agents.md",
+      "line": 7
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/agents.md",
+      "line": 174
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/agents.md",
+      "line": 194
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/agents.md",
+      "line": 227
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/appkit-sdk.md",
+      "line": 19
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/custom-endpoints.md",
+      "line": 36
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/files.md",
+      "line": 3
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/files.md",
+      "line": 97
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/files.md",
+      "line": 113
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/files.md",
+      "line": 121
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/frontend.md",
+      "line": 3
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/frontend.md",
+      "line": 37
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/frontend.md",
+      "line": 75
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/frontend.md",
+      "line": 118
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/genie.md",
+      "line": 158
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/genie.md",
+      "line": 162
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/genie.md",
+      "line": 263
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/genie.md",
+      "line": 265
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/image-generation.md",
+      "line": 420
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/jobs.md",
+      "line": 3
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/jobs.md",
+      "line": 78
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/jobs.md",
+      "line": 82
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/jobs.md",
+      "line": 105
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/lakebase.md",
+      "line": 82
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/metric-views.md",
+      "line": 52
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/metric-views.md",
+      "line": 74
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/model-serving.md",
+      "line": 209
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/overview.md",
+      "line": 52
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/overview.md",
+      "line": 98
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/overview.md",
+      "line": 127
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/overview.md",
+      "line": 128
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/proto-first.md",
+      "line": 262
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/sql-queries.md",
+      "line": 17
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/appkit/sql-queries.md",
+      "line": 99
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RP1",
+      "severity": "medium",
+      "message": "MCP Rug Pull: null",
+      "file": "references/testing.md",
+      "line": 103
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: .env\n",
+      "file": "references/appkit/agents.md",
+      "line": 120
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: .env\n",
+      "file": "references/appkit/genie.md",
+      "line": 80
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "PE3",
+      "severity": "high",
+      "message": "Privilege Escalation: .env ",
+      "file": "references/appkit/overview.md",
+      "line": 72
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    }
+  ]
+}

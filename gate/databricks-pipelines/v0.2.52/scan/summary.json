@@ -1,0 +1,67 @@
+{
+  "passed": false,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": true
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": true
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "TM2",
+      "severity": "high",
+      "message": "Tool Misuse: | python\n",
+      "file": "references/migrate-to-sdp/ir-schema.yml",
+      "line": 60
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "LAZY_LOAD_DEEP_NESTING",
+      "severity": "medium",
+      "message": "Deeply nested file references detected",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "FILE_MAGIC_MISMATCH",
+      "severity": "medium",
+      "message": "File extension does not match actual content type",
+      "file": "references/migrate-to-sdp/sources/dbt/examples/incremental_to_streaming.md"
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "PROMPT_INJECTION_CONCEALMENT",
+      "severity": "high",
+      "message": "Attempts to conceal actions from the user",
+      "file": "references/replace-where-flow-python.md",
+      "line": 234
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "PROMPT_INJECTION_CONCEALMENT",
+      "severity": "high",
+      "message": "Attempts to conceal actions from the user",
+      "file": "references/replace-where-flow-sql.md",
+      "line": 201
+    }
+  ]
+}
