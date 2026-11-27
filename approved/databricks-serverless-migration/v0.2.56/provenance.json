@@ -1,0 +1,10 @@
+{
+  "id": "databricks-serverless-migration",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-serverless-migration",
+  "version": "v0.2.56",
+  "sha": "f46843188a9de60a29c8b8a52aba992c6c1e1133",
+  "contentHash": "sha256-6fcdac8e6875da3375edf6b27bdb0c0b2fcfeaa178cf3f14fbecfa455723be6f",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-27T14:12:36.753Z"
+}

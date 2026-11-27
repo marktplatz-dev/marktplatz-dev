@@ -1,0 +1,10 @@
+{
+  "id": "databricks-unity-catalog",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-unity-catalog",
+  "version": "v0.2.56",
+  "sha": "f46843188a9de60a29c8b8a52aba992c6c1e1133",
+  "contentHash": "sha256-2f50b88614b3e40781d3a814d564aca9441a16a7de253f2c8083fbb1ebd466b6",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-27T14:12:36.998Z"
+}

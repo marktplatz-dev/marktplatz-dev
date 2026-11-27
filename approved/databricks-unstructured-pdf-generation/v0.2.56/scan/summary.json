@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "scanners": [
+    {
+      "id": "skillspector",
+      "version": "2.9.6",
+      "blocked": false
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "version": "2.1.0",
+      "blocked": false
+    },
+    {
+      "id": "atr",
+      "version": "4.0.0",
+      "blocked": false
+    }
+  ],
+  "findings": [
+    {
+      "scanner": "skillspector",
+      "ruleId": "LP3",
+      "severity": "medium",
+      "message": "MCP Least Privilege: null",
+      "file": "SKILL.md",
+      "line": 1
+    },
+    {
+      "scanner": "skillspector",
+      "ruleId": "RA2",
+      "severity": "medium",
+      "message": "Rogue Agent: Write HTML files to `./raw_data/html/` (write multiple files in parallel for speed) — domain-shaped to match the documents your retrieval pipeline will see in production.\n2. Convert HTML → PDF using `",
+      "file": "SKILL.md",
+      "line": 16
+    },
+    {
+      "scanner": "cisco-skill-scanner",
+      "ruleId": "MANIFEST_MISSING_LICENSE",
+      "severity": "info",
+      "message": "Skill does not specify a license",
+      "file": "SKILL.md"
+    }
+  ]
+}
