@@ -1,0 +1,11 @@
+{
+  "id": "databricks-apps",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-apps",
+  "version": "v0.2.56",
+  "sha": "f46843188a9de60a29c8b8a52aba992c6c1e1133",
+  "contentHash": "sha256-3787ab5499a829689b72a3052e619c59fc9b0d3b641820c395c84e75a2a73f08",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-27T14:12:35.823Z",
+  "description": "Build apps on Databricks Apps platform. Use when asked to create data apps, analytics tools, or custom interactive visualizations. A plain \"create a dashboard\" request means a managed AI/BI (Lakeview) dashboard → use databricks-aibi-dashboards, not this skill. Evaluates data access patterns (analytics vs Lakebase synced tables) before scaffolding. Invoke BEFORE starting implementation."
+}

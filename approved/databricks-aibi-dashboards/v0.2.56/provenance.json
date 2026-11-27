@@ -1,0 +1,10 @@
+{
+  "id": "databricks-aibi-dashboards",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-aibi-dashboards",
+  "version": "v0.2.56",
+  "sha": "f46843188a9de60a29c8b8a52aba992c6c1e1133",
+  "contentHash": "sha256-3fbaaad78bb6ad4d0b672d5398297a551283b0671bae039833717cb9095ff317",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-27T14:12:35.637Z"
+}

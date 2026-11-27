@@ -1,0 +1,6 @@
+{
+  "name": "databricks-genie-agents",
+  "description": "Create, manage, and query Databricks Genie Agents (formerly Genie Spaces): curated agents over Unity Catalog tables, Metric Views, and documents in UC volumes. Use when building, migrating, tuning, or asking a specific Agent, and for document Q&A or docs + data agents (replaces the legacy Knowledge Assistant and Supervisor Agent). For data questions across the workspace, use databricks-data-discovery.",
+  "license": "LicenseRef-Databricks",
+  "repository": "https://github.com/databricks/databricks-agent-skills"
+}

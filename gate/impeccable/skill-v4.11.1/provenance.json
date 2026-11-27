@@ -1,0 +1,11 @@
+{
+  "id": "impeccable",
+  "repo": "pbakaus/impeccable",
+  "path": "plugin/skills/impeccable",
+  "version": "skill-v4.11.1",
+  "sha": "2fc5e1459efbbf06d92c7306517c286bf12490cf",
+  "contentHash": "sha256-bcf25633d8a2adb05cdf063d10f626149bb3830fb3e0a474ac405e337828c305",
+  "license": "Apache-2.0",
+  "promotedAt": "2026-11-27T14:12:37.596Z",
+  "description": "Use to design, redesign, critique, audit, polish or animate a frontend: websites, landing pages, dashboards, app UI, components, native iOS/Android screens, or a design system (DESIGN.md)."
+}

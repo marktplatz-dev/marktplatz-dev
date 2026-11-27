@@ -1,0 +1,11 @@
+{
+  "id": "databricks-python-sdk",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-python-sdk",
+  "version": "v0.2.56",
+  "sha": "f46843188a9de60a29c8b8a52aba992c6c1e1133",
+  "contentHash": "sha256-5cf1f72f1f1f5db70d4280ebf1e6dcff8774de293e686113edbb76b7aadf77fb",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-27T14:12:36.701Z",
+  "description": "Databricks development guidance including Python SDK, Databricks Connect, CLI, and REST API. Use when working with databricks-sdk, databricks-connect, or Databricks APIs."
+}

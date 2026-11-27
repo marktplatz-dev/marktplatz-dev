@@ -1,0 +1,7 @@
+interface:
+  display_name: "Databricks MLflow Evaluation"
+  short_description: "Evaluate and improve MLflow agents with datasets and scorers."
+  icon_small: "./assets/databricks.svg"
+  icon_large: "./assets/databricks.png"
+  brand_color: "#FF3621"
+  default_prompt: "Use $databricks-mlflow-evaluation for MLflow agent evaluation and scorer workflows."

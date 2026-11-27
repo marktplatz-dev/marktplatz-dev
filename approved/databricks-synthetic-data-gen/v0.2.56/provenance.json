@@ -1,0 +1,10 @@
+{
+  "id": "databricks-synthetic-data-gen",
+  "repo": "databricks/databricks-agent-skills",
+  "path": "skills/databricks-synthetic-data-gen",
+  "version": "v0.2.56",
+  "sha": "f46843188a9de60a29c8b8a52aba992c6c1e1133",
+  "contentHash": "sha256-e66346999f5000f1c2eec2c6a60e2241e7256a07df1139abd645a53717e4a098",
+  "license": "LicenseRef-Databricks",
+  "promotedAt": "2026-11-27T14:12:36.936Z"
+}
